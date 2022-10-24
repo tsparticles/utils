@@ -1,0 +1,19 @@
+0 silly argv {
+0 silly argv   _: [ 'import' ],
+0 silly argv   lernaVersion: '6.0.0',
+0 silly argv   '$0': '../../../../Library/pnpm/global/5/node_modules/lerna/cli.js',
+0 silly argv   dir: '../utils-old/eslint-config'
+0 silly argv }
+1 notice cli v6.0.0
+2 verbose rootPath /Users/matteo/Projects/GitHub/tsparticles/utils
+3 error Error: Command failed with exit code 128: git rev-parse HEAD
+3 error fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+3 error Use '--' to separate paths from revisions, like this:
+3 error 'git <command> [<revision>...] -- [<file>...]'
+3 error HEAD
+3 error     at makeError (/Users/matteo/Library/pnpm/global/5/.pnpm/execa@5.1.1/node_modules/execa/lib/error.js:60:11)
+3 error     at Function.module.exports.sync (/Users/matteo/Library/pnpm/global/5/.pnpm/execa@5.1.1/node_modules/execa/index.js:194:17)
+3 error     at Object.execSync (/Users/matteo/Library/pnpm/global/5/.pnpm/@lerna+child-process@6.0.0/node_modules/@lerna/child-process/index.js:39:16)
+3 error     at ImportCommand.execSync (/Users/matteo/Library/pnpm/global/5/.pnpm/@lerna+import@6.0.0/node_modules/@lerna/import/index.js:141:25)
+3 error     at ImportCommand.getCurrentSHA (/Users/matteo/Library/pnpm/global/5/.pnpm/@lerna+import@6.0.0/node_modules/@lerna/import/index.js:133:17)
+3 error     at ImportCommand.initialize (/Users/matteo/Library/pnpm/global/5/.pnpm/@lerna+import@6.0.0/node_modules/@lerna/import/index.js:102:31)
