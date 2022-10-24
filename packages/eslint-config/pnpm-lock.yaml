@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@tsparticles/prettier-config': ^1.3.0
   '@typescript-eslint/eslint-plugin': ^5.39.0
   '@typescript-eslint/parser': ^5.39.0
   eslint: ^8.24.0
@@ -9,6 +10,7 @@ specifiers:
   typescript: ^4.8.4
 
 devDependencies:
+  '@tsparticles/prettier-config': 1.3.0_prettier@2.7.1
   '@typescript-eslint/eslint-plugin': 5.40.1_c4zyna56jjjrggqkyejnaxjxfu
   '@typescript-eslint/parser': 5.40.1_wyqvi574yv7oiwfeinomdzmc3m
   eslint: 8.26.0
@@ -74,6 +76,14 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@tsparticles/prettier-config/1.3.0_prettier@2.7.1:
+    resolution: {integrity: sha512-RsQhYFye32TACiA01gFJZo4i+eSoop8b1cEB3+bt+4Jn7dlWzHyiqD2Ma5NojIJF5X5P3DOo0Rd8Veo+Nerl5Q==}
+    peerDependencies:
+      prettier: ^2.7.1
+    dependencies:
+      prettier: 2.7.1
     dev: true
 
   /@types/json-schema/7.0.11:
