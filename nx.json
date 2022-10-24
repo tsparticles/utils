@@ -1,0 +1,28 @@
+{
+  "extends": "@nrwl/workspace/presets/npm.json",
+  "npmScope": "tsparticles-utils-root",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "build:ci"
+        ],
+        "accessToken": "ZTBkZDI4YTctNmIzNS00MzllLWFmNDktODg3MzM3NDljYmQ2fHJlYWQ="
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "build:ci": {
+      "dependsOn": [
+        "^build:ci"
+      ]
+    }
+  }
+}
