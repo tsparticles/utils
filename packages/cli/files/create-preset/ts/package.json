@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/preset-template-typescript",
-  "version": "1.46.3",
+  "version": "1.46.4",
   "private": true,
   "description": "tsParticles template preset, using TypeScript",
   "homepage": "https://particles.js.org",
