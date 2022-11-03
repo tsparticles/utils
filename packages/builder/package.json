@@ -1,6 +1,6 @@
 {
     "name": "@tsparticles/build",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "license": "MIT",
     "bin": {
         "tsparticles-build": "dist/build.js"
