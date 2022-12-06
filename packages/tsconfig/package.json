@@ -7,9 +7,9 @@
     "access": "public"
   },
   "devDependencies": {
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   },
   "peerDependencies": {
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.3"
   }
 }

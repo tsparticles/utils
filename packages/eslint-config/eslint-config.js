@@ -50,7 +50,6 @@ module.exports = {
 
                     "public-abstract-field",
                     "protected-abstract-field",
-                    "private-abstract-field",
 
                     "public-field",
                     "protected-field",
@@ -86,7 +85,6 @@ module.exports = {
 
                     [ "public-abstract-get", "public-abstract-set" ],
                     [ "protected-abstract-get", "protected-abstract-set" ],
-                    [ "private-abstract-get", "private-abstract-set" ],
 
                     [ "public-get", "public-set" ],
                     [ "protected-get", "protected-set" ],
@@ -115,7 +113,6 @@ module.exports = {
 
                     "public-abstract-method",
                     "protected-abstract-method",
-                    "private-abstract-method",
 
                     "public-method",
                     "protected-method",
