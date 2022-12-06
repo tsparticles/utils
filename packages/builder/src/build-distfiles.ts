@@ -53,7 +53,9 @@ export async function buildDistFiles(basePath: string): Promise<boolean> {
         }
 
         return true;
-    } catch {
+    } catch (e) {
+        console.error(e);
+
         return false;
     }
 }

@@ -40,7 +40,7 @@ export async function bundle(basePath: string): Promise<boolean> {
 
         return res;
     } catch (e) {
-        console.log(e);
+        console.error(e);
 
         return false;
     }

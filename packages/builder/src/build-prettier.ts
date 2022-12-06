@@ -10,9 +10,8 @@ export async function prettifySrc(basePath: string, srcPath: string, ci: boolean
                 continue;
             }
 
-            const contents = await fs.readFile(file.path, "utf8");
-
-            const options = (await prettier.resolveConfig(basePath)) ?? {};
+            const contents = await fs.readFile(file.path, "utf8"),
+                options = (await prettier.resolveConfig(basePath)) ?? {};
 
             options.printWidth = 120;
             options.endOfLine = "lf";
@@ -83,9 +82,8 @@ async function prettifyTraductions(basePath: string, ci: boolean): Promise<boole
                 continue;
             }
 
-            const contents = await fs.readFile(file.path, "utf8");
-
-            const options = (await prettier.resolveConfig(basePath)) ?? {};
+            const contents = await fs.readFile(file.path, "utf8"),
+                options = (await prettier.resolveConfig(basePath)) ?? {};
 
             options.printWidth = 120;
             options.endOfLine = "lf";
@@ -126,9 +124,8 @@ async function prettifyMarkdownTypeDocFiles(basePath: string, ci: boolean): Prom
                 continue;
             }
 
-            const contents = await fs.readFile(file.path, "utf8");
-
-            const options = (await prettier.resolveConfig(basePath)) ?? {};
+            const contents = await fs.readFile(file.path, "utf8"),
+                options = (await prettier.resolveConfig(basePath)) ?? {};
 
             options.printWidth = 120;
             options.endOfLine = "lf";

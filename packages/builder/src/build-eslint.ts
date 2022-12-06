@@ -10,19 +10,19 @@ export async function lint(ci: boolean): Promise<boolean> {
             fix: !ci,
         });
 
-        const results = await eslint.lintFiles(["src"]);
-
-        const errors = ESLint.getErrorResults(results);
+        const results = await eslint.lintFiles(["src"]),
+            errors = ESLint.getErrorResults(results);
 
         await ESLint.outputFixes(results);
 
-        const formatter = await eslint.loadFormatter("stylish");
-        const resultText = formatter.format(results);
+        const formatter = await eslint.loadFormatter("stylish"),
+            resultText = formatter.format(results);
 
         if (errors.length > 0) {
             const messages = errors.map(t =>
                 t.messages.map(m => `${t.filePath} (${m.line},${m.column}): ${m.message}`).join("\n")
             );
+
             console.log(messages.join("\n"));
 
             return false;
@@ -31,7 +31,9 @@ export async function lint(ci: boolean): Promise<boolean> {
         console.log(resultText);
 
         return true;
-    } catch {
+    } catch (e) {
+        console.error(e);
+
         return false;
     }
 }

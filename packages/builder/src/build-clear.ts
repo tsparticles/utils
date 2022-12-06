@@ -1,5 +1,4 @@
 import path from "path";
-
 import rimraf from "rimraf";
 
 export async function clearDist(basePath: string): Promise<boolean> {
@@ -15,7 +14,9 @@ export async function clearDist(basePath: string): Promise<boolean> {
         });
 
         return res;
-    } catch {
+    } catch (e) {
+        console.error(e);
+
         return false;
     }
 }
