@@ -76,6 +76,7 @@ const getExternals = (bundle: boolean): unknown[] => {
         "tsparticles-preset-stars",
         "tsparticles-preset-triangles",
         "tsparticles-shape-bubble",
+        "tsparticles-shape-cards",
         "tsparticles-shape-circle",
         "tsparticles-shape-heart",
         "tsparticles-shape-image",
