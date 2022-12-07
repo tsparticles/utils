@@ -39,7 +39,7 @@ importers:
       rimraf: ^3.0.2
       typescript: ^4.9.3
       webpack: ^5.75.0
-      webpack-tsparticles-plugin: ^1.5.0
+      webpack-tsparticles-plugin: ^1.5.1
     dependencies:
       '@tsparticles/eslint-config': link:../eslint-config
       '@tsparticles/prettier-config': link:../prettier-config
