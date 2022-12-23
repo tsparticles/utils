@@ -55,6 +55,7 @@ const getExternals = (bundle: boolean): unknown[] => {
         "tsparticles-plugin-infection",
         "tsparticles-plugin-motion",
         "tsparticles-plugin-polygon-mask",
+        "tsparticles-plugin-sounds",
         "tsparticles-plugin-easing-back",
         "tsparticles-plugin-easing-circ",
         "tsparticles-plugin-easing-cubic",
@@ -82,6 +83,7 @@ const getExternals = (bundle: boolean): unknown[] => {
         "tsparticles-shape-image",
         "tsparticles-shape-line",
         "tsparticles-shape-multiline-text",
+        "tsparticles-shape-path",
         "tsparticles-shape-polygon",
         "tsparticles-shape-rounded-rect",
         "tsparticles-shape-spiral",
@@ -101,7 +103,8 @@ const getExternals = (bundle: boolean): unknown[] => {
         "tsparticles-updater-stroke-color",
         "tsparticles-updater-tilt",
         "tsparticles-updater-twinkle",
-        "tsparticles-updater-wobble"
+        "tsparticles-updater-wobble",
+        "tsparticles-demo-configs"
     );
 };
 
