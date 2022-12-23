@@ -4,6 +4,9 @@
   "version": "independent",
   "npmClient": "pnpm",
   "conventionalCommits": true,
+  "packages": [
+    "packages/*"
+  ],
   "command": {
     "version": {
       "message": "chore(release): published new version"
