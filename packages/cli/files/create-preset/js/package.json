@@ -19,7 +19,7 @@
     "bundle": "webpack --mode production --config webpack.config.cjs",
     "build": "pnpm run clear:dist && pnpm run prettify:src && pnpm run lint && pnpm run bundle && pnpm run prettify:readme",
     "build:ci": "pnpm run clear:dist && pnpm run prettify:ci:src && pnpm run lint:ci && pnpm run bundle && pnpm run prettify:ci:readme",
-    "clear:dist": "rimraf -f ./dist",
+    "clear:dist": "rimraf ./dist",
     "prepack": "pnpm run build"
   },
   "repository": {
