@@ -3,42 +3,43 @@ import webpack from "webpack";
 
 export async function bundle(basePath: string): Promise<boolean> {
     try {
-        const options = await import(path.join(basePath, "webpack.config.js")),
-            res = await new Promise<boolean>((resolve, reject) => {
-                webpack(options.default, (err, stats) => {
-                    if (err) {
-                        console.error(err.stack || err);
+        const options = await import(path.join(basePath, "webpack.config.js"));
 
-                        reject(err);
-                        return;
-                    }
+        return await new Promise<boolean>((resolve, reject) => {
+            webpack(options.default, (err, stats) => {
+                if (err) {
+                    console.error(err.stack || err);
 
-                    if (!stats) {
-                        const err = "No stats returned from webpack";
+                    reject(err);
 
-                        console.error(err);
-                        reject(err);
+                    return;
+                }
 
-                        return;
-                    }
+                if (!stats) {
+                    const err = "No stats returned from webpack";
 
-                    const info = stats.toJson();
+                    console.error(err);
 
-                    if (stats.hasErrors()) {
-                        console.error(info.errors);
+                    reject(err);
 
-                        reject(info.errors);
-                    }
+                    return;
+                }
 
-                    if (stats.hasWarnings()) {
-                        console.warn(info.warnings);
-                    }
+                const info = stats.toJson();
 
-                    resolve(true);
-                });
+                if (stats.hasErrors()) {
+                    console.error(info.errors);
+
+                    reject(info.errors);
+                }
+
+                if (stats.hasWarnings()) {
+                    console.warn(info.warnings);
+                }
+
+                resolve(true);
             });
-
-        return res;
+        });
     } catch (e) {
         console.error(e);
 
