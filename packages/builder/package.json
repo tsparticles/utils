@@ -1,52 +1,51 @@
 {
-    "name": "@tsparticles/build",
-    "version": "1.6.0",
-    "license": "MIT",
-    "bin": {
-        "tsparticles-build": "dist/build.js"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "prettier": "@tsparticles/prettier-config",
-    "scripts": {
-        "prettify:ci:src": "prettier --check ./src/*",
-        "prettify:ci:readme": "prettier --check ./README.md",
-        "prettify:src": "prettier --write ./src/*",
-        "prettify:readme": "prettier --write ./README.md",
-        "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
-        "lint:ci": "eslint src --ext .js,.jsx,.ts,.tsx",
-        "compile": "pnpm run build:ts",
-        "compile:ci": "pnpm run build:ts",
-        "build:ts": "pnpm run build:ts:cjs",
-        "build:ts:cjs": "tsc",
-        "build": "pnpm run clear:dist && pnpm run prettify:src && pnpm run lint && pnpm run compile && pnpm run prettify:readme && chmod +x dist/build.js",
-        "build:ci": "pnpm run clear:dist && pnpm run prettify:ci:src && pnpm run lint:ci && pnpm run compile && pnpm run prettify:ci:readme",
-        "clear:dist": "rimraf ./dist",
-        "prepack": "pnpm run build"
-    },
-    "dependencies": {
-        "@tsparticles/eslint-config": "^1.5.0",
-        "@tsparticles/prettier-config": "^1.5.0",
-        "@tsparticles/tsconfig": "^1.6.0",
-        "@typescript-eslint/eslint-plugin": "^5.47.0",
-        "@typescript-eslint/parser": "^5.47.0",
-        "eslint": "^8.30.0",
-        "eslint-config-prettier": "^8.5.0",
-        "fs-extra": "^11.1.0",
-        "klaw": "^4.0.1",
-        "prettier": "^2.8.1",
-        "rimraf": "^3.0.2",
-        "typescript": "^4.9.4",
-        "webpack": "^5.75.0",
-        "webpack-tsparticles-plugin": "^1.6.0"
-    },
-    "devDependencies": {
-        "@types/eslint": "^8.4.10",
-        "@types/fs-extra": "^11.0.0",
-        "@types/klaw": "^3.0.3",
-        "@types/node": "^18.11.17",
-        "@types/prettier": "^2.7.2",
-        "@types/rimraf": "^3.0.2"
-    }
+  "name": "@tsparticles/build",
+  "version": "1.6.0",
+  "license": "MIT",
+  "bin": {
+    "tsparticles-build": "dist/build.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@tsparticles/prettier-config",
+  "scripts": {
+    "prettify:ci:src": "prettier --check ./src/*",
+    "prettify:ci:readme": "prettier --check ./README.md",
+    "prettify:src": "prettier --write ./src/*",
+    "prettify:readme": "prettier --write ./README.md",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:ci": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "compile": "pnpm run build:ts",
+    "compile:ci": "pnpm run build:ts",
+    "build:ts": "pnpm run build:ts:cjs",
+    "build:ts:cjs": "tsc",
+    "build": "pnpm run clear:dist && pnpm run prettify:src && pnpm run lint && pnpm run compile && pnpm run prettify:readme && chmod +x dist/build.js",
+    "build:ci": "pnpm run clear:dist && pnpm run prettify:ci:src && pnpm run lint:ci && pnpm run compile && pnpm run prettify:ci:readme",
+    "clear:dist": "rimraf ./dist",
+    "prepack": "pnpm run build"
+  },
+  "dependencies": {
+    "@tsparticles/eslint-config": "^1.5.0",
+    "@tsparticles/prettier-config": "^1.5.0",
+    "@tsparticles/tsconfig": "^1.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "eslint-config-prettier": "^8.5.0",
+    "fs-extra": "^11.1.0",
+    "klaw": "^4.0.1",
+    "prettier": "^2.8.1",
+    "rimraf": "^4.1.0",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-tsparticles-plugin": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "@types/fs-extra": "^11.0.0",
+    "@types/klaw": "^3.0.3",
+    "@types/node": "^18.11.17",
+    "@types/prettier": "^2.7.2"
+  }
 }

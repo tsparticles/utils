@@ -28,7 +28,6 @@ importers:
       '@types/klaw': ^3.0.3
       '@types/node': ^18.11.17
       '@types/prettier': ^2.7.2
-      '@types/rimraf': ^3.0.2
       '@typescript-eslint/eslint-plugin': ^5.47.0
       '@typescript-eslint/parser': ^5.47.0
       eslint: ^8.30.0
@@ -36,7 +35,7 @@ importers:
       fs-extra: ^11.1.0
       klaw: ^4.0.1
       prettier: ^2.8.1
-      rimraf: ^3.0.2
+      rimraf: ^4.1.0
       typescript: ^4.9.4
       webpack: ^5.75.0
       webpack-tsparticles-plugin: ^1.6.0
@@ -51,7 +50,7 @@ importers:
       fs-extra: 11.1.0
       klaw: 4.0.1
       prettier: 2.8.1
-      rimraf: 3.0.2
+      rimraf: 4.1.0
       typescript: 4.9.4
       webpack: 5.75.0
       webpack-tsparticles-plugin: link:../webpack-config
@@ -61,7 +60,6 @@ importers:
       '@types/klaw': 3.0.3
       '@types/node': 18.11.17
       '@types/prettier': 2.7.2
-      '@types/rimraf': 3.0.2
 
   packages/cli:
     specifiers:
@@ -81,7 +79,7 @@ importers:
       eslint: ^8.30.0
       eslint-config-prettier: ^8.5.0
       prettier: ^2.8.1
-      rimraf: ^3.0.2
+      rimraf: ^4.1.0
       terser-webpack-plugin: ^5.3.6
       tsparticles-engine: ^2.6.0
       webpack: ^5.75.0
@@ -98,7 +96,7 @@ importers:
       eslint: 8.30.0
       eslint-config-prettier: 8.5.0_eslint@8.30.0
       prettier: 2.8.1
-      rimraf: 3.0.2
+      rimraf: 4.1.0
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       webpack: 5.75.0_webpack-cli@5.0.1
       webpack-bundle-analyzer: 4.7.0
@@ -116,7 +114,7 @@ importers:
       eslint: ^8.30.0
       eslint-config-prettier: ^8.5.0
       prettier: ^2.8.1
-      rimraf: ^3.0.2
+      rimraf: ^4.1.0
       terser-webpack-plugin: ^5.3.6
       tsparticles-engine: ^2.6.0
       typescript: ^4.9.4
@@ -136,7 +134,7 @@ importers:
       eslint: 8.30.0
       eslint-config-prettier: 8.5.0_eslint@8.30.0
       prettier: 2.8.1
-      rimraf: 3.0.2
+      rimraf: 4.1.0
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       typescript: 4.9.4
       webpack: 5.75.0_webpack-cli@5.0.1
@@ -191,7 +189,7 @@ importers:
       eslint: ^8.30.0
       eslint-config-prettier: ^8.5.0
       prettier: ^2.8.1
-      rimraf: ^3.0.2
+      rimraf: ^4.1.0
       terser-webpack-plugin: ^5.3.6
       typescript: ^4.9.4
       webpack: ^5.75.0
@@ -213,7 +211,7 @@ importers:
       eslint: 8.30.0
       eslint-config-prettier: 8.5.0_eslint@8.30.0
       prettier: 2.8.1
-      rimraf: 3.0.2
+      rimraf: 4.1.0
       terser-webpack-plugin: 5.3.6_webpack@5.75.0
       typescript: 4.9.4
       webpack: 5.75.0_webpack-cli@5.0.1
@@ -2622,13 +2620,6 @@ packages:
       '@types/node': 18.11.17
     dev: true
 
-  /@types/glob/8.0.0:
-    resolution: {integrity: sha512-l6NQsDDyQUVeoTynNpC9uRvCUint/gSUXQA2euwmTuWGvPY5LSDUu6tkCtJB2SvGQlJQzLaKqcGZP4//7EDveA==}
-    dependencies:
-      '@types/minimatch': 5.1.2
-      '@types/node': 18.11.17
-    dev: true
-
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
 
@@ -2652,10 +2643,6 @@ packages:
     resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
 
-  /@types/minimatch/5.1.2:
-    resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
-    dev: true
-
   /@types/minimist/1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
@@ -2673,13 +2660,6 @@ packages:
 
   /@types/prettier/2.7.2:
     resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
-    dev: true
-
-  /@types/rimraf/3.0.2:
-    resolution: {integrity: sha512-F3OznnSLAUxFrCEu/L5PY8+ny8DtcFRjx7fZZ9bycvXRi3KPTRS9HOitGZwvPg0juRhXFWIeKX58cnX5YqLohQ==}
-    dependencies:
-      '@types/glob': 8.0.0
-      '@types/node': 18.11.17
     dev: true
 
   /@types/semver/7.3.13:
@@ -6152,6 +6132,11 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.1.4
+
+  /rimraf/4.1.0:
+    resolution: {integrity: sha512-ZJdkUR5/dRrRJHdcSKJLrpRn6tVjl9ALxd4yrTCxFsMpjQNzwHF6GLqMsuEzEYIXxHlFPDSk21Vr8VPuFBEz0g==}
+    engines: {node: '>=14'}
+    hasBin: true
 
   /run-async/2.4.1:
     resolution: {integrity: sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ==}
