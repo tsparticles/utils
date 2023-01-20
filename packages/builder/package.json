@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/build",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "license": "MIT",
   "bin": {
     "tsparticles-build": "dist/build.js"
@@ -26,9 +26,9 @@
     "prepack": "pnpm run build"
   },
   "dependencies": {
-    "@tsparticles/eslint-config": "^1.5.0",
-    "@tsparticles/prettier-config": "^1.5.0",
-    "@tsparticles/tsconfig": "^1.6.0",
+    "@tsparticles/eslint-config": "^1.6.0",
+    "@tsparticles/prettier-config": "^1.6.0",
+    "@tsparticles/tsconfig": "^1.7.0",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
     "eslint": "^8.32.0",
@@ -39,7 +39,7 @@
     "rimraf": "^4.1.1",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",
-    "webpack-tsparticles-plugin": "^1.6.0"
+    "webpack-tsparticles-plugin": "^1.7.0"
   },
   "devDependencies": {
     "@types/eslint": "^8.4.10",
