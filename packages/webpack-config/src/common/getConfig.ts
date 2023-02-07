@@ -40,7 +40,7 @@ const getConfig = (
         },
         plugins: [
             new webpack.DefinePlugin({
-                __VERSION__: version,
+                __VERSION__: JSON.stringify(version),
             }),
             new webpack.BannerPlugin({
                 banner: bannerInput,
