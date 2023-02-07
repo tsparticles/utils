@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/tsparticles/utils/compare/webpack-tsparticles-plugin@1.7.0...webpack-tsparticles-plugin@1.8.0) (2023-02-07)
+
+
+### Features
+
+* added version to webpack output ([496fcbb](https://github.com/tsparticles/utils/commit/496fcbb98c64cdb37c874bfbf8f9c3172806ef58))
+
+
+
+
+
 # [1.7.0](https://github.com/tsparticles/utils/compare/webpack-tsparticles-plugin@1.6.0...webpack-tsparticles-plugin@1.7.0) (2023-01-20)
 
 **Note:** Version bump only for package webpack-tsparticles-plugin
