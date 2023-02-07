@@ -12,8 +12,8 @@ v${version}`,
         minBanner = `tsParticles ${fixBundleName}v${version} by Matteo Bruni`;
 
     return [
-        getConfig(getBundleEntry(moduleName, false), banner, minBanner, dir, false),
-        getConfig(getBundleEntry(`${moduleName}.bundle`, true), banner, minBanner, dir, true),
+        getConfig(getBundleEntry(moduleName, false), version, banner, minBanner, dir, false),
+        getConfig(getBundleEntry(`${moduleName}.bundle`, true), version, banner, minBanner, dir, true),
     ];
 }
 

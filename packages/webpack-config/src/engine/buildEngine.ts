@@ -13,7 +13,7 @@ How to use?: Check the GitHub README
 
     const minBanner = `tsParticles Engine v${version} by Matteo Bruni`;
 
-    return [getConfig(getEngineEntry(), banner, minBanner, dir, false)];
+    return [getConfig(getEngineEntry(), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesEngine };

@@ -11,8 +11,8 @@ v${version}`,
         minBanner = `tsParticles ${presetName} Preset v${version} by Matteo Bruni`;
 
     return [
-        getConfig(getPresetEntry(moduleName, false), banner, minBanner, dir, false),
-        getConfig(getPresetEntry(`${moduleName}.bundle`, true), banner, minBanner, dir, true),
+        getConfig(getPresetEntry(moduleName, false), version, banner, minBanner, dir, false),
+        getConfig(getPresetEntry(`${moduleName}.bundle`, true), version, banner, minBanner, dir, true),
     ];
 }
 

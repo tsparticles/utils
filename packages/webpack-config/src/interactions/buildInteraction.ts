@@ -10,7 +10,7 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${pluginName} Interaction v${version} by Matteo Bruni`;
 
-    return [getConfig(getInteractionEntry(moduleName, false), banner, minBanner, dir, false)];
+    return [getConfig(getInteractionEntry(moduleName, false), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesInteraction };

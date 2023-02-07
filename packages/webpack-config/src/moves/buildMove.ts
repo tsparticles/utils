@@ -10,7 +10,7 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${pluginName} Move v${version} by Matteo Bruni`;
 
-    return [getConfig(getMoveEntry(moduleName, false), banner, minBanner, dir, false)];
+    return [getConfig(getMoveEntry(moduleName, false), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesMove };

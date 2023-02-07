@@ -15,7 +15,7 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${pluginName} Particles Interaction v${version} by Matteo Bruni`;
 
-    return [getConfig(getInteractionParticlesEntry(moduleName, false), banner, minBanner, dir, false)];
+    return [getConfig(getInteractionParticlesEntry(moduleName, false), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesInteractionParticles };

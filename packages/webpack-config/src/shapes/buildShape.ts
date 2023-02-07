@@ -10,7 +10,7 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${shapeName} Shape v${version} by Matteo Bruni`;
 
-    return [getConfig(getShapeEntry(moduleName, false), banner, minBanner, dir, false)];
+    return [getConfig(getShapeEntry(moduleName, false), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesShape };

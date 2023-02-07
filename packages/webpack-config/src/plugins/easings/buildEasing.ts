@@ -18,10 +18,10 @@ v${version}`,
 
     return bundle
         ? [
-              getConfig(getPluginEasingEntry(moduleName, false), banner, minBanner, dir, false),
-              getConfig(getPluginEasingEntry(moduleName, true), banner, minBanner, dir, true),
+              getConfig(getPluginEasingEntry(moduleName, false), version, banner, minBanner, dir, false),
+              getConfig(getPluginEasingEntry(moduleName, true), version, banner, minBanner, dir, true),
           ]
-        : [getConfig(getPluginEasingEntry(moduleName, false), banner, minBanner, dir, false)];
+        : [getConfig(getPluginEasingEntry(moduleName, false), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesPluginEasing };

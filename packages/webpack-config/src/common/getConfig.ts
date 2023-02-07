@@ -6,6 +6,7 @@ import webpack from "webpack";
 
 const getConfig = (
     entry: unknown,
+    version: string,
     bannerInput: string,
     minBannerInput: string,
     dir: string,
@@ -38,12 +39,15 @@ const getConfig = (
             ],
         },
         plugins: [
+            new webpack.DefinePlugin({
+                __VERSION__: version,
+            }),
             new webpack.BannerPlugin({
                 banner: bannerInput,
                 exclude: /\.min\.js$/,
             }),
             new webpack.BannerPlugin({
-                banner: bannerInput,
+                banner: minBannerInput,
                 include: /\.min\.js$/,
             }),
             new webpack.ProgressPlugin(),

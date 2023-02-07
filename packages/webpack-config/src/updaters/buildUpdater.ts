@@ -10,7 +10,7 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${updaterName} Updater v${version} by Matteo Bruni`;
 
-    return [getConfig(getUpdaterEntry(moduleName, false), banner, minBanner, dir, false)];
+    return [getConfig(getUpdaterEntry(moduleName, false), version, banner, minBanner, dir, false)];
 }
 
 export { loadParticlesUpdater };
