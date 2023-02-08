@@ -1,4 +1,5 @@
 import fs from "fs-extra";
+import klaw from "klaw";
 import path from "path";
 
 export async function buildDistFiles(basePath: string): Promise<boolean> {
@@ -50,6 +51,16 @@ export async function buildDistFiles(basePath: string): Promise<boolean> {
             if (fs.existsSync(installPath)) {
                 fs.copyFileSync(installPath, path.join(distScriptsPath, "install.js"));
             }
+        }
+
+        for await (const file of klaw(distPath)) {
+            if (file.stats.isDirectory()) {
+                continue;
+            }
+
+            const contents = await fs.readFile(file.path, "utf8");
+
+            await fs.writeFile(file.path, contents.replaceAll("__VERSION__", `"${pkgInfo.version}"`), "utf8");
         }
 
         return true;
