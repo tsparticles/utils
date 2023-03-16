@@ -17,7 +17,7 @@
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "prettier": "^2.8.3",
-    "typescript": "^4.9.4"
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
     "@tsparticles/prettier-config": "^1.5.0",
