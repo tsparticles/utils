@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/tsparticles/utils/compare/@tsparticles/tsconfig@1.7.0...@tsparticles/tsconfig@1.8.0) (2023-03-17)
+
+**Note:** Version bump only for package @tsparticles/tsconfig
+
+
+
+
+
 # [1.7.0](https://github.com/tsparticles/utils/compare/@tsparticles/tsconfig@1.6.0...@tsparticles/tsconfig@1.7.0) (2023-01-20)
 
 **Note:** Version bump only for package @tsparticles/tsconfig

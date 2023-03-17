@@ -20,9 +20,9 @@ importers:
 
   packages/builder:
     specifiers:
-      '@tsparticles/eslint-config': ^1.6.0
-      '@tsparticles/prettier-config': ^1.6.0
-      '@tsparticles/tsconfig': ^1.7.0
+      '@tsparticles/eslint-config': ^1.7.0
+      '@tsparticles/prettier-config': ^1.7.0
+      '@tsparticles/tsconfig': ^1.8.0
       '@types/eslint': ^8.21.2
       '@types/fs-extra': ^11.0.1
       '@types/klaw': ^3.0.3
@@ -38,7 +38,7 @@ importers:
       rimraf: ^4.4.0
       typescript: ^5.0.2
       webpack: ^5.76.2
-      webpack-tsparticles-plugin: ^1.8.1
+      webpack-tsparticles-plugin: ^1.9.0
     dependencies:
       '@tsparticles/eslint-config': link:../eslint-config
       '@tsparticles/prettier-config': link:../prettier-config
@@ -144,7 +144,7 @@ importers:
 
   packages/eslint-config:
     specifiers:
-      '@tsparticles/prettier-config': ^1.6.0
+      '@tsparticles/prettier-config': ^1.7.0
       '@typescript-eslint/eslint-plugin': ^5.55.0
       '@typescript-eslint/parser': ^5.55.0
       eslint: ^8.36.0
@@ -176,8 +176,8 @@ importers:
     specifiers:
       '@babel/core': ^7.21.3
       '@babel/preset-env': ^7.20.2
-      '@tsparticles/eslint-config': ^1.6.0
-      '@tsparticles/prettier-config': ^1.6.0
+      '@tsparticles/eslint-config': ^1.7.0
+      '@tsparticles/prettier-config': ^1.7.0
       '@types/node': ^18.15.3
       '@types/webpack-bundle-analyzer': ^4.6.0
       '@types/webpack-env': ^1.18.0
