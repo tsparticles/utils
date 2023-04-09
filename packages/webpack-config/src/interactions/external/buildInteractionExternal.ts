@@ -1,6 +1,13 @@
 import { getConfig } from "../../common/getConfig";
 import { getInteractionExternalEntry } from "./getInteractionExternalEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param pluginName
+ * @param version
+ * @param dir
+ */
 function loadParticlesInteractionExternal(
     moduleName: string,
     pluginName: string,

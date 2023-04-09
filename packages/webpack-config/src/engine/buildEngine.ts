@@ -1,6 +1,11 @@
 import { getConfig } from "../common/getConfig";
 import { getEngineEntry } from "./getEngineEntry";
 
+/**
+ *
+ * @param version
+ * @param dir
+ */
 function loadParticlesEngine(version: string, dir: string): unknown {
     const banner = `tsParticles Engine v${version}
 Author: Matteo Bruni

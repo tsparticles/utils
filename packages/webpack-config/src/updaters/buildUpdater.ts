@@ -1,6 +1,13 @@
 import { getConfig } from "../common/getConfig";
 import { getUpdaterEntry } from "./getUpdaterEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param updaterName
+ * @param version
+ * @param dir
+ */
 function loadParticlesUpdater(moduleName: string, updaterName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT

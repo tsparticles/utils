@@ -3,6 +3,12 @@ import klaw from "klaw";
 import path from "path";
 import prettier from "prettier";
 
+/**
+ *
+ * @param basePath
+ * @param srcPath
+ * @param ci
+ */
 export async function prettifySrc(basePath: string, srcPath: string, ci: boolean): Promise<boolean> {
     try {
         for await (const file of klaw(srcPath)) {
@@ -39,6 +45,11 @@ export async function prettifySrc(basePath: string, srcPath: string, ci: boolean
     }
 }
 
+/**
+ *
+ * @param basePath
+ * @param ci
+ */
 export async function prettifyReadme(basePath: string, ci: boolean): Promise<boolean> {
     try {
         const contents = await fs.readFile("README.md", "utf8"),
@@ -68,6 +79,11 @@ export async function prettifyReadme(basePath: string, ci: boolean): Promise<boo
     }
 }
 
+/**
+ *
+ * @param basePath
+ * @param ci
+ */
 async function prettifyTraductions(basePath: string, ci: boolean): Promise<boolean> {
     try {
         const folder = "traduction",
@@ -110,6 +126,11 @@ async function prettifyTraductions(basePath: string, ci: boolean): Promise<boole
     }
 }
 
+/**
+ *
+ * @param basePath
+ * @param ci
+ */
 async function prettifyMarkdownTypeDocFiles(basePath: string, ci: boolean): Promise<boolean> {
     try {
         const folder = "markdown",

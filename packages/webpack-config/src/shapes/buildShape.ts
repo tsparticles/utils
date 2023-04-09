@@ -1,6 +1,13 @@
 import { getConfig } from "../common/getConfig";
 import { getShapeEntry } from "./getShapeEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param shapeName
+ * @param version
+ * @param dir
+ */
 function loadParticlesShape(moduleName: string, shapeName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT

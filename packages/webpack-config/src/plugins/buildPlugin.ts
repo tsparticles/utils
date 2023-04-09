@@ -1,6 +1,14 @@
 import { getConfig } from "../common/getConfig";
 import { getPluginEntry } from "./getPluginEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param pluginName
+ * @param version
+ * @param dir
+ * @param bundle
+ */
 function loadParticlesPlugin(
     moduleName: string,
     pluginName: string,

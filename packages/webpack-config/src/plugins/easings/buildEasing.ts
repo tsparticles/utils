@@ -1,6 +1,14 @@
 import { getConfig } from "../../common/getConfig";
 import { getPluginEasingEntry } from "./getPluginEasingEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param pluginName
+ * @param version
+ * @param dir
+ * @param bundle
+ */
 function loadParticlesPluginEasing(
     moduleName: string,
     pluginName: string,

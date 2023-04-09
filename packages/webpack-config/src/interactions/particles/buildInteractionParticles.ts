@@ -1,6 +1,13 @@
 import { getConfig } from "../../common/getConfig";
 import { getInteractionParticlesEntry } from "./getInteractionParticlesEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param pluginName
+ * @param version
+ * @param dir
+ */
 function loadParticlesInteractionParticles(
     moduleName: string,
     pluginName: string,

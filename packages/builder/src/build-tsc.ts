@@ -2,6 +2,11 @@ import fs from "fs-extra";
 import path from "path";
 import ts from "typescript";
 
+/**
+ *
+ * @param basePath
+ * @param file
+ */
 async function readConfig(basePath: string, file: string): Promise<string | undefined> {
     const tsconfigPath = path.join(basePath, file);
 
@@ -14,6 +19,11 @@ async function readConfig(basePath: string, file: string): Promise<string | unde
     return;
 }
 
+/**
+ *
+ * @param basePath
+ * @param type
+ */
 async function compile(basePath: string, type: "browser" | "cjs" | "esm" | "types" | "umd"): Promise<number> {
     let options: unknown, data: string | undefined;
 
@@ -139,6 +149,10 @@ async function compile(basePath: string, type: "browser" | "cjs" | "esm" | "type
     return exitCode;
 }
 
+/**
+ *
+ * @param basePath
+ */
 export async function buildTS(basePath: string): Promise<boolean> {
     const types: ("browser" | "cjs" | "esm" | "types" | "umd")[] = ["browser", "cjs", "esm", "types", "umd"];
 

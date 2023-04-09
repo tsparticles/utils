@@ -1,6 +1,13 @@
 import { getConfig } from "../common/getConfig";
 import { getPathEntry } from "./getPathEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param pluginName
+ * @param version
+ * @param dir
+ */
 function loadParticlesPath(moduleName: string, pluginName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT

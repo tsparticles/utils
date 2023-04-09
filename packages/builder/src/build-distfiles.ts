@@ -2,6 +2,10 @@ import fs from "fs-extra";
 import klaw from "klaw";
 import path from "path";
 
+/**
+ *
+ * @param basePath
+ */
 export async function buildDistFiles(basePath: string): Promise<boolean> {
     try {
         const pkgInfo = await import(path.join(basePath, "package.json")),

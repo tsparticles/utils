@@ -1,6 +1,13 @@
 import { getBundleEntry } from "./getBundleEntry";
 import { getConfig } from "../common/getConfig";
 
+/**
+ *
+ * @param moduleName
+ * @param bundleName
+ * @param version
+ * @param dir
+ */
 function loadParticlesBundle(moduleName: string, bundleName: string, version: string, dir: string): unknown {
     const fixBundleName = bundleName ? `${bundleName} ` : "";
     const banner = `Author : Matteo Bruni

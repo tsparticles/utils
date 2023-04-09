@@ -1,6 +1,13 @@
 import { getConfig } from "../common/getConfig";
 import { getPresetEntry } from "./getPresetEntry";
 
+/**
+ *
+ * @param moduleName
+ * @param presetName
+ * @param version
+ * @param dir
+ */
 function loadParticlesPreset(moduleName: string, presetName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT

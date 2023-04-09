@@ -1,6 +1,10 @@
 import path from "path";
 import webpack from "webpack";
 
+/**
+ *
+ * @param basePath
+ */
 export async function bundle(basePath: string): Promise<boolean> {
     try {
         const options = await import(path.join(basePath, "webpack.config.js"));
