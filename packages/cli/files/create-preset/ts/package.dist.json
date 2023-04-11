@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/preset-template-typescript",
-  "version": "1.49.0",
+  "version": "1.50.0",
   "private": true,
   "author": "Matteo Bruni <matteo.bruni@me.com>",
   "description": "tsParticles template preset, using TypeScript",
