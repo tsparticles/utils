@@ -123,7 +123,7 @@ async function updateIndexFile(destPath, name) {
 
     const replacedNameText = replacedFuncText.replace(
         indexNameRegex,
-        `"${camelizedName}"`
+        `"\#${camelizedName}\#"`
     );
 
     await fs.writeFile(indexPath, replacedNameText);

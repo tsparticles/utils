@@ -13,7 +13,8 @@
     "access": "public"
   },
   "dependencies": {
+    "commander": "^10.0.0",
     "fs-extra": "^11.1.0",
-    "tsparticles": "^1.43.1"
+    "tsparticles-engine": "^2.9.3"
   }
 }
