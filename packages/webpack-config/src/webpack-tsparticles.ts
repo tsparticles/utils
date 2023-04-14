@@ -9,6 +9,7 @@ import { loadParticlesPlugin } from "./plugins/buildPlugin";
 import { loadParticlesPluginEasing } from "./plugins/easings/buildEasing";
 import { loadParticlesPreset } from "./presets/buildPreset";
 import { loadParticlesShape } from "./shapes/buildShape";
+import { loadParticlesTemplate } from "./templates/buildTemplate";
 import { loadParticlesUpdater } from "./updaters/buildUpdater";
 
 export {
@@ -23,5 +24,6 @@ export {
     loadParticlesPluginEasing,
     loadParticlesPreset,
     loadParticlesShape,
+    loadParticlesTemplate,
     loadParticlesUpdater,
 };

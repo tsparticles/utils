@@ -4,7 +4,7 @@
  * @param split -
  * @returns the capitalized string
  */
-export function capitalize(str: string, split = " "): string {
+export function capitalize(str: string, split?: string): string {
     if (split) {
         return str
             .split(split)
@@ -21,7 +21,7 @@ export function capitalize(str: string, split = " "): string {
  * @param split -
  * @returns the camelized string
  */
-export function camelize(str: string, split = " "): string {
+export function camelize(str: string, split?: string): string {
     const capitalized = capitalize(str, split);
 
     return capitalized.replace(/./, c => c.toLowerCase());
