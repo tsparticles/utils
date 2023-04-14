@@ -4,7 +4,7 @@ import { createCommand } from "./create/create";
 import pkgInfo from "../package.json";
 import { program } from "commander";
 
-program.name("tsparticles-build");
+program.name("tsparticles-cli build");
 program.description("tsParticles Builder");
 program.version(pkgInfo.version, "-v, --version", "output the current version");
 program.addCommand(buildCommand);
