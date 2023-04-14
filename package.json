@@ -5,8 +5,7 @@
     "build": "lerna run build"
   },
   "workspaces": [
-    "packages/*",
-    "packages/cli/files/create-preset/*"
+    "packages/*"
   ],
   "devDependencies": {
     "@nrwl/cli": "^15.9.2",

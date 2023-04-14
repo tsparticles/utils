@@ -4,10 +4,7 @@
   "version": "independent",
   "npmClient": "pnpm",
   "conventionalCommits": true,
-  "packages": [
-    "packages/*",
-    "packages/cli/files/create-preset/*"
-  ],
+  "packages": ["packages/*"],
   "command": {
     "version": {
       "message": "chore(release): published new version"
