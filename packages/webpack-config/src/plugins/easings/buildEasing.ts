@@ -2,12 +2,12 @@ import { getConfig } from "../../common/getConfig";
 import { getPluginEasingEntry } from "./getPluginEasingEntry";
 
 /**
- *
- * @param moduleName
- * @param pluginName
- * @param version
- * @param dir
- * @param bundle
+ * @param moduleName -
+ * @param pluginName -
+ * @param version -
+ * @param dir -
+ * @param bundle -
+ * @returns the webpack config
  */
 function loadParticlesPluginEasing(
     moduleName: string,

@@ -2,11 +2,11 @@ import { getConfig } from "../common/getConfig";
 import { getShapeEntry } from "./getShapeEntry";
 
 /**
- *
- * @param moduleName
- * @param shapeName
- * @param version
- * @param dir
+ * @param moduleName -
+ * @param shapeName -
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesShape(moduleName: string, shapeName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni

@@ -2,9 +2,9 @@ import { getConfig } from "../common/getConfig";
 import { getEngineEntry } from "./getEngineEntry";
 
 /**
- *
- * @param version
- * @param dir
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesEngine(version: string, dir: string): unknown {
     const banner = `tsParticles Engine v${version}

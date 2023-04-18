@@ -2,11 +2,11 @@ import { getBundleEntry } from "./getBundleEntry";
 import { getConfig } from "../common/getConfig";
 
 /**
- *
- * @param moduleName
- * @param bundleName
- * @param version
- * @param dir
+ * @param moduleName -
+ * @param bundleName -
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesBundle(moduleName: string, bundleName: string, version: string, dir: string): unknown {
     const fixBundleName = bundleName ? `${bundleName} ` : "";

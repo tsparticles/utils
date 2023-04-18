@@ -2,12 +2,12 @@ import { getConfig } from "../common/getConfig";
 import { getPluginEntry } from "./getPluginEntry";
 
 /**
- *
- * @param moduleName
- * @param pluginName
- * @param version
- * @param dir
- * @param bundle
+ * @param moduleName -
+ * @param pluginName -
+ * @param version -
+ * @param dir -
+ * @param bundle -
+ * @returns the webpack config
  */
 function loadParticlesPlugin(
     moduleName: string,

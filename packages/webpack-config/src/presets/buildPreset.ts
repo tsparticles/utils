@@ -2,11 +2,11 @@ import { getConfig } from "../common/getConfig";
 import { getPresetEntry } from "./getPresetEntry";
 
 /**
- *
- * @param moduleName
- * @param presetName
- * @param version
- * @param dir
+ * @param moduleName -
+ * @param presetName -
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesPreset(moduleName: string, presetName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni

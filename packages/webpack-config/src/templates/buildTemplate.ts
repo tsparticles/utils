@@ -2,11 +2,11 @@ import { getConfig } from "../common/getConfig";
 import { getTemplateEntry } from "./getTemplateEntry";
 
 /**
- *
- * @param moduleName
- * @param templateName
- * @param version
- * @param dir
+ * @param moduleName -
+ * @param templateName -
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesTemplate(moduleName: string, templateName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni

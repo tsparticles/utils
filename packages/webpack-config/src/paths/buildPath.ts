@@ -2,11 +2,11 @@ import { getConfig } from "../common/getConfig";
 import { getPathEntry } from "./getPathEntry";
 
 /**
- *
- * @param moduleName
- * @param pluginName
- * @param version
- * @param dir
+ * @param moduleName -
+ * @param pluginName -
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesPath(moduleName: string, pluginName: string, version: string, dir: string): unknown {
     const banner = `Author : Matteo Bruni

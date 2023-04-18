@@ -2,11 +2,11 @@ import { getConfig } from "../../common/getConfig";
 import { getInteractionParticlesEntry } from "./getInteractionParticlesEntry";
 
 /**
- *
- * @param moduleName
- * @param pluginName
- * @param version
- * @param dir
+ * @param moduleName -
+ * @param pluginName -
+ * @param version -
+ * @param dir -
+ * @returns the webpack config
  */
 function loadParticlesInteractionParticles(
     moduleName: string,

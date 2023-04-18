@@ -6,10 +6,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "devDependencies": {
-    "typescript": "^5.0.4"
-  },
-  "peerDependencies": {
+  "dependencies": {
     "typescript": "^5.0.4"
   }
 }
