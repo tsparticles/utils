@@ -41,8 +41,8 @@ importers:
         specifier: ^8.8.0
         version: 8.8.0(eslint@8.38.0)
       eslint-plugin-jsdoc:
-        specifier: ^41.1.1
-        version: 41.1.1(eslint@8.38.0)
+        specifier: ^43.0.0
+        version: 43.0.0(eslint@8.38.0)
       eslint-plugin-tsdoc:
         specifier: ^0.2.17
         version: 0.2.17
@@ -3490,8 +3490,8 @@ packages:
     dependencies:
       eslint: 8.38.0
 
-  /eslint-plugin-jsdoc@41.1.1(eslint@8.38.0):
-    resolution: {integrity: sha512-dfH97DKLGtQ5dgEMzd+GSUuY+xX/yyAfjML3O0pEWmMMpylsG6Ro65s4ziYXKmixiENYK9CTQxCVRGqZUFN2Mw==}
+  /eslint-plugin-jsdoc@43.0.0(eslint@8.38.0):
+    resolution: {integrity: sha512-Z1Ox1MAGcFV7ZNKe5eYIk4ALUtCjo1r4HBMoAYUs+bBKPcHro5A/YDDHOTsQ7zxcuUnm5R9rXCZTvGWcihwZpg==}
     engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
