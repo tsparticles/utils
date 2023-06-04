@@ -8,11 +8,11 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@nrwl/cli": "^15.9.3",
-    "@nrwl/nx-cloud": "^16.0.5",
-    "@nrwl/workspace": "^16.3.1",
+    "@nrwl/cli": "^15.9.4",
+    "@nrwl/nx-cloud": "^15.3.5",
+    "@nrwl/workspace": "^15.9.4",
     "lerna": "^6.6.2",
-    "nx": "^16.3.1",
+    "nx": "^15.9.4",
     "typescript": "^5.1.3"
   }
 }
