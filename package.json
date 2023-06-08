@@ -10,9 +10,9 @@
   "devDependencies": {
     "@nrwl/cli": "^15.9.4",
     "@nrwl/nx-cloud": "^15.3.5",
-    "@nrwl/workspace": "^15.9.4",
+    "@nrwl/workspace": "^16.0.0",
     "lerna": "^7.0.0",
-    "nx": "^15.9.4",
+    "nx": "^16.0.0",
     "typescript": "^5.1.3"
   }
 }
