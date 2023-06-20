@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@1.13.0...@tsparticles/eslint-config@1.13.1) (2023-06-20)
+
+
+### Features
+
+* added eslint-plugin-import for enforcing .js at the end of every import ([be58415](https://github.com/tsparticles/utils/commit/be5841584f4b3a6d6b011031548e8c1929b05c2c))
+
+
+
+
+
 # [1.13.0](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@1.12.1...@tsparticles/eslint-config@1.13.0) (2023-06-20)
 
 **Note:** Version bump only for package @tsparticles/eslint-config
