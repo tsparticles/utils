@@ -14,9 +14,8 @@ Website: https://particles.js.org/
 Confetti Website: https://confetti.js.org
 GitHub: https://www.github.com/matteobruni/tsparticles
 How to use?: Check the GitHub README
-------------------------------------------------------`;
-
-    const minBanner = `tsParticles Engine v${version} by Matteo Bruni`;
+------------------------------------------------------`,
+        minBanner = `tsParticles Engine v${version} by Matteo Bruni`;
 
     return [getConfig(getEngineEntry(), version, banner, minBanner, dir, false)];
 }
