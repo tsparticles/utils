@@ -1,5 +1,5 @@
-import { getConfig } from '../../common/getConfig.js';
-import { getPluginEasingEntry } from './getPluginEasingEntry.js';
+import { getConfig } from "../../common/getConfig.js";
+import { getPluginEasingEntry } from "./getPluginEasingEntry.js";
 
 /**
  * @param moduleName -

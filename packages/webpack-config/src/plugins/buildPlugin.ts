@@ -1,5 +1,5 @@
-import { getConfig } from '../common/getConfig.js';
-import { getPluginEntry } from './getPluginEntry.js';
+import { getConfig } from "../common/getConfig.js";
+import { getPluginEntry } from "./getPluginEntry.js";
 
 /**
  * @param moduleName -

@@ -1,4 +1,4 @@
-import { getEntry } from '../common/getEntry.js';
+import { getEntry } from "../common/getEntry.js";
 
 const getEngineEntry = (): unknown => {
     return getEntry("engine");

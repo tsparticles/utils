@@ -1,5 +1,5 @@
-import { getConfig } from '../../common/getConfig.js';
-import { getInteractionExternalEntry } from './getInteractionExternalEntry.js';
+import { getConfig } from "../../common/getConfig.js";
+import { getInteractionExternalEntry } from "./getInteractionExternalEntry.js";
 
 /**
  * @param moduleName -
