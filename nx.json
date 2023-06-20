@@ -1,18 +1,4 @@
 {
-  "extends": "@nrwl/workspace/presets/npm.json",
-  "npmScope": "tsparticles-utils-root",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "build:ci"
-        ],
-        "accessToken": "ZTBkZDI4YTctNmIzNS00MzllLWFmNDktODg3MzM3NDljYmQ2fHJlYWQ="
-      }
-    }
-  },
   "targetDefaults": {
     "build": {
       "dependsOn": [
@@ -23,6 +9,20 @@
       "dependsOn": [
         "^build:ci"
       ]
+    }
+  },
+  "extends": "@nrwl/workspace/presets/npm.json",
+  "npmScope": "tsparticles-utils-root",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "build:ci"
+        ],
+        "accessToken": "ZTBkZDI4YTctNmIzNS00MzllLWFmNDktODg3MzM3NDljYmQ2fHJlYWQ="
+      }
     }
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
