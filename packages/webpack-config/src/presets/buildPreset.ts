@@ -1,5 +1,5 @@
-import { getConfig } from "../common/getConfig";
-import { getPresetEntry } from "./getPresetEntry";
+import { getConfig } from '../common/getConfig.js';
+import { getPresetEntry } from './getPresetEntry.js';
 
 /**
  * @param moduleName -

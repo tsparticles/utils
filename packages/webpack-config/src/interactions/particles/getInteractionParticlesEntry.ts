@@ -1,4 +1,4 @@
-import { getEntry } from "../../common/getEntry";
+import { getEntry } from '../../common/getEntry.js';
 
 const getInteractionParticlesEntry = (name: string, bundle: boolean): unknown => {
     return getEntry("interaction.particles", name, bundle);

@@ -1,16 +1,16 @@
-import { loadParticlesBundle } from "./bundles/buildBundle";
-import { loadParticlesEngine } from "./engine/buildEngine";
-import { loadParticlesInteraction } from "./interactions/buildInteraction";
-import { loadParticlesInteractionExternal } from "./interactions/external/buildInteractionExternal";
-import { loadParticlesInteractionParticles } from "./interactions/particles/buildInteractionParticles";
-import { loadParticlesMove } from "./moves/buildMove";
-import { loadParticlesPath } from "./paths/buildPath";
-import { loadParticlesPlugin } from "./plugins/buildPlugin";
-import { loadParticlesPluginEasing } from "./plugins/easings/buildEasing";
-import { loadParticlesPreset } from "./presets/buildPreset";
-import { loadParticlesShape } from "./shapes/buildShape";
-import { loadParticlesTemplate } from "./templates/buildTemplate";
-import { loadParticlesUpdater } from "./updaters/buildUpdater";
+import { loadParticlesBundle } from './bundles/buildBundle.js';
+import { loadParticlesEngine } from './engine/buildEngine.js';
+import { loadParticlesInteraction } from './interactions/buildInteraction.js';
+import { loadParticlesInteractionExternal } from './interactions/external/buildInteractionExternal.js';
+import { loadParticlesInteractionParticles } from './interactions/particles/buildInteractionParticles.js';
+import { loadParticlesMove } from './moves/buildMove.js';
+import { loadParticlesPath } from './paths/buildPath.js';
+import { loadParticlesPlugin } from './plugins/buildPlugin.js';
+import { loadParticlesPluginEasing } from './plugins/easings/buildEasing.js';
+import { loadParticlesPreset } from './presets/buildPreset.js';
+import { loadParticlesShape } from './shapes/buildShape.js';
+import { loadParticlesTemplate } from './templates/buildTemplate.js';
+import { loadParticlesUpdater } from './updaters/buildUpdater.js';
 
 export {
     loadParticlesBundle,

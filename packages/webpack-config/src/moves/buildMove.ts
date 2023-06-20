@@ -1,5 +1,5 @@
-import { getConfig } from "../common/getConfig";
-import { getMoveEntry } from "./getMoveEntry";
+import { getConfig } from '../common/getConfig.js';
+import { getMoveEntry } from './getMoveEntry.js';
 
 /**
  * @param moduleName -

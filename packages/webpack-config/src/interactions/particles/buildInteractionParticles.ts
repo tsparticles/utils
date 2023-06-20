@@ -1,5 +1,5 @@
-import { getConfig } from "../../common/getConfig";
-import { getInteractionParticlesEntry } from "./getInteractionParticlesEntry";
+import { getConfig } from '../../common/getConfig.js';
+import { getInteractionParticlesEntry } from './getInteractionParticlesEntry.js';
 
 /**
  * @param moduleName -

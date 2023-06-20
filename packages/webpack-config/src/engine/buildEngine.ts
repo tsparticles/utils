@@ -1,5 +1,5 @@
-import { getConfig } from "../common/getConfig";
-import { getEngineEntry } from "./getEngineEntry";
+import { getConfig } from '../common/getConfig.js';
+import { getEngineEntry } from './getEngineEntry.js';
 
 /**
  * @param version -
