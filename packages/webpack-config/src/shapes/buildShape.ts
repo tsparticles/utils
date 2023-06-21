@@ -1,5 +1,5 @@
-import { getConfig } from "../common/getConfig.js";
-import { getShapeEntry } from "./getShapeEntry.js";
+import { getConfig } from "../common/getConfig";
+import { getShapeEntry } from "./getShapeEntry";
 
 /**
  * @param moduleName -

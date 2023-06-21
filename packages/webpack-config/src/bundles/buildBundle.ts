@@ -1,5 +1,5 @@
-import { getBundleEntry } from "./getBundleEntry.js";
-import { getConfig } from "../common/getConfig.js";
+import { getBundleEntry } from "./getBundleEntry";
+import { getConfig } from "../common/getConfig";
 
 /**
  * @param moduleName -

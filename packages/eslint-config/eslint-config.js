@@ -4,8 +4,8 @@ module.exports = {
     parserOptions: {
         project: "./tsconfig.json"
     },
-    plugins: ["@typescript-eslint", "jsdoc", "eslint-plugin-tsdoc", "require-extensions"],
-    extends: ["eslint:recommended", "plugin:@typescript-eslint/eslint-recommended", "plugin:@typescript-eslint/recommended", "plugin:jsdoc/recommended-typescript", "prettier", "plugin:require-extensions/recommended"],
+    plugins: ["@typescript-eslint", "jsdoc", "eslint-plugin-tsdoc"],
+    extends: ["eslint:recommended", "plugin:@typescript-eslint/eslint-recommended", "plugin:@typescript-eslint/recommended", "plugin:jsdoc/recommended-typescript", "prettier"],
     rules: {
         "@typescript-eslint/ban-types": "warn",
         "@typescript-eslint/comma-spacing": ["error"],

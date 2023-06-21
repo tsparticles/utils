@@ -1,4 +1,4 @@
-import { getPluginEntry } from "../getPluginEntry.js";
+import { getPluginEntry } from "../getPluginEntry";
 
 const getPluginEasingEntry = (name: string, bundle: boolean): unknown => {
     return getPluginEntry(`easing.${name}`, bundle);

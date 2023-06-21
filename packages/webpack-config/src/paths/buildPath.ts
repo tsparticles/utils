@@ -1,5 +1,5 @@
-import { getConfig } from "../common/getConfig.js";
-import { getPathEntry } from "./getPathEntry.js";
+import { getConfig } from "../common/getConfig";
+import { getPathEntry } from "./getPathEntry";
 
 /**
  * @param moduleName -
