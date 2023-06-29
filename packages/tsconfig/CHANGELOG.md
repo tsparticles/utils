@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/tsparticles/utils/compare/@tsparticles/tsconfig@1.13.0...@tsparticles/tsconfig@1.14.0) (2023-06-29)
+
+
+### Features
+
+* added additional externals parameter to webpack plugin ([01c94e8](https://github.com/tsparticles/utils/commit/01c94e8aea203c6c277cc612848a2b22a928a230))
+
+
+
+
+
 # [1.13.0](https://github.com/tsparticles/utils/compare/@tsparticles/tsconfig@1.12.0...@tsparticles/tsconfig@1.13.0) (2023-06-04)
 
 **Note:** Version bump only for package @tsparticles/tsconfig
