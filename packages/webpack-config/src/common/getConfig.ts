@@ -1,17 +1,23 @@
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
+import type { ExternalData } from "./ExternalData";
 import TerserPlugin from "terser-webpack-plugin";
 import { getExternals } from "./getExternals";
 import path from "path";
 import webpack from "webpack";
 
-const getConfig = (
-    entry: unknown,
-    version: string,
-    bannerInput: string,
-    minBannerInput: string,
-    dir: string,
-    bundle: boolean
-): unknown => {
+interface ConfigParams {
+    additionalExternals?: ExternalData[];
+    banner: string;
+    bundle?: boolean;
+    dir: string;
+    entry: unknown;
+    minBanner: string;
+    version: string;
+}
+
+const getConfig = (params: ConfigParams): unknown => {
+    const { additionalExternals, banner, bundle, dir, entry, minBanner, version } = params;
+
     return {
         entry: entry,
         mode: "production",
@@ -27,7 +33,7 @@ const getConfig = (
         resolve: {
             extensions: [".js", ".json"],
         },
-        externals: getExternals(bundle),
+        externals: getExternals({ bundle, additionalExternals }),
         module: {
             rules: [
                 {
@@ -43,11 +49,11 @@ const getConfig = (
                 __VERSION__: JSON.stringify(version),
             }),
             new webpack.BannerPlugin({
-                banner: bannerInput,
+                banner,
                 exclude: /\.min\.js$/,
             }),
             new webpack.BannerPlugin({
-                banner: minBannerInput,
+                banner: minBanner,
                 include: /\.min\.js$/,
             }),
             new webpack.ProgressPlugin(),

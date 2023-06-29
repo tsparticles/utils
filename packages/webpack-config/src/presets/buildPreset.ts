@@ -1,15 +1,22 @@
+import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
 import { getPresetEntry } from "./getPresetEntry";
 
+interface PresetParams {
+    additionalExternals?: ExternalData[];
+    dir: string;
+    moduleName: string;
+    presetName: string;
+    version: string;
+}
+
 /**
- * @param moduleName -
- * @param presetName -
- * @param version -
- * @param dir -
+ * @param params -
  * @returns the webpack config
  */
-function loadParticlesPreset(moduleName: string, presetName: string, version: string, dir: string): unknown {
-    const banner = `Author : Matteo Bruni
+function loadParticlesPreset(params: PresetParams): unknown {
+    const { moduleName, presetName, version, dir, additionalExternals } = params,
+        banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
 GitHub : https://www.github.com/matteobruni/tsparticles
@@ -18,8 +25,24 @@ v${version}`,
         minBanner = `tsParticles ${presetName} Preset v${version} by Matteo Bruni`;
 
     return [
-        getConfig(getPresetEntry(moduleName, false), version, banner, minBanner, dir, false),
-        getConfig(getPresetEntry(`${moduleName}.bundle`, true), version, banner, minBanner, dir, true),
+        getConfig({
+            entry: getPresetEntry(moduleName, false),
+            version,
+            banner,
+            minBanner: minBanner,
+            dir,
+            bundle: false,
+            additionalExternals,
+        }),
+        getConfig({
+            entry: getPresetEntry(`${moduleName}.bundle`, true),
+            version,
+            banner,
+            minBanner: minBanner,
+            dir,
+            bundle: true,
+            additionalExternals,
+        }),
     ];
 }
 

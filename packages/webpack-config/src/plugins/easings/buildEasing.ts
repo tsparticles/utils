@@ -1,22 +1,23 @@
+import type { ExternalData } from "../../common/ExternalData";
 import { getConfig } from "../../common/getConfig";
 import { getPluginEasingEntry } from "./getPluginEasingEntry";
 
+interface EasingParams {
+    additionalExternals?: ExternalData[];
+    bundle: boolean;
+    dir: string;
+    moduleName: string;
+    pluginName: string;
+    version: string;
+}
+
 /**
- * @param moduleName -
- * @param pluginName -
- * @param version -
- * @param dir -
- * @param bundle -
+ * @param params -
  * @returns the webpack config
  */
-function loadParticlesPluginEasing(
-    moduleName: string,
-    pluginName: string,
-    version: string,
-    dir: string,
-    bundle: boolean
-): unknown {
-    const banner = `Author : Matteo Bruni
+function loadParticlesPluginEasing(params: EasingParams): unknown {
+    const { moduleName, pluginName, version, dir, bundle, additionalExternals } = params,
+        banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
 GitHub : https://www.github.com/matteobruni/tsparticles
@@ -26,10 +27,36 @@ v${version}`,
 
     return bundle
         ? [
-              getConfig(getPluginEasingEntry(moduleName, false), version, banner, minBanner, dir, false),
-              getConfig(getPluginEasingEntry(moduleName, true), version, banner, minBanner, dir, true),
+              getConfig({
+                  entry: getPluginEasingEntry(moduleName, false),
+                  version,
+                  banner,
+                  minBanner: minBanner,
+                  dir,
+                  bundle: false,
+                  additionalExternals,
+              }),
+              getConfig({
+                  entry: getPluginEasingEntry(moduleName, true),
+                  version,
+                  banner,
+                  minBanner: minBanner,
+                  dir,
+                  bundle: true,
+                  additionalExternals,
+              }),
           ]
-        : [getConfig(getPluginEasingEntry(moduleName, false), version, banner, minBanner, dir, false)];
+        : [
+              getConfig({
+                  entry: getPluginEasingEntry(moduleName, false),
+                  version,
+                  banner,
+                  minBanner: minBanner,
+                  dir,
+                  bundle: false,
+                  additionalExternals,
+              }),
+          ];
 }
 
 export { loadParticlesPluginEasing };

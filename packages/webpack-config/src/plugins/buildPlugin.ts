@@ -1,22 +1,23 @@
+import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
 import { getPluginEntry } from "./getPluginEntry";
 
+interface PluginParams {
+    additionalExternals?: ExternalData[];
+    bundle: boolean;
+    dir: string;
+    moduleName: string;
+    pluginName: string;
+    version: string;
+}
+
 /**
- * @param moduleName -
- * @param pluginName -
- * @param version -
- * @param dir -
- * @param bundle -
+ * @param params -
  * @returns the webpack config
  */
-function loadParticlesPlugin(
-    moduleName: string,
-    pluginName: string,
-    version: string,
-    dir: string,
-    bundle: boolean
-): unknown {
-    const banner = `Author : Matteo Bruni
+function loadParticlesPlugin(params: PluginParams): unknown {
+    const { moduleName, pluginName, version, dir, bundle, additionalExternals } = params,
+        banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
 GitHub : https://www.github.com/matteobruni/tsparticles
@@ -26,10 +27,36 @@ v${version}`,
 
     return bundle
         ? [
-              getConfig(getPluginEntry(moduleName, false), version, banner, minBanner, dir, false),
-              getConfig(getPluginEntry(moduleName, true), version, banner, minBanner, dir, true),
+              getConfig({
+                  entry: getPluginEntry(moduleName, false),
+                  version,
+                  banner,
+                  minBanner: minBanner,
+                  dir,
+                  bundle: false,
+                  additionalExternals,
+              }),
+              getConfig({
+                  entry: getPluginEntry(moduleName, true),
+                  version,
+                  banner,
+                  minBanner: minBanner,
+                  dir,
+                  bundle: true,
+                  additionalExternals,
+              }),
           ]
-        : [getConfig(getPluginEntry(moduleName, false), version, banner, minBanner, dir, false)];
+        : [
+              getConfig({
+                  entry: getPluginEntry(moduleName, false),
+                  version,
+                  banner,
+                  minBanner: minBanner,
+                  dir,
+                  bundle: false,
+                  additionalExternals,
+              }),
+          ];
 }
 
 export { loadParticlesPlugin };
