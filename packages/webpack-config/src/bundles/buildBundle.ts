@@ -47,7 +47,7 @@ v${version}`,
                 dir,
                 bundle: true,
                 additionalExternals,
-            })
+            }),
         );
     }
 

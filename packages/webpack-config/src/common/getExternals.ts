@@ -205,7 +205,7 @@ const getExternals = (params: ExternalsParams): unknown[] => {
             "@tsparticles/updater-tilt",
             "@tsparticles/updater-twinkle",
             "@tsparticles/updater-wobble",
-            "@tsparticles/demo-configs"
+            "@tsparticles/demo-configs",
         ),
     ];
 };
