@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@1.16.0...@tsparticles/webpack-plugin@1.17.0) (2023-07-05)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
 # [1.16.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@1.15.5...@tsparticles/webpack-plugin@1.16.0) (2023-06-29)
 
 
