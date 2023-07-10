@@ -91,6 +91,7 @@ module.exports = {
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-readonly": ["error"],
         "comma-spacing": "off", //"no-extra-parens": "off",
+        "no-console": "error",
         "sort-imports": ["error", {
             allowSeparatedGroups: false,
             ignoreCase: false,
