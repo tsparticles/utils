@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@1.17.0...@tsparticles/eslint-config@1.18.0) (2023-07-15)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
 # [1.17.0](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@1.16.0...@tsparticles/eslint-config@1.17.0) (2023-07-10)
 
 **Note:** Version bump only for package @tsparticles/eslint-config
