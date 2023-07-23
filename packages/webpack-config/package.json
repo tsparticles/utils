@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/webpack-plugin",
-  "version": "1.21.0",
+  "version": "1.22.0",
   "main": "dist/webpack-tsparticles.js",
   "types": "dist/webpack-tsparticles.d.ts",
   "license": "MIT",
