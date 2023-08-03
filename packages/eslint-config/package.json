@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/eslint-config",
-  "version": "1.18.0",
+  "version": "1.19.0",
   "description": "tsParticles default ESLint Configuration",
   "main": "eslint-config.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@tsparticles/prettier-config": "^1.11.0",
+    "@tsparticles/prettier-config": "^1.12.0",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
