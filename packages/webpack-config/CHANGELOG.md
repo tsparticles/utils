@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@1.23.0...@tsparticles/webpack-plugin@1.24.0) (2023-08-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-prettier to v9 ([b950d9f](https://github.com/tsparticles/utils/commit/b950d9f2eeca55228d613d6db00ffba0402d0634))
+
+
+
+
+
 # [1.23.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@1.22.0...@tsparticles/webpack-plugin@1.23.0) (2023-08-03)
 
 **Note:** Version bump only for package @tsparticles/webpack-plugin
