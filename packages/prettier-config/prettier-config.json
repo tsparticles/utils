@@ -23,7 +23,7 @@
       "files": "*.riot",
       "options": {
         "parser": "mdx",
-        "jsxBracketSameLine": true
+        "bracketSameLine": true
       }
     }
   ]
