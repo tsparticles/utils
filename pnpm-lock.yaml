@@ -27,7 +27,7 @@ importers:
   packages/eslint-config:
     dependencies:
       '@tsparticles/prettier-config':
-        specifier: ^2.0.0-beta.0
+        specifier: ^2.0.0-beta.1
         version: link:../prettier-config
       '@typescript-eslint/eslint-plugin':
         specifier: ^6.4.1
@@ -78,10 +78,10 @@ importers:
         specifier: ^7.22.10
         version: 7.22.10(@babel/core@7.22.11)
       '@tsparticles/eslint-config':
-        specifier: ^2.0.0-beta.0
+        specifier: ^2.0.0-beta.1
         version: link:../eslint-config
       '@tsparticles/prettier-config':
-        specifier: ^2.0.0-beta.0
+        specifier: ^2.0.0-beta.1
         version: link:../prettier-config
       '@types/node':
         specifier: ^20.5.6
