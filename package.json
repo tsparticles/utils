@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@nrwl/workspace": "^16.6.0",
+    "@nrwl/workspace": "^17.0.0",
     "lerna": "^7.1.4",
-    "nx": "^16.6.0",
+    "nx": "^17.0.0",
     "typescript": "^5.1.6",
     "nx-cloud": "^16.2.0"
   }
