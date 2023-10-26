@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/eslint-config",
-  "version": "2.0.0-beta.3",
+  "version": "2.0.0-beta.4",
   "description": "tsParticles default ESLint Configuration",
   "main": "eslint-config.js",
   "license": "MIT",

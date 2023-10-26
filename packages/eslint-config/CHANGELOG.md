@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.4](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.3...@tsparticles/eslint-config@2.0.0-beta.4) (2023-10-26)
+
+
+### Features
+
+* added effects support ([d1e1743](https://github.com/tsparticles/utils/commit/d1e17431a2b1af081f62f0e52bc7436e3b83e863))
+
+
+
+
+
 # [2.0.0-beta.3](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.2...@tsparticles/eslint-config@2.0.0-beta.3) (2023-10-22)
 
 **Note:** Version bump only for package @tsparticles/eslint-config
