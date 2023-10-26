@@ -13,9 +13,9 @@
   ],
   "devDependencies": {
     "@nrwl/workspace": "^16.9.1",
-    "lerna": "^7.3.0",
+    "lerna": "^7.4.1",
     "nx": "^16.9.1",
     "typescript": "^5.2.2",
-    "nx-cloud": "^16.4.0"
+    "nx-cloud": "^16.5.2"
   }
 }

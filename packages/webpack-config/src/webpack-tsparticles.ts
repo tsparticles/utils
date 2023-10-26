@@ -1,4 +1,5 @@
 import { loadParticlesBundle } from "./bundles/buildBundle";
+import { loadParticlesEffect } from "./effects/buildEffect";
 import { loadParticlesEngine } from "./engine/buildEngine";
 import { loadParticlesInteraction } from "./interactions/buildInteraction";
 import { loadParticlesInteractionExternal } from "./interactions/external/buildInteractionExternal";
@@ -15,6 +16,7 @@ import { loadParticlesUpdater } from "./updaters/buildUpdater";
 
 export {
     loadParticlesBundle,
+    loadParticlesEffect,
     loadParticlesEngine,
     loadParticlesInteraction,
     loadParticlesInteractionExternal,
