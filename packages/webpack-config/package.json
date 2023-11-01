@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/webpack-plugin",
-  "version": "2.0.0-beta.4",
+  "version": "2.0.0-beta.5",
   "main": "dist/webpack-tsparticles.js",
   "types": "dist/webpack-tsparticles.d.ts",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@babel/core": "^7.23.2",
     "@babel/preset-env": "^7.23.2",
-    "@tsparticles/eslint-config": "^2.0.0-beta.4",
+    "@tsparticles/eslint-config": "^2.0.0-beta.5",
     "@tsparticles/prettier-config": "^2.0.0-beta.3",
     "@types/node": "^20.8.10",
     "@types/webpack-bundle-analyzer": "^4.6.2",
