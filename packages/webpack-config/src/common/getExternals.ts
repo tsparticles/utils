@@ -176,6 +176,7 @@ const getExternals = (params: ExternalsParams): unknown[] => {
             "@tsparticles/plugin-easing-quart",
             "@tsparticles/plugin-easing-quint",
             "@tsparticles/plugin-easing-sine",
+            "@tsparticles/plugin-emitters-shape-canvas",
             "@tsparticles/plugin-emitters-shape-circle",
             "@tsparticles/plugin-emitters-shape-path",
             "@tsparticles/plugin-emitters-shape-polygon",
