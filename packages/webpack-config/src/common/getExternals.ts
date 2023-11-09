@@ -145,6 +145,7 @@ const getExternals = (params: ExternalsParams): unknown[] => {
             "@tsparticles/interaction-external-connect",
             "@tsparticles/interaction-external-grab",
             "@tsparticles/interaction-external-pause",
+            "@tsparticles/interaction-external-pop",
             "@tsparticles/interaction-external-push",
             "@tsparticles/interaction-external-remove",
             "@tsparticles/interaction-external-repulse",
