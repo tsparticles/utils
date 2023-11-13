@@ -195,6 +195,7 @@ const getExternals = (params: ExternalsParams): unknown[] => {
             "@tsparticles/preset-stars",
             "@tsparticles/preset-triangles",
             "@tsparticles/effect-bubble",
+            "@tsparticles/effect-trail",
             "@tsparticles/shape-cards",
             "@tsparticles/shape-circle",
             "@tsparticles/shape-heart",
