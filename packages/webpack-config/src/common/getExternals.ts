@@ -238,6 +238,8 @@ const getExternals = (params: ExternalsParams): unknown[] => {
             "@tsparticles/shape-rounded-polygon",
             "@tsparticles/updater-rotate",
             "@tsparticles/options-updater",
+            "@tsparticles/perlin-noise",
+            "@tsparticles/simplex-noise",
         ),
     ];
 };
