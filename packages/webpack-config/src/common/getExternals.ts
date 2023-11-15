@@ -157,6 +157,7 @@ const getExternals = (params: ExternalsParams): unknown[] => {
             "@tsparticles/interaction-particles-repulse",
             "@tsparticles/move-base",
             "@tsparticles/move-parallax",
+            "@tsparticles/path-curl-noise",
             "@tsparticles/path-curves",
             "@tsparticles/path-perlin-noise",
             "@tsparticles/path-polygon",
