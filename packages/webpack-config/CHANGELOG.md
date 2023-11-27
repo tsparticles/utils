@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.14...@tsparticles/webpack-plugin@2.0.0) (2023-11-21)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.14](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.13...@tsparticles/webpack-plugin@2.0.0-beta.14) (2023-11-21)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.13](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.12...@tsparticles/webpack-plugin@2.0.0-beta.13) (2023-11-20)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.12](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.11...@tsparticles/webpack-plugin@2.0.0-beta.12) (2023-11-15)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.11](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.10...@tsparticles/webpack-plugin@2.0.0-beta.11) (2023-11-14)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.10](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.9...@tsparticles/webpack-plugin@2.0.0-beta.10) (2023-11-13)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.9](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.8...@tsparticles/webpack-plugin@2.0.0-beta.9) (2023-11-09)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.8](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.7...@tsparticles/webpack-plugin@2.0.0-beta.8) (2023-11-07)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.7](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.6...@tsparticles/webpack-plugin@2.0.0-beta.7) (2023-11-03)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.6](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.5...@tsparticles/webpack-plugin@2.0.0-beta.6) (2023-11-03)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.5](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.4...@tsparticles/webpack-plugin@2.0.0-beta.5) (2023-11-01)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.4](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.3...@tsparticles/webpack-plugin@2.0.0-beta.4) (2023-10-26)
+
+
+### Features
+
+* added effects support ([d1e1743](https://github.com/tsparticles/utils/commit/d1e17431a2b1af081f62f0e52bc7436e3b83e863))
+
+
+
+
+
+# [2.0.0-beta.3](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.2...@tsparticles/webpack-plugin@2.0.0-beta.3) (2023-10-22)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.2](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.1...@tsparticles/webpack-plugin@2.0.0-beta.2) (2023-10-02)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.1](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@2.0.0-beta.0...@tsparticles/webpack-plugin@2.0.0-beta.1) (2023-08-26)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.0.0-beta.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@1.24.0...@tsparticles/webpack-plugin@2.0.0-beta.0) (2023-08-25)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
 # [1.24.0](https://github.com/tsparticles/utils/compare/@tsparticles/webpack-plugin@1.23.0...@tsparticles/webpack-plugin@1.24.0) (2023-08-08)
 
 

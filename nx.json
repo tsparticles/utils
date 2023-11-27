@@ -3,28 +3,17 @@
     "build": {
       "dependsOn": [
         "^build"
-      ]
+      ],
+      "cache": true
     },
     "build:ci": {
       "dependsOn": [
         "^build:ci"
-      ]
+      ],
+      "cache": true
     }
   },
   "extends": "@nrwl/workspace/presets/npm.json",
-  "npmScope": "tsparticles-utils-root",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "build:ci"
-        ],
-        "accessToken": "ZTBkZDI4YTctNmIzNS00MzllLWFmNDktODg3MzM3NDljYmQ2fHJlYWQ="
-      }
-    }
-  },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": [
@@ -35,5 +24,6 @@
     "production": [
       "default"
     ]
-  }
+  },
+  "nxCloudAccessToken": "ZTBkZDI4YTctNmIzNS00MzllLWFmNDktODg3MzM3NDljYmQ2fHJlYWQ="
 }

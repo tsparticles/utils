@@ -31,7 +31,7 @@ const getConfig = (params: ConfigParams): unknown => {
             chunkFilename: "[name].js",
         },
         resolve: {
-            extensions: [".js", ".json"],
+            extensions: [".cjs", ".mjs", ".js", ".json"],
         },
         externals: getExternals({ bundle, additionalExternals }),
         module: {

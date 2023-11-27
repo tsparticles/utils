@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@2.0.0-beta.5...@tsparticles/prettier-config@2.0.0) (2023-11-21)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+# [2.0.0-beta.5](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@2.0.0-beta.4...@tsparticles/prettier-config@2.0.0-beta.5) (2023-11-20)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+# [2.0.0-beta.4](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@2.0.0-beta.3...@tsparticles/prettier-config@2.0.0-beta.4) (2023-11-14)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+# [2.0.0-beta.3](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@2.0.0-beta.2...@tsparticles/prettier-config@2.0.0-beta.3) (2023-10-22)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+# [2.0.0-beta.2](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@2.0.0-beta.1...@tsparticles/prettier-config@2.0.0-beta.2) (2023-10-02)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+# [2.0.0-beta.1](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@2.0.0-beta.0...@tsparticles/prettier-config@2.0.0-beta.1) (2023-08-26)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+# [2.0.0-beta.0](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@1.12.0...@tsparticles/prettier-config@2.0.0-beta.0) (2023-08-25)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
 # [1.12.0](https://github.com/tsparticles/utils/compare/@tsparticles/prettier-config@1.11.0...@tsparticles/prettier-config@1.12.0) (2023-08-03)
 
 **Note:** Version bump only for package @tsparticles/prettier-config

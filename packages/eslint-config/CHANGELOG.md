@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.8...@tsparticles/eslint-config@2.0.0) (2023-11-21)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.8](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.7...@tsparticles/eslint-config@2.0.0-beta.8) (2023-11-20)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.7](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.6...@tsparticles/eslint-config@2.0.0-beta.7) (2023-11-14)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.6](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.5...@tsparticles/eslint-config@2.0.0-beta.6) (2023-11-07)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.5](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.4...@tsparticles/eslint-config@2.0.0-beta.5) (2023-11-01)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.4](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.3...@tsparticles/eslint-config@2.0.0-beta.4) (2023-10-26)
+
+
+### Features
+
+* added effects support ([d1e1743](https://github.com/tsparticles/utils/commit/d1e17431a2b1af081f62f0e52bc7436e3b83e863))
+
+
+
+
+
+# [2.0.0-beta.3](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.2...@tsparticles/eslint-config@2.0.0-beta.3) (2023-10-22)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.2](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.1...@tsparticles/eslint-config@2.0.0-beta.2) (2023-10-02)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.1](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@2.0.0-beta.0...@tsparticles/eslint-config@2.0.0-beta.1) (2023-08-26)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
+# [2.0.0-beta.0](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@1.20.0...@tsparticles/eslint-config@2.0.0-beta.0) (2023-08-25)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
 # [1.20.0](https://github.com/tsparticles/utils/compare/@tsparticles/eslint-config@1.19.0...@tsparticles/eslint-config@1.20.0) (2023-08-08)
 
 
