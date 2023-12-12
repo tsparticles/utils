@@ -1,9 +1,7 @@
 import { getEntry } from "../common/getEntry";
 
-const getBundleEntry = (name: string, bundle: boolean): unknown => {
-    const fixName = name && name.startsWith(".") ? name.substring(1) : name ? name : "";
+const getFixedName = (name: string): string => (name && name.startsWith(".") ? name.substring(1) : name || "");
 
-    return getEntry("", fixName, bundle);
-};
+const getBundleEntry = (name: string, bundle: boolean): unknown => getEntry("", getFixedName(name), bundle);
 
 export { getBundleEntry };

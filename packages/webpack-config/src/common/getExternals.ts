@@ -31,7 +31,11 @@ const getExternals = (params: ExternalsParams): unknown[] => {
     return [
         ...externals.map(transformExternal),
         function ({ request }: { request: string }, cb: (err?: Error | null, data?: unknown) => void): void {
-            if ("tsparticles" === request || /^tsparticles-/.test(request) || /^@tsparticles\//.test(request)) {
+            if (
+                request === "tsparticles" ||
+                request.startsWith("tsparticles-") ||
+                request.startsWith("@tsparticles/")
+            ) {
                 cb(null, getExternalObject(request));
 
                 return;
