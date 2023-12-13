@@ -99,7 +99,6 @@ module.exports = {
         } ],
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-readonly": [ "error" ],
-        "comma-spacing": "off",
         "no-console": "error",
         "sort-imports": [ "error", {
             allowSeparatedGroups: false,
@@ -116,14 +115,7 @@ module.exports = {
         "prefer-object-spread": "error",
         "prefer-template": "error",
         "quote-props": [ "error", "as-needed" ],
-        "quotes": [ "error", "double", {
-            allowTemplateLiterals: true,
-            avoidEscape: true
-        } ],
-        "semi": [ "error", "always" ],
-        "space-before-blocks": "error",
         "space-in-parens": [ "error", "never" ],
-        "space-infix-ops": "error",
         "spaced-comment": [ "error", "always", {
             block: {
                 balanced: true
@@ -132,10 +124,8 @@ module.exports = {
         "yoda": [ "error", "never", {
             exceptRange: true
         } ],
-        "keyword-spacing": "error",
         "arrow-spacing": "error",
         "no-duplicate-imports": "error",
-        "no-useless-constructor": "error",
         "no-useless-rename": "error",
         "no-useless-return": "error",
         "no-useless-computed-key": "error",
@@ -145,7 +135,6 @@ module.exports = {
         "no-this-before-super": "error",
         "no-duplicate-case": "error",
         "no-empty": "error",
-        "no-extra-semi": "error",
         "no-func-assign": "error",
         "no-irregular-whitespace": "error",
         "no-unexpected-multiline": "error",
@@ -153,14 +142,11 @@ module.exports = {
         "valid-typeof": "error",
         "no-unsafe-finally": "error",
         "no-case-declarations": "error",
-        "no-empty-function": "error",
         "no-empty-pattern": "error",
         "no-extra-boolean-cast": "error",
         "no-inner-declarations": "error",
         "no-prototype-builtins": "error",
         "no-self-assign": "error",
-        "no-throw-literal": "error",
-        "no-unused-expressions": "error",
         "no-unused-labels": "error",
         "no-useless-catch": "error",
         "@typescript-eslint/quotes": [ "error", "double", {
