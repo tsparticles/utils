@@ -78,7 +78,7 @@ importers:
         specifier: ^7.23.6
         version: 7.23.6(@babel/core@7.23.6)
       '@tsparticles/eslint-config':
-        specifier: ^2.0.3
+        specifier: ^2.0.4
         version: link:../eslint-config
       '@tsparticles/prettier-config':
         specifier: ^2.0.1
