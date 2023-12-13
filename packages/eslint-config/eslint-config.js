@@ -149,18 +149,30 @@ module.exports = {
         "no-self-assign": "error",
         "no-unused-labels": "error",
         "no-useless-catch": "error",
+        "quotes": "off",
         "@typescript-eslint/quotes": [ "error", "double", {
             allowTemplateLiterals: true,
             avoidEscape: true
         } ],
+        "semi": "off",
         "@typescript-eslint/semi": [ "error", "always" ],
+        "space-before-blocks": "off",
         "@typescript-eslint/space-before-blocks": "error",
+        "space-infix-ops": "off",
         "@typescript-eslint/space-infix-ops": "error",
+        "keyword-spacing": "off",
         "@typescript-eslint/keyword-spacing": "error",
+        "no-useless-constructor": "off",
         "@typescript-eslint/no-useless-constructor": "error",
+        "no-extra-semi": "off",
         "@typescript-eslint/no-extra-semi": "error",
+        "no-empty-function": "off",
         "@typescript-eslint/no-empty-function": "error",
+        "no-throw-literal": "off",
         "@typescript-eslint/no-throw-literal": "error",
+        "no-unused-expressions": "off",
         "@typescript-eslint/no-unused-expressions": "error",
+        "no-magic-numbers": "off",
+        "@typescript-eslint/no-magic-numbers": "error"
     }
 };
