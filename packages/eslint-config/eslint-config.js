@@ -173,6 +173,6 @@ module.exports = {
         "no-unused-expressions": "off",
         "@typescript-eslint/no-unused-expressions": "error",
         "no-magic-numbers": "off",
-        "@typescript-eslint/no-magic-numbers": "error"
+        "@typescript-eslint/no-magic-numbers": [ "error", { ignoreEnums: true, ignoreNumericLiteralTypes: true } ],
     }
 };
