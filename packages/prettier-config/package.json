@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/prettier-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "tsParticles default Prettier Configuration",
   "main": "prettier-config.json",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "access": "public"
   },
   "dependencies": {
-    "prettier": "^3.1.0",
+    "prettier": "^3.1.1",
     "prettier-plugin-multiline-arrays": "^3.0.1"
   }
 }

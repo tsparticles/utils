@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.0.1 (2023-12-12)
+
+
+### Features
+
+* added additional externals parameter to webpack plugin ([01c94e8](https://github.com/tsparticles/utils/commit/01c94e8aea203c6c277cc612848a2b22a928a230))
+
+
+
+
+
 # [2.0.0](https://github.com/tsparticles/utils/compare/@tsparticles/tsconfig@2.0.0-beta.2...@tsparticles/tsconfig@2.0.0) (2023-11-21)
 
 **Note:** Version bump only for package @tsparticles/tsconfig
