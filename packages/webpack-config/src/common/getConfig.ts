@@ -34,7 +34,7 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
         mode: min ? "production" : "development",
         output: {
             path: path.resolve(dir, "dist"),
-            filename: min ? "[name].min.js" : "[name].js",
+            filename: "[name].js",
             library: {
                 type: "umd2",
             },
@@ -42,7 +42,7 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
             chunkFilename: min ? "[name].min.js" : "[name].js",
         },
         resolve: {
-            extensions: [".cjs", ".mjs", ".js", ".json"],
+            extensions: [ ".cjs", ".mjs", ".js", ".json" ],
         },
         externals: getExternals({ bundle, additionalExternals }),
         module: {
@@ -95,7 +95,7 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
 }
 
 const getConfig = (params: ConfigParams): unknown[] => {
-    return [getSingleConfig(params, false), getSingleConfig(params, true)];
+    return [ getSingleConfig(params, false), getSingleConfig(params, true) ];
 };
 
 export { getConfig };
