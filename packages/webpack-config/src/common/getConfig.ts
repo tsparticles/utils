@@ -69,6 +69,11 @@ const getConfig = (params: ConfigParams): unknown => {
             minimizer: [
                 new TerserPlugin({
                     include: /\.min\.js$/,
+                    parallel: true,
+                    terserOptions: {
+                        ecma: 2019,
+                        module: true,
+                    },
                 }),
             ],
         },
