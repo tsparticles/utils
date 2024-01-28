@@ -1,5 +1,4 @@
 import type { ExternalData } from "../common/ExternalData";
-import { getBundleEntry } from "./getBundleEntry";
 import { getConfig } from "../common/getConfig";
 
 interface BundleParams {
@@ -25,22 +24,20 @@ GitHub : https://www.github.com/matteobruni/tsparticles
 How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${fixBundleName}v${version} by Matteo Bruni`,
-        configs = [
-            getConfig({
-                entry: getBundleEntry(moduleName, false),
-                version,
-                banner,
-                minBanner: minBanner,
-                dir,
-                bundle: false,
-                additionalExternals,
-            }),
-        ];
+        configs = getConfig({
+            entry: { format: "", name: moduleName, bundle: false },
+            version,
+            banner,
+            minBanner: minBanner,
+            dir,
+            bundle: false,
+            additionalExternals,
+        });
 
     if (bundle ?? true) {
         configs.push(
-            getConfig({
-                entry: getBundleEntry(`${moduleName}.bundle`, true),
+            ...getConfig({
+                entry: { format: "", name: `${moduleName}.bundle`, bundle: true },
                 version,
                 banner,
                 minBanner: minBanner,

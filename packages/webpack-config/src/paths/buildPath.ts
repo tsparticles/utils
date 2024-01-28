@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getPathEntry } from "./getPathEntry";
 
 interface PathParams {
     additionalExternals?: ExternalData[];
@@ -24,17 +23,19 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${pluginName} Path v${version} by Matteo Bruni`;
 
-    return [
-        getConfig({
-            entry: getPathEntry(moduleName, false),
-            version,
-            banner,
-            minBanner: minBanner,
-            dir,
+    return getConfig({
+        entry: {
+            format: "path",
+            name: moduleName,
             bundle: false,
-            additionalExternals,
-        }),
-    ];
+        },
+        version,
+        banner,
+        minBanner: minBanner,
+        dir,
+        bundle: false,
+        additionalExternals,
+    });
 }
 
 export { loadParticlesPath };

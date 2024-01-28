@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getUpdaterEntry } from "./getUpdaterEntry";
 
 interface UpdaterParams {
     additionalExternals?: ExternalData[];
@@ -24,17 +23,15 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${updaterName} Updater v${version} by Matteo Bruni`;
 
-    return [
-        getConfig({
-            entry: getUpdaterEntry(moduleName, false),
-            version,
-            banner,
-            minBanner: minBanner,
-            dir,
-            bundle: false,
-            additionalExternals,
-        }),
-    ];
+    return getConfig({
+        entry: { format: "updater", name: moduleName, bundle: false },
+        version,
+        banner,
+        minBanner: minBanner,
+        dir,
+        bundle: false,
+        additionalExternals,
+    });
 }
 
 export { loadParticlesUpdater };

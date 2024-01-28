@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getShapeEntry } from "./getShapeEntry";
 
 interface ShapeParams {
     additionalExternals?: ExternalData[];
@@ -24,17 +23,15 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${shapeName} Shape v${version} by Matteo Bruni`;
 
-    return [
-        getConfig({
-            entry: getShapeEntry(moduleName, false),
-            version,
-            banner,
-            minBanner: minBanner,
-            dir,
-            bundle: false,
-            additionalExternals,
-        }),
-    ];
+    return getConfig({
+        entry: { format: "shape", name: moduleName, bundle: false },
+        version,
+        banner,
+        minBanner: minBanner,
+        dir,
+        bundle: false,
+        additionalExternals,
+    });
 }
 
 export { loadParticlesShape };

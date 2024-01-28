@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getPresetEntry } from "./getPresetEntry";
 
 interface PresetParams {
     additionalExternals?: ExternalData[];
@@ -25,8 +24,8 @@ v${version}`,
         minBanner = `tsParticles ${presetName} Preset v${version} by Matteo Bruni`;
 
     return [
-        getConfig({
-            entry: getPresetEntry(moduleName, false),
+        ...getConfig({
+            entry: { format: "preset", name: moduleName, bundle: false },
             version,
             banner,
             minBanner: minBanner,
@@ -34,8 +33,8 @@ v${version}`,
             bundle: false,
             additionalExternals,
         }),
-        getConfig({
-            entry: getPresetEntry(`${moduleName}.bundle`, true),
+        ...getConfig({
+            entry: { format: "preset", name: moduleName, bundle: true },
             version,
             banner,
             minBanner: minBanner,
