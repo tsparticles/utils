@@ -27,7 +27,7 @@ v${version}`,
     return bundle
         ? [
               ...getConfig({
-                  entry: { format: "plugin.entry", name: moduleName, bundle: false },
+                  entry: { format: "plugin.easing", name: moduleName, bundle: false },
                   version,
                   banner,
                   minBanner: minBanner,
@@ -36,7 +36,7 @@ v${version}`,
                   additionalExternals,
               }),
               ...getConfig({
-                  entry: { format: "plugin.entry", name: moduleName, bundle: true },
+                  entry: { format: "plugin.easing", name: moduleName, bundle: true },
                   version,
                   banner,
                   minBanner: minBanner,
@@ -46,7 +46,7 @@ v${version}`,
               }),
           ]
         : getConfig({
-              entry: { format: "plugin.entry", name: moduleName, bundle: false },
+              entry: { format: "plugin.easing", name: moduleName, bundle: false },
               version,
               banner,
               minBanner: minBanner,
