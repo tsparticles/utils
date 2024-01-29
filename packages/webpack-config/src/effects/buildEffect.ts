@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getEffectEntry } from "./getEffctEntry";
 
 interface EffectParams {
     additionalExternals?: ExternalData[];
@@ -24,17 +23,15 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${effectName} Shape v${version} by Matteo Bruni`;
 
-    return [
-        getConfig({
-            entry: getEffectEntry(moduleName, false),
-            version,
-            banner,
-            minBanner: minBanner,
-            dir,
-            bundle: false,
-            additionalExternals,
-        }),
-    ];
+    return getConfig({
+        entry: { format: "effect", name: moduleName, bundle: false },
+        version,
+        banner,
+        minBanner: minBanner,
+        dir,
+        bundle: false,
+        additionalExternals,
+    });
 }
 
 export { loadParticlesEffect };

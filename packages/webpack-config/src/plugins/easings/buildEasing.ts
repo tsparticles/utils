@@ -1,6 +1,5 @@
 import type { ExternalData } from "../../common/ExternalData";
 import { getConfig } from "../../common/getConfig";
-import { getPluginEasingEntry } from "./getPluginEasingEntry";
 
 interface EasingParams {
     additionalExternals?: ExternalData[];
@@ -27,8 +26,8 @@ v${version}`,
 
     return bundle
         ? [
-              getConfig({
-                  entry: getPluginEasingEntry(moduleName, false),
+              ...getConfig({
+                  entry: { format: "plugin.easing", name: moduleName, bundle: false },
                   version,
                   banner,
                   minBanner: minBanner,
@@ -36,8 +35,8 @@ v${version}`,
                   bundle: false,
                   additionalExternals,
               }),
-              getConfig({
-                  entry: getPluginEasingEntry(moduleName, true),
+              ...getConfig({
+                  entry: { format: "plugin.easing", name: moduleName, bundle: true },
                   version,
                   banner,
                   minBanner: minBanner,
@@ -46,17 +45,15 @@ v${version}`,
                   additionalExternals,
               }),
           ]
-        : [
-              getConfig({
-                  entry: getPluginEasingEntry(moduleName, false),
-                  version,
-                  banner,
-                  minBanner: minBanner,
-                  dir,
-                  bundle: false,
-                  additionalExternals,
-              }),
-          ];
+        : getConfig({
+              entry: { format: "plugin.easing", name: moduleName, bundle: false },
+              version,
+              banner,
+              minBanner: minBanner,
+              dir,
+              bundle: false,
+              additionalExternals,
+          });
 }
 
 export { loadParticlesPluginEasing };

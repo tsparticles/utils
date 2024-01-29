@@ -1,6 +1,5 @@
 import type { ExternalData } from "../../common/ExternalData";
 import { getConfig } from "../../common/getConfig";
-import { getPluginExportEntry } from "./getPluginExportEntry";
 
 interface ExportParams {
     additionalExternals?: ExternalData[];
@@ -27,8 +26,8 @@ v${version}`,
 
     return bundle
         ? [
-              getConfig({
-                  entry: getPluginExportEntry(moduleName, false),
+              ...getConfig({
+                  entry: { format: "plugin.export", name: moduleName, bundle: false },
                   version,
                   banner,
                   minBanner: minBanner,
@@ -36,8 +35,8 @@ v${version}`,
                   bundle: false,
                   additionalExternals,
               }),
-              getConfig({
-                  entry: getPluginExportEntry(moduleName, true),
+              ...getConfig({
+                  entry: { format: "plugin.export", name: moduleName, bundle: true },
                   version,
                   banner,
                   minBanner: minBanner,
@@ -46,17 +45,15 @@ v${version}`,
                   additionalExternals,
               }),
           ]
-        : [
-              getConfig({
-                  entry: getPluginExportEntry(moduleName, false),
-                  version,
-                  banner,
-                  minBanner: minBanner,
-                  dir,
-                  bundle: false,
-                  additionalExternals,
-              }),
-          ];
+        : getConfig({
+              entry: { format: "plugin.export", name: moduleName, bundle: false },
+              version,
+              banner,
+              minBanner: minBanner,
+              dir,
+              bundle: false,
+              additionalExternals,
+          });
 }
 
 export { loadParticlesPluginExport };

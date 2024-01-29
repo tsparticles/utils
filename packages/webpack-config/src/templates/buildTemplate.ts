@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getTemplateEntry } from "./getTemplateEntry";
 
 interface TemplateParams {
     additionalExternals?: ExternalData[];
@@ -25,8 +24,8 @@ v${version}`,
         minBanner = `tsParticles ${templateName} Template v${version} by Matteo Bruni`;
 
     return [
-        getConfig({
-            entry: getTemplateEntry(moduleName, false),
+        ...getConfig({
+            entry: { format: "template", name: moduleName, bundle: false },
             version,
             banner,
             minBanner: minBanner,
@@ -34,8 +33,8 @@ v${version}`,
             bundle: false,
             additionalExternals,
         }),
-        getConfig({
-            entry: getTemplateEntry(`${moduleName}.bundle`, true),
+        ...getConfig({
+            entry: { format: "template", name: moduleName, bundle: true },
             version,
             banner,
             minBanner: minBanner,

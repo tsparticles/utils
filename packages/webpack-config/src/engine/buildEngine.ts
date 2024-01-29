@@ -1,6 +1,5 @@
 import type { ExternalData } from "../common/ExternalData";
 import { getConfig } from "../common/getConfig";
-import { getEngineEntry } from "./getEngineEntry";
 
 interface EngineParams {
     additionalExternals?: ExternalData[];
@@ -24,17 +23,15 @@ How to use?: Check the GitHub README
 ------------------------------------------------------`,
         minBanner = `tsParticles Engine v${version} by Matteo Bruni`;
 
-    return [
-        getConfig({
-            entry: getEngineEntry(),
-            version,
-            banner,
-            minBanner: minBanner,
-            dir,
-            bundle: false,
-            additionalExternals,
-        }),
-    ];
+    return getConfig({
+        entry: { format: "engine", bundle: false },
+        version,
+        banner,
+        minBanner: minBanner,
+        dir,
+        bundle: false,
+        additionalExternals,
+    });
 }
 
 export { loadParticlesEngine };

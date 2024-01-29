@@ -1,6 +1,7 @@
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import type { ExternalData } from "./ExternalData";
 import TerserPlugin from "terser-webpack-plugin";
+import { getEntry } from "./getEntry.js";
 import { getExternals } from "./getExternals";
 import path from "path";
 import webpack from "webpack";
@@ -10,17 +11,27 @@ interface ConfigParams {
     banner: string;
     bundle?: boolean;
     dir: string;
-    entry: unknown;
+    entry: {
+        bundle: boolean;
+        format: string;
+        name?: string;
+    };
     minBanner: string;
     version: string;
 }
 
-const getConfig = (params: ConfigParams): unknown => {
+/**
+ *
+ * @param params -
+ * @param min -
+ * @returns the webpack configuration
+ */
+function getSingleConfig(params: ConfigParams, min: boolean): unknown {
     const { additionalExternals, banner, bundle, dir, entry, minBanner, version } = params;
 
     return {
-        entry: entry,
-        mode: "production",
+        entry: getEntry({ ...entry, min }),
+        mode: min ? "production" : "development",
         output: {
             path: path.resolve(dir, "dist"),
             filename: "[name].js",
@@ -28,7 +39,7 @@ const getConfig = (params: ConfigParams): unknown => {
                 type: "umd2",
             },
             globalObject: "this",
-            chunkFilename: "[name].js",
+            chunkFilename: min ? "[name].min.js" : "[name].js",
         },
         resolve: {
             extensions: [".cjs", ".mjs", ".js", ".json"],
@@ -69,6 +80,11 @@ const getConfig = (params: ConfigParams): unknown => {
             minimizer: [
                 new TerserPlugin({
                     include: /\.min\.js$/,
+                    parallel: true,
+                    terserOptions: {
+                        ecma: 2019,
+                        module: true,
+                    },
                 }),
             ],
         },
@@ -76,6 +92,10 @@ const getConfig = (params: ConfigParams): unknown => {
             hints: false,
         },
     };
+}
+
+const getConfig = (params: ConfigParams): unknown[] => {
+    return [getSingleConfig(params, false), getSingleConfig(params, true)];
 };
 
 export { getConfig };

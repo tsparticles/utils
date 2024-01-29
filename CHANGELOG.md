@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/tsparticles/utils/compare/v2.1.2...v2.1.3) (2024-01-28)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [2.1.2](https://github.com/tsparticles/utils/compare/v2.1.1...v2.1.2) (2024-01-28)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [2.1.1](https://github.com/tsparticles/utils/compare/v2.1.0...v2.1.1) (2024-01-28)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+# [2.1.0](https://github.com/tsparticles/utils/compare/v2.0.5...v2.1.0) (2024-01-28)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [2.0.5](https://github.com/tsparticles/utils/compare/v2.0.4...v2.0.5) (2024-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsdoc to v48 ([bc2be62](https://github.com/tsparticles/utils/commit/bc2be6245096e0c455ffd406f72605fbf6efc2a8))
+
+
+
+
+
 ## [2.0.4](https://github.com/tsparticles/utils/compare/v2.0.3...v2.0.4) (2023-12-13)
 
 **Note:** Version bump only for package tsparticles-utils-root

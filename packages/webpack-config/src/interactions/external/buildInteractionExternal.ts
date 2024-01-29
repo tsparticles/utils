@@ -1,6 +1,5 @@
 import type { ExternalData } from "../../common/ExternalData";
 import { getConfig } from "../../common/getConfig";
-import { getInteractionExternalEntry } from "./getInteractionExternalEntry";
 
 interface InteractionExternalParams {
     additionalExternals?: ExternalData[];
@@ -24,17 +23,19 @@ How to use? : Check the GitHub README
 v${version}`,
         minBanner = `tsParticles ${pluginName} External Interaction v${version} by Matteo Bruni`;
 
-    return [
-        getConfig({
-            entry: getInteractionExternalEntry(moduleName, false),
-            version,
-            banner,
-            minBanner: minBanner,
-            dir,
+    return getConfig({
+        entry: {
+            format: "interaction.external",
+            name: moduleName,
             bundle: false,
-            additionalExternals,
-        }),
-    ];
+        },
+        version,
+        banner,
+        minBanner: minBanner,
+        dir,
+        bundle: false,
+        additionalExternals,
+    });
 }
 
 export { loadParticlesInteractionExternal };
