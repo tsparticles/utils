@@ -37,7 +37,7 @@ v${version}`,
     if (bundle ?? true) {
         configs.push(
             ...getConfig({
-                entry: { format: "", name: `${moduleName}.bundle`, bundle: true },
+                entry: { format: "", name: moduleName ? `${moduleName}.bundle` : "bundle", bundle: true },
                 version,
                 banner,
                 minBanner: minBanner,

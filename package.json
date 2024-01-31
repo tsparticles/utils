@@ -12,9 +12,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@nrwl/workspace": "^17.2.8",
+    "@nrwl/workspace": "^17.3.0",
     "lerna": "^8.0.2",
-    "nx": "^17.2.8",
+    "nx": "^17.3.0",
     "typescript": "^5.3.3"
   }
 }
