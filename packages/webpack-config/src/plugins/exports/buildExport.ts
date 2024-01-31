@@ -36,7 +36,7 @@ v${version}`,
                   additionalExternals,
               }),
               ...getConfig({
-                  entry: { format: "plugin.export", name: moduleName, bundle: true },
+                  entry: { format: "plugin.export", name: `${moduleName}.bundle`, bundle: true },
                   version,
                   banner,
                   minBanner: minBanner,

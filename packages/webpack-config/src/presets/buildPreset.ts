@@ -34,7 +34,7 @@ v${version}`,
             additionalExternals,
         }),
         ...getConfig({
-            entry: { format: "preset", name: moduleName, bundle: true },
+            entry: { format: "preset", name: `${moduleName}.bundle`, bundle: true },
             version,
             banner,
             minBanner: minBanner,
