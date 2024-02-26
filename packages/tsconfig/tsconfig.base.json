@@ -26,7 +26,7 @@
     "strictNullChecks": true,
     "alwaysStrict": true,
     "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "Node16",
+    "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
