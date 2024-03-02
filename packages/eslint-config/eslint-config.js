@@ -4,7 +4,7 @@ module.exports = {
     parserOptions: {
         project: "./tsconfig.json",
     },
-    plugins: [ "@typescript-eslint", "jsdoc", "eslint-plugin-tsdoc" ],
+    plugins: [ "@stylistic", "@typescript-eslint", "jsdoc", "eslint-plugin-tsdoc" ],
     extends: [
         "eslint:recommended",
         "plugin:@typescript-eslint/eslint-recommended",
@@ -16,8 +16,27 @@ module.exports = {
         "prettier"
     ],
     rules: {
+        "@stylistic/comma-spacing": [ "error" ],
+        "@stylistic/quote-props": [ "error", "as-needed" ],
+        "@stylistic/space-in-parens": [ "error", "never" ],
+        "@stylistic/spaced-comment": [ "error", "always", {
+            block: {
+                balanced: true
+            }
+        } ],
+        "@stylistic/arrow-spacing": "error",
+        "@stylistic/arrow-parens": [ "error", "as-needed" ],
+        "@stylistic/quotes": [ "error", "double", {
+            allowTemplateLiterals: true,
+            avoidEscape: true
+        } ],
+        "@stylistic/semi": [ "error", "always" ],
+        "@stylistic/space-before-blocks": "error",
+        "@stylistic/space-infix-ops": "error",
+        "@stylistic/keyword-spacing": "error",
+        "@stylistic/no-extra-semi": "error",
+
         "@typescript-eslint/ban-types": "warn",
-        "@typescript-eslint/comma-spacing": [ "error" ],
         "@typescript-eslint/consistent-generic-constructors": [ "error", "constructor" ],
         "@typescript-eslint/consistent-type-exports": [ "error" ],
         "@typescript-eslint/consistent-type-imports": [ "error" ],
@@ -99,6 +118,12 @@ module.exports = {
         } ],
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/prefer-readonly": [ "error" ],
+        "@typescript-eslint/no-magic-numbers": [ "error", { ignoreEnums: true, ignoreNumericLiteralTypes: true } ],
+        "@typescript-eslint/no-unused-expressions": "error",
+        "@typescript-eslint/no-throw-literal": "error",
+        "@typescript-eslint/no-empty-function": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+
         "no-console": "error",
         "sort-imports": [ "error", {
             allowSeparatedGroups: false,
@@ -114,17 +139,9 @@ module.exports = {
         "prefer-const": "error",
         "prefer-object-spread": "error",
         "prefer-template": "error",
-        "quote-props": [ "error", "as-needed" ],
-        "space-in-parens": [ "error", "never" ],
-        "spaced-comment": [ "error", "always", {
-            block: {
-                balanced: true
-            }
-        } ],
         "yoda": [ "error", "never", {
             exceptRange: true
         } ],
-        "arrow-spacing": "error",
         "no-duplicate-imports": "error",
         "no-useless-rename": "error",
         "no-useless-return": "error",
@@ -149,30 +166,10 @@ module.exports = {
         "no-self-assign": "error",
         "no-unused-labels": "error",
         "no-useless-catch": "error",
-        "quotes": "off",
-        "@typescript-eslint/quotes": [ "error", "double", {
-            allowTemplateLiterals: true,
-            avoidEscape: true
-        } ],
-        "semi": "off",
-        "@typescript-eslint/semi": [ "error", "always" ],
-        "space-before-blocks": "off",
-        "@typescript-eslint/space-before-blocks": "error",
-        "space-infix-ops": "off",
-        "@typescript-eslint/space-infix-ops": "error",
-        "keyword-spacing": "off",
-        "@typescript-eslint/keyword-spacing": "error",
         "no-useless-constructor": "off",
-        "@typescript-eslint/no-useless-constructor": "error",
-        "no-extra-semi": "off",
-        "@typescript-eslint/no-extra-semi": "error",
         "no-empty-function": "off",
-        "@typescript-eslint/no-empty-function": "error",
         "no-throw-literal": "off",
-        "@typescript-eslint/no-throw-literal": "error",
         "no-unused-expressions": "off",
-        "@typescript-eslint/no-unused-expressions": "error",
         "no-magic-numbers": "off",
-        "@typescript-eslint/no-magic-numbers": [ "error", { ignoreEnums: true, ignoreNumericLiteralTypes: true } ],
     }
 };
