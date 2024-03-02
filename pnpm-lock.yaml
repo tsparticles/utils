@@ -84,7 +84,7 @@ importers:
         specifier: ^1.6.3
         version: 1.6.3(eslint@8.57.0)(typescript@5.3.3)
       '@tsparticles/eslint-config':
-        specifier: ^2.1.6
+        specifier: ^2.2.0
         version: link:../eslint-config
       '@tsparticles/prettier-config':
         specifier: ^2.1.6
