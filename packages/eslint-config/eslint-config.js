@@ -13,7 +13,8 @@ module.exports = {
         "plugin:@typescript-eslint/recommended-type-checked",
         "plugin:@typescript-eslint/stylistic-type-checked",
         "plugin:jsdoc/recommended-typescript",
-        "prettier"
+        "plugin:prettier/recommended",
+        "prettier",
     ],
     rules: {
         "@stylistic/comma-spacing": [ "error" ],
