@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/tsparticles/utils/compare/v2.2.1...v2.3.0) (2024-03-06)
+
+**Note:** Version bump only for package @tsparticles/tsconfig
+
+
+
+
+
 ## [2.1.7](https://github.com/tsparticles/utils/compare/v2.1.6...v2.1.7) (2024-02-26)
 
 **Note:** Version bump only for package @tsparticles/tsconfig
