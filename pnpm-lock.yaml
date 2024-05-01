@@ -94,7 +94,7 @@ importers:
         version: link:../prettier-config
       '@types/node':
         specifier: ^20.12.7
-        version: 20.12.7
+        version: 20.12.8
       '@types/webpack-bundle-analyzer':
         specifier: ^4.7.0
         version: 4.7.0(webpack-cli@5.1.4)
@@ -2325,8 +2325,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node@20.12.7:
-    resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
+  /@types/node@20.12.8:
+    resolution: {integrity: sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -2346,7 +2346,7 @@ packages:
   /@types/webpack-bundle-analyzer@4.7.0(webpack-cli@5.1.4):
     resolution: {integrity: sha512-c5i2ThslSNSG8W891BRvOd/RoCjI2zwph8maD22b1adtSns20j+0azDDMCK06DiVrzTgnwiDl5Ntmu1YRJw8Sg==}
     dependencies:
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
       tapable: 2.2.1
       webpack: 5.91.0(webpack-cli@5.1.4)
     transitivePeerDependencies:
@@ -5181,7 +5181,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.12.7
+      '@types/node': 20.12.8
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
