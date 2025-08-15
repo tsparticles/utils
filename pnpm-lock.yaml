@@ -94,7 +94,7 @@ importers:
         version: link:../prettier-config
       '@types/node':
         specifier: ^20.12.7
-        version: 20.12.8
+        version: 20.19.11
       '@types/webpack-bundle-analyzer':
         specifier: ^4.7.0
         version: 4.7.0(webpack-cli@5.1.4)
@@ -2318,10 +2318,10 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node@20.12.8:
-    resolution: {integrity: sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==}
+  /@types/node@20.19.11:
+    resolution: {integrity: sha512-uug3FEEGv0r+jrecvUUpbY8lLisvIjg6AAic6a2bSP5OEOLeJsDSnvhCDov7ipFFMXS3orMpzlmi0ZcuGkBbow==}
     dependencies:
-      undici-types: 5.26.5
+      undici-types: 6.21.0
     dev: false
 
   /@types/normalize-package-data@2.4.1:
@@ -2335,7 +2335,7 @@ packages:
   /@types/webpack-bundle-analyzer@4.7.0(webpack-cli@5.1.4):
     resolution: {integrity: sha512-c5i2ThslSNSG8W891BRvOd/RoCjI2zwph8maD22b1adtSns20j+0azDDMCK06DiVrzTgnwiDl5Ntmu1YRJw8Sg==}
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.19.11
       tapable: 2.2.1
       webpack: 5.91.0(webpack-cli@5.1.4)
     transitivePeerDependencies:
@@ -4595,7 +4595,7 @@ packages:
       source-map: 0.6.1
       wordwrap: 1.0.0
     optionalDependencies:
-      uglify-js: 3.17.4
+      uglify-js: 3.19.3
     dev: true
 
   /hard-rejection@2.1.0:
@@ -5170,7 +5170,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.12.8
+      '@types/node': 20.19.11
       merge-stream: 2.0.0
       supports-color: 8.1.1
     dev: false
@@ -7575,8 +7575,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  /uglify-js@3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
+  /uglify-js@3.19.3:
+    resolution: {integrity: sha512-v3Xu+yuwBXisp6QYTcH4UbH+xYJXqnq2m/LtQVWKWzYc1iehYnLixoQDN9FH6/j9/oybfd6W9Ghwkl8+UMKTKQ==}
     engines: {node: '>=0.8.0'}
     hasBin: true
     requiresBuild: true
@@ -7592,8 +7592,8 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: false
 
-  /undici-types@5.26.5:
-    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+  /undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
     dev: false
 
   /unicode-canonical-property-names-ecmascript@2.0.0:
