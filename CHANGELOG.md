@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/tsparticles/utils/compare/v2.3.0...v3.0.1) (2025-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @stylistic/eslint-plugin to v1.8.1 ([80f2702](https://github.com/tsparticles/utils/commit/80f2702387db319dbb92eb832b163a0a7e2bf963))
+* **deps:** update dependency @types/node to v20.12.8 ([0071ce5](https://github.com/tsparticles/utils/commit/0071ce52e318ac908479358a37e46d98705b5905))
+* **deps:** update dependency rimraf to v5.0.6 ([cff82d5](https://github.com/tsparticles/utils/commit/cff82d5693cc9329fcf31d0e6527d59df5f994f5))
+* **deps:** update dependency rimraf to v5.0.7 ([ba00fb8](https://github.com/tsparticles/utils/commit/ba00fb8f0daeb8e6ec4625e84e77ae5500b29d7d))
+* fixed a wrong string ([880cd9d](https://github.com/tsparticles/utils/commit/880cd9d804da498780c788753c9a8f4096f18858))
+* fixed config ([c94929a](https://github.com/tsparticles/utils/commit/c94929a98f0fd764b750730e45e8efc62a3010bd))
+
+
+
+
+
 # [3.0.0](https://github.com/tsparticles/utils/compare/v2.3.0...v3.0.0) (2025-08-31)
 
 
