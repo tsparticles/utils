@@ -32,6 +32,9 @@ importers:
       '@tsparticles/prettier-config':
         specifier: workspace:^3.0.0
         version: link:../prettier-config
+      '@types/node':
+        specifier: ^24.3.0
+        version: 24.3.0
       eslint:
         specifier: ^9.34.0
         version: 9.34.0

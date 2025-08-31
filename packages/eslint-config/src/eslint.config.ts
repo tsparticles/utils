@@ -1,4 +1,5 @@
-// eslint.config.ts
+import path from "path";
+import fs from "fs";
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import stylistic from "@stylistic/eslint-plugin";
@@ -8,13 +9,15 @@ import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier/flat";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
 
+const consumerTsconfig = path.resolve(process.cwd(), "tsconfig.json"),
+    parserProject = fs.existsSync(consumerTsconfig) ? consumerTsconfig : undefined;
+
 export default tseslint.config(
     js.configs.recommended,
     stylistic.configs.recommended,
-    ...tseslint.configs.recommended,
-    ...tseslint.configs.recommendedTypeChecked,
-    ...tseslint.configs.stylisticTypeChecked,
     jsdoc.configs["flat/recommended-typescript"],
+    ...tseslint.configs.strictTypeChecked,
+    ...tseslint.configs.stylisticTypeChecked,
     {
         ignores: ["dist", "node_modules"],
         plugins: {
@@ -26,9 +29,7 @@ export default tseslint.config(
         },
         languageOptions: {
             parser: tseslint.parser,
-            parserOptions: {
-                project: "./tsconfig.json",
-            },
+            parserOptions: parserProject ? { project: parserProject } : undefined,
         },
         rules: {
             // --- stylistic ---
@@ -46,14 +47,11 @@ export default tseslint.config(
             "@stylistic/no-extra-semi": "error",
 
             // --- typescript-eslint ---
-            "@typescript-eslint/ban-types": "warn",
             "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
             "@typescript-eslint/consistent-type-exports": "error",
             "@typescript-eslint/consistent-type-imports": "error",
             "@typescript-eslint/explicit-function-return-type": "error",
             "@typescript-eslint/explicit-member-accessibility": ["error", {accessibility: "no-public"}],
-            "@typescript-eslint/no-explicit-any": "error",
-            "@typescript-eslint/no-inferrable-types": "error",
             "@typescript-eslint/member-ordering": [
                 "error",
                 {
@@ -126,6 +124,12 @@ export default tseslint.config(
                     },
                 },
             ],
+            "@typescript-eslint/no-explicit-any": "error",
+            "@typescript-eslint/no-inferrable-types": "error",
+            "@typescript-eslint/no-restricted-types": "warn",
+            "@typescript-eslint/no-empty-object-type": "warn",
+            "@typescript-eslint/no-unsafe-function-type": "warn",
+            "@typescript-eslint/no-wrapper-object-types": "warn",
             "@typescript-eslint/no-unnecessary-type-arguments": "error",
             "@typescript-eslint/no-unnecessary-type-assertion": "error",
             "@typescript-eslint/no-unused-vars": [
@@ -138,15 +142,15 @@ export default tseslint.config(
                 },
             ],
             "@typescript-eslint/no-var-requires": "error",
-            "@typescript-eslint/prefer-readonly": "error",
             "@typescript-eslint/no-magic-numbers": [
                 "error",
                 {ignoreEnums: true, ignoreNumericLiteralTypes: true},
             ],
             "@typescript-eslint/no-unused-expressions": "error",
-            "@typescript-eslint/no-throw-literal": "error",
+            "@typescript-eslint/only-throw-error": "error",
             "@typescript-eslint/no-empty-function": "error",
             "@typescript-eslint/no-useless-constructor": "error",
+            "@typescript-eslint/prefer-readonly": "error",
 
             // --- core rules ---
             "no-console": "error",
@@ -196,7 +200,6 @@ export default tseslint.config(
             // disabilitazioni duplicate (sostituite da @typescript-eslint)
             "no-useless-constructor": "off",
             "no-empty-function": "off",
-            "no-throw-literal": "off",
             "no-unused-expressions": "off",
             "no-magic-numbers": "off",
         },
