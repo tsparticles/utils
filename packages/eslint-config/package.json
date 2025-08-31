@@ -4,6 +4,7 @@
   "description": "tsParticles default ESLint Configuration (ESLint 9 + Flat Config)",
   "type": "module",
   "main": "dist/eslint.config.js",
+  "types": "dist/eslint.config.d.ts",
   "license": "MIT",
   "files": [
     "dist/eslint.config.js"
