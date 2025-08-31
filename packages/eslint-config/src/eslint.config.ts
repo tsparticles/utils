@@ -8,6 +8,7 @@ import tsdoc from "eslint-plugin-tsdoc";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier/flat";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
+import {Linter} from "eslint";
 
 const consumerTsconfig = path.resolve(process.cwd(), "tsconfig.json"),
     parserProject = fs.existsSync(consumerTsconfig) ? consumerTsconfig : undefined;
@@ -206,4 +207,4 @@ export default tseslint.config(
     },
     prettierConfig,
     prettierRecommended,
-);
+) as unknown as Linter.Config;

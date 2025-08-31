@@ -5,3 +5,4 @@ lerna-debug.log
 .idea
 
 .nx/cache
+.nx/workspace-data
