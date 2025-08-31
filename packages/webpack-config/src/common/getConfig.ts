@@ -1,8 +1,8 @@
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
-import type { ExternalData } from "./ExternalData";
+import type { ExternalData } from "./ExternalData.js";
 import TerserPlugin from "terser-webpack-plugin";
 import { getEntry } from "./getEntry.js";
-import { getExternals } from "./getExternals";
+import { getExternals } from "./getExternals.js";
 import path from "path";
 import webpack from "webpack";
 

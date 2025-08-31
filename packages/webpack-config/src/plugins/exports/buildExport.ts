@@ -1,5 +1,5 @@
-import type { ExternalData } from "../../common/ExternalData";
-import { getConfig } from "../../common/getConfig";
+import type { ExternalData } from "../../common/ExternalData.js";
+import { getConfig } from "../../common/getConfig.js";
 
 interface ExportParams {
     additionalExternals?: ExternalData[];
