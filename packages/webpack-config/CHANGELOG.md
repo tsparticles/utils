@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/tsparticles/utils/compare/v3.0.2...v3.0.3) (2025-08-31)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [3.0.2](https://github.com/tsparticles/utils/compare/v3.0.1...v3.0.2) (2025-08-31)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [3.0.1](https://github.com/tsparticles/utils/compare/v2.3.0...v3.0.1) (2025-08-31)
+
+
+### Bug Fixes
+
+* fixed a wrong string ([880cd9d](https://github.com/tsparticles/utils/commit/880cd9d804da498780c788753c9a8f4096f18858))
+
+
+
+
+
+# [3.0.0](https://github.com/tsparticles/utils/compare/v2.3.0...v3.0.0) (2025-08-31)
+
+
+### Bug Fixes
+
+* fixed a wrong string ([880cd9d](https://github.com/tsparticles/utils/commit/880cd9d804da498780c788753c9a8f4096f18858))
+
+
+
+
+
+# [2.3.0](https://github.com/tsparticles/utils/compare/v2.2.1...v2.3.0) (2024-03-06)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [2.2.1](https://github.com/tsparticles/utils/compare/v2.2.0...v2.2.1) (2024-03-02)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+# [2.2.0](https://github.com/tsparticles/utils/compare/v2.1.7...v2.2.0) (2024-03-02)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [2.1.6](https://github.com/tsparticles/utils/compare/v2.1.5...v2.1.6) (2024-02-26)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [2.1.5](https://github.com/tsparticles/utils/compare/v2.1.4...v2.1.5) (2024-01-31)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [2.1.4](https://github.com/tsparticles/utils/compare/v2.1.3...v2.1.4) (2024-01-31)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
 ## [2.1.3](https://github.com/tsparticles/utils/compare/v2.1.2...v2.1.3) (2024-01-28)
 
 **Note:** Version bump only for package @tsparticles/webpack-plugin

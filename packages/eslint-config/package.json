@@ -1,25 +1,39 @@
 {
   "name": "@tsparticles/eslint-config",
-  "version": "2.1.0",
-  "description": "tsParticles default ESLint Configuration",
-  "main": "eslint-config.js",
+  "version": "3.0.3",
+  "description": "tsParticles default ESLint Configuration (ESLint 9 + Flat Config)",
+  "type": "module",
+  "main": "dist/eslint.config.js",
+  "types": "dist/eslint.config.d.ts",
   "license": "MIT",
   "files": [
-    "eslint-config.js"
+    "dist/eslint.config.js",
+    "dist/eslint.config.d.ts"
   ],
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "@tsparticles/prettier-config": "^2.1.0",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
-    "@typescript-eslint/parser": "^6.19.1",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsdoc": "^48.0.4",
-    "eslint-plugin-tsdoc": "^0.2.17",
-    "prettier": "^3.2.4",
-    "typescript": "^5.3.3"
+  "prettier": "@tsparticles/prettier-config",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@stylistic/eslint-plugin": "^5.2.3",
+    "@tsparticles/prettier-config": "workspace:^3.0.1",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsdoc": "^54.1.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
   }
 }
