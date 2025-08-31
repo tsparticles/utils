@@ -7,7 +7,8 @@
   "types": "dist/eslint.config.d.ts",
   "license": "MIT",
   "files": [
-    "dist/eslint.config.js"
+    "dist/eslint.config.js",
+    "dist/eslint.config.d.ts"
   ],
   "publishConfig": {
     "access": "public"
