@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/prettier-config",
-  "version": "2.1.6",
+  "version": "3.0.0",
   "description": "tsParticles default Prettier Configuration",
   "main": "prettier-config.json",
   "license": "MIT",

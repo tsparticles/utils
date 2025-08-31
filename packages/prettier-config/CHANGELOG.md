@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/tsparticles/utils/compare/v2.3.0...v3.0.0) (2025-08-31)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
 ## [2.1.6](https://github.com/tsparticles/utils/compare/v2.1.5...v2.1.6) (2024-02-26)
 
 **Note:** Version bump only for package @tsparticles/prettier-config

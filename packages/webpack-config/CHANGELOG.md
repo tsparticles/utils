@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/tsparticles/utils/compare/v2.3.0...v3.0.0) (2025-08-31)
+
+
+### Bug Fixes
+
+* fixed a wrong string ([880cd9d](https://github.com/tsparticles/utils/commit/880cd9d804da498780c788753c9a8f4096f18858))
+
+
+
+
+
 # [2.3.0](https://github.com/tsparticles/utils/compare/v2.2.1...v2.3.0) (2024-03-06)
 
 **Note:** Version bump only for package @tsparticles/webpack-plugin
