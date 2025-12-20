@@ -15,7 +15,7 @@
   "devDependencies": {
     "@nrwl/workspace": "^19.8.4",
     "lerna": "^8.2.3",
-    "nx": "19.8.4",
+    "nx": "22.3.3",
     "typescript": "^5.9.2"
   }
 }
