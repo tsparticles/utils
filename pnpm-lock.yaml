@@ -66,8 +66,8 @@ importers:
         specifier: ^3.7.4
         version: 3.7.4
       prettier-plugin-multiline-arrays:
-        specifier: 4.1.1
-        version: 4.1.1(prettier@3.7.4)
+        specifier: 4.1.3
+        version: 4.1.3(prettier@3.7.4)
 
   packages/tsconfig:
     dependencies:
@@ -135,8 +135,8 @@ importers:
         specifier: ^3.7.4
         version: 3.7.4
       prettier-plugin-multiline-arrays:
-        specifier: 4.1.1
-        version: 4.1.1(prettier@3.7.4)
+        specifier: 4.1.3
+        version: 4.1.3(prettier@3.7.4)
       rimraf:
         specifier: ^6.1.2
         version: 6.1.2
@@ -3666,8 +3666,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier-plugin-multiline-arrays@4.1.1:
-    resolution: {integrity: sha512-fISpetMzBxTcrImHt9hBFbG12EapoLDiQIe2jaPdQQCAyEYvgbfixdYeisE/bxYQvNZA4N0dtDoOQ5zkp9hJCA==}
+  prettier-plugin-multiline-arrays@4.1.3:
+    resolution: {integrity: sha512-V1U2EtLCvaoid1lDPReN4Gxw888dGmedJsz61Wfw36z/oG4NIcm3i13gdiUAKRvFKbf+iPsYO1a076tlksD/Tw==}
     engines: {node: '>=20'}
     peerDependencies:
       prettier: '>=3.0.0 <4.0.0'
@@ -8823,7 +8823,7 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-multiline-arrays@4.1.1(prettier@3.7.4):
+  prettier-plugin-multiline-arrays@4.1.3(prettier@3.7.4):
     dependencies:
       '@augment-vir/common': 31.54.4
       prettier: 3.7.4
