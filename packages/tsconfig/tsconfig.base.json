@@ -4,6 +4,7 @@
     "target": "ES2021",
     "lib": [
       "ESNext",
+      "ES2024",
       "ES2023",
       "ES2022",
       "ES2021",
@@ -14,7 +15,7 @@
       "ES2016",
       "ES2015",
       "ES5",
-      "DOM"
+      "DOM",
     ],
     "types": ["node"],
     "allowJs": true,
@@ -26,7 +27,7 @@
     "strictNullChecks": true,
     "alwaysStrict": true,
     "noFallthroughCasesInSwitch": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "NodeNext",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,

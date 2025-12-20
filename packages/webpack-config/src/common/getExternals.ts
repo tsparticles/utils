@@ -1,4 +1,4 @@
-import type { ExternalData } from "./ExternalData";
+import type { ExternalData } from "./ExternalData.js";
 
 const getExternalObject = (name: string): unknown => {
     return {
