@@ -13,6 +13,6 @@
   },
   "dependencies": {
     "prettier": "^3.7.4",
-    "prettier-plugin-multiline-arrays": "4.1.1"
+    "prettier-plugin-multiline-arrays": "^4.1.3"
   }
 }
