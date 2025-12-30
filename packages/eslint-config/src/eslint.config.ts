@@ -10,7 +10,8 @@ import prettierConfig from "eslint-config-prettier/flat";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
 import {Linter} from "eslint";
 
-const consumerTsconfig = path.resolve(process.cwd(), "tsconfig.json"),
+const consumerDir = process.cwd(),
+    consumerTsconfig = path.resolve(consumerDir, "tsconfig.json"),
     parserProject = fs.existsSync(consumerTsconfig) ? consumerTsconfig : undefined;
 
 export default tseslint.config(
@@ -30,7 +31,10 @@ export default tseslint.config(
         },
         languageOptions: {
             parser: tseslint.parser,
-            parserOptions: parserProject ? { project: parserProject } : undefined,
+            parserOptions: parserProject ? {
+                project: parserProject,
+                tsconfigRootDir: consumerDir,
+            } : undefined,
         },
         rules: {
             // --- stylistic ---
