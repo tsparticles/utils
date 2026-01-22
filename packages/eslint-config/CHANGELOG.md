@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.10](https://github.com/tsparticles/utils/compare/v3.0.9...v3.0.10) (2026-01-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsdoc to v62 ([7bffdcd](https://github.com/tsparticles/utils/commit/7bffdcd38d071ac1a8ff8c2d10993507ee2ffc08))
+
+
+
+
+
 ## [3.0.9](https://github.com/tsparticles/utils/compare/v3.0.8...v3.0.9) (2025-12-30)
 
 **Note:** Version bump only for package @tsparticles/eslint-config
