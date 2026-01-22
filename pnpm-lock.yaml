@@ -27,7 +27,7 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0(eslint@9.39.2)
       '@tsparticles/prettier-config':
-        specifier: workspace:^3.0.10
+        specifier: workspace:^3.0.11
         version: link:../prettier-config
       '@types/node':
         specifier: ^25.0.10
@@ -84,10 +84,10 @@ importers:
         specifier: ^5.7.0
         version: 5.7.0(eslint@9.39.2)
       '@tsparticles/eslint-config':
-        specifier: workspace:^3.0.10
+        specifier: workspace:^3.0.11
         version: link:../eslint-config
       '@tsparticles/prettier-config':
-        specifier: workspace:^3.0.10
+        specifier: workspace:^3.0.11
         version: link:../prettier-config
       '@types/node':
         specifier: ^25.0.10
