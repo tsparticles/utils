@@ -174,7 +174,10 @@ export default tseslint.config(
           allowRegExp: true,
         }
       ],
-      "@typescript-eslint/switch-exhaustiveness-check": "error",
+      "@typescript-eslint/switch-exhaustiveness-check": ["error", {
+        allowDefaultCaseForExhaustiveSwitch: true,
+        considerDefaultExhaustiveForUnions: true,
+      }],
 
       // --- core rules ---
       "no-console": "error",
