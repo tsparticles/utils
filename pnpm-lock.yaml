@@ -84,7 +84,7 @@ importers:
         specifier: ^5.7.1
         version: 5.7.1(eslint@9.39.2)
       '@tsparticles/eslint-config':
-        specifier: workspace:^3.0.12
+        specifier: workspace:^3.0.13
         version: link:../eslint-config
       '@tsparticles/prettier-config':
         specifier: workspace:^3.0.11
