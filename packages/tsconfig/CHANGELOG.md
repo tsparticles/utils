@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.14](https://github.com/tsparticles/utils/compare/v3.0.13...v3.0.14) (2026-01-30)
+
+**Note:** Version bump only for package @tsparticles/tsconfig
+
+
+
+
+
 ## [3.0.9](https://github.com/tsparticles/utils/compare/v3.0.8...v3.0.9) (2025-12-30)
 
 **Note:** Version bump only for package @tsparticles/tsconfig
