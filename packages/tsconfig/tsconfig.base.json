@@ -11,7 +11,9 @@
     "importHelpers": false,
     "lib": [
       "ESNext",
-      "DOM"
+      "DOM",
+      "DOM.AsyncIterable",
+      "DOM.Iterable"
     ],
     "moduleResolution": "NodeNext",
     "noFallthroughCasesInSwitch": true,
