@@ -33,7 +33,7 @@
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
-    "target": "ES2021",
+    "target": "ES2022",
     "types": ["node"],
     "useUnknownInCatchVariables": true
   }

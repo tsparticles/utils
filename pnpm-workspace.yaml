@@ -3,3 +3,6 @@ packages:
 
 ignoredBuiltDependencies:
   - nx
+
+onlyBuiltDependencies:
+  - '@swc/core'

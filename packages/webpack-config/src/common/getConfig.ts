@@ -31,6 +31,7 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
 
   return {
     entry: getEntry({ ...entry, min }),
+    target: "web",
     mode: min ? "production" : "development",
     output: {
       path: path.resolve(dir, "dist"),
@@ -48,10 +49,22 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
     module: {
       rules: [
         {
-          // Include ts, tsx, js, and jsx files.
-          test: /\.js$/,
+          test: /\.m?js$/,
           exclude: /node_modules/,
-          loader: "babel-loader",
+          use: {
+            loader: "swc-loader",
+            options: {
+              jsc: {
+                parser: {
+                  syntax: "ecmascript",
+                },
+                target: "es2022",
+              },
+              module: {
+                type: "es6",
+              },
+            },
+          },
         },
       ],
     },
@@ -80,10 +93,17 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
       minimizer: [
         new TerserPlugin({
           include: /\.min\.js$/,
+          minify: TerserPlugin.swcMinify,
           parallel: true,
           terserOptions: {
-            ecma: 2019,
-            module: true,
+            compress: {
+              unused: true,
+              dead_code: true,
+            },
+            mangle: true,
+            format: {
+              comments: false,
+            },
           },
         }),
       ],
