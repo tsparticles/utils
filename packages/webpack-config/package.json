@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/webpack-plugin",
-  "version": "3.0.13",
+  "version": "3.1.0",
   "type": "module",
   "main": "dist/webpack-tsparticles.js",
   "types": "dist/webpack-tsparticles.d.ts",
@@ -28,7 +28,7 @@
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.7.1",
     "@swc/core": "^1.15.11",
-    "@tsparticles/eslint-config": "workspace:^3.0.13",
+    "@tsparticles/eslint-config": "workspace:^3.1.0",
     "@tsparticles/prettier-config": "workspace:^3.0.11",
     "@types/node": "^25.2.0",
     "@types/webpack-bundle-analyzer": "^4.7.0",
