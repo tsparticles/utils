@@ -3,6 +3,9 @@
   "version": "3.1.2",
   "private": false,
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
