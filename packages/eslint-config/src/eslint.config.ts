@@ -1,20 +1,20 @@
-import path from "path";
+import { defineConfig } from "eslint/config";
 import fs from "fs";
 import js from "@eslint/js";
-import tseslint from "typescript-eslint";
-import stylistic from "@stylistic/eslint-plugin";
 import jsdoc from "eslint-plugin-jsdoc";
-import tsdoc from "eslint-plugin-tsdoc";
-import prettierPlugin from "eslint-plugin-prettier";
+import path from "path";
 import prettierConfig from "eslint-config-prettier/flat";
+import prettierPlugin from "eslint-plugin-prettier";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
-import { Linter } from "eslint";
+import stylistic from "@stylistic/eslint-plugin";
+import tsdoc from "eslint-plugin-tsdoc";
+import tseslint from "typescript-eslint";
 
 const consumerDir = process.cwd(),
   consumerTsconfig = path.resolve(consumerDir, "tsconfig.json"),
   parserProject = fs.existsSync(consumerTsconfig) ? consumerTsconfig : undefined;
 
-export default tseslint.config(
+export default defineConfig([
   js.configs.recommended,
   stylistic.configs.recommended,
   jsdoc.configs["flat/recommended-typescript"],
@@ -31,25 +31,27 @@ export default tseslint.config(
     },
     languageOptions: {
       parser: tseslint.parser,
-      parserOptions: parserProject ? {
-        project: parserProject,
-        tsconfigRootDir: consumerDir,
-      } : undefined,
+      parserOptions: parserProject
+        ? {
+            project: parserProject,
+            tsconfigRootDir: consumerDir,
+          }
+        : undefined,
     },
     rules: {
       // --- stylistic ---
-      "@stylistic/comma-spacing": ["error"],
-      "@stylistic/quote-props": ["error", "as-needed"],
-      "@stylistic/space-in-parens": ["error", "never"],
-      "@stylistic/spaced-comment": ["error", "always", { block: { balanced: true } }],
-      "@stylistic/arrow-spacing": "error",
       "@stylistic/arrow-parens": ["error", "as-needed"],
+      "@stylistic/arrow-spacing": "error",
+      "@stylistic/comma-spacing": ["error"],
+      "@stylistic/keyword-spacing": "error",
+      "@stylistic/no-extra-semi": "error",
+      "@stylistic/quote-props": ["error", "as-needed"],
       "@stylistic/quotes": ["error", "double", { allowTemplateLiterals: true, avoidEscape: true }],
       "@stylistic/semi": ["error", "always"],
       "@stylistic/space-before-blocks": "error",
+      "@stylistic/space-in-parens": ["error", "never"],
       "@stylistic/space-infix-ops": "error",
-      "@stylistic/keyword-spacing": "error",
-      "@stylistic/no-extra-semi": "error",
+      "@stylistic/spaced-comment": ["error", "always", { block: { balanced: true } }],
 
       // --- typescript-eslint ---
       "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
@@ -129,12 +131,11 @@ export default tseslint.config(
           },
         },
       ],
-      "@typescript-eslint/no-explicit-any": "error",
-      "@typescript-eslint/no-inferrable-types": "error",
-      "@typescript-eslint/no-restricted-types": "warn",
       "@typescript-eslint/no-empty-function": "error",
       "@typescript-eslint/no-empty-object-type": "warn",
+      "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/no-inferrable-types": "error",
       "@typescript-eslint/no-magic-numbers": [
         "error",
         {
@@ -144,9 +145,11 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/no-misused-promises": "error",
-      "@typescript-eslint/no-unsafe-function-type": "warn",
+      "@typescript-eslint/no-restricted-types": "warn",
+      "@typescript-eslint/no-unnecessary-condition": "error",
       "@typescript-eslint/no-unnecessary-type-arguments": "error",
       "@typescript-eslint/no-unnecessary-type-assertion": "error",
+      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
@@ -156,10 +159,8 @@ export default tseslint.config(
           varsIgnorePattern: "^_",
         },
       ],
-      "@typescript-eslint/no-var-requires": "error",
-      "@typescript-eslint/no-unnecessary-condition": "error",
-      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-useless-constructor": "error",
+      "@typescript-eslint/no-var-requires": "error",
       "@typescript-eslint/no-wrapper-object-types": "warn",
       "@typescript-eslint/only-throw-error": "error",
       "@typescript-eslint/prefer-nullish-coalescing": "error",
@@ -172,15 +173,53 @@ export default tseslint.config(
           allowBoolean: true,
           allowNullish: true,
           allowRegExp: true,
-        }
+        },
       ],
-      "@typescript-eslint/switch-exhaustiveness-check": ["error", {
-        allowDefaultCaseForExhaustiveSwitch: true,
-        considerDefaultExhaustiveForUnions: true,
-      }],
+      "@typescript-eslint/switch-exhaustiveness-check": [
+        "error",
+        {
+          allowDefaultCaseForExhaustiveSwitch: true,
+          considerDefaultExhaustiveForUnions: true,
+        },
+      ],
 
       // --- core rules ---
+      "constructor-super": "error",
+      curly: ["error", "all"],
+      "no-alert": "error",
+      "no-case-declarations": "error",
       "no-console": "error",
+      "no-debugger": "error",
+      "no-duplicate-case": "error",
+      "no-duplicate-imports": "error",
+      "no-empty": "error",
+      "no-empty-pattern": "error",
+      "no-extra-boolean-cast": "error",
+      "no-func-assign": "error",
+      "no-inner-declarations": "error",
+      "no-irregular-whitespace": "error",
+      "no-nested-ternary": "error",
+      "no-prototype-builtins": "error",
+      "no-restricted-syntax": "error",
+      "no-self-assign": "error",
+      "no-this-before-super": "error",
+      "no-unexpected-multiline": "error",
+      "no-unneeded-ternary": "error",
+      "no-unreachable": "error",
+      "no-unsafe-finally": "error",
+      "no-unused-labels": "error",
+      "no-useless-catch": "error",
+      "no-useless-computed-key": "error",
+      "no-useless-concat": "error",
+      "no-useless-escape": "error",
+      "no-useless-rename": "error",
+      "no-useless-return": "error",
+      "no-var": "error",
+      "one-var": ["error", "consecutive"],
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
+      "prefer-object-spread": "error",
+      "prefer-template": "error",
       "sort-imports": [
         "error",
         {
@@ -192,45 +231,16 @@ export default tseslint.config(
         },
       ],
       "tsdoc/syntax": "warn",
-      "no-nested-ternary": "error",
-      "no-unneeded-ternary": "error",
-      "no-var": "error",
-      "prefer-const": "error",
-      "prefer-object-spread": "error",
-      "prefer-template": "error",
-      yoda: ["error", "never", { exceptRange: true }],
-      "no-duplicate-imports": "error",
-      "no-useless-rename": "error",
-      "no-useless-return": "error",
-      "no-useless-computed-key": "error",
-      "no-useless-concat": "error",
-      "no-useless-escape": "error",
-      "constructor-super": "error",
-      "no-this-before-super": "error",
-      "no-duplicate-case": "error",
-      "no-empty": "error",
-      "no-func-assign": "error",
-      "no-irregular-whitespace": "error",
-      "no-unexpected-multiline": "error",
-      "no-unreachable": "error",
       "valid-typeof": "error",
-      "no-unsafe-finally": "error",
-      "no-case-declarations": "error",
-      "no-empty-pattern": "error",
-      "no-extra-boolean-cast": "error",
-      "no-inner-declarations": "error",
-      "no-prototype-builtins": "error",
-      "no-self-assign": "error",
-      "no-unused-labels": "error",
-      "no-useless-catch": "error",
+      yoda: ["error", "never", { exceptRange: true }],
 
-      // disabilitazioni duplicate (sostituite da @typescript-eslint)
-      "no-useless-constructor": "off",
+      // duplicate rules (replaced by @typescript-eslint)
       "no-empty-function": "off",
-      "no-unused-expressions": "off",
       "no-magic-numbers": "off",
+      "no-unused-expressions": "off",
+      "no-useless-constructor": "off",
     },
   },
   prettierConfig,
   prettierRecommended,
-) as unknown as Linter.Config;
+]);

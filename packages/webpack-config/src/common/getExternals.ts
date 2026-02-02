@@ -15,31 +15,30 @@ interface ExternalsParams {
 }
 
 const transformExternal = (external: ExternalData): unknown => {
-  return {
-    [external.name]: external.data,
+    return {
+      [external.name]: external.data,
+    };
+  },
+  getExternals = (params: ExternalsParams): unknown[] => {
+    const { additionalExternals, bundle } = params,
+      externals = additionalExternals ?? [];
+
+    if (bundle) {
+      return [...externals.filter(t => !t.bundle).map(transformExternal)];
+    }
+
+    return [
+      ...externals.map(transformExternal),
+      function ({ request }: { request: string }, cb: (err?: Error | null, data?: unknown) => void): void {
+        if (request === "tsparticles" || request.startsWith("tsparticles-") || request.startsWith("@tsparticles/")) {
+          cb(null, getExternalObject(request));
+
+          return;
+        }
+
+        cb();
+      },
+    ];
   };
-};
-
-const getExternals = (params: ExternalsParams): unknown[] => {
-  const { additionalExternals, bundle } = params,
-    externals = additionalExternals ?? [];
-
-  if (bundle) {
-    return [...externals.filter(t => !t.bundle).map(transformExternal)];
-  }
-
-  return [
-    ...externals.map(transformExternal),
-    function ({ request }: { request: string }, cb: (err?: Error | null, data?: unknown) => void): void {
-      if (request === "tsparticles" || request.startsWith("tsparticles-") || request.startsWith("@tsparticles/")) {
-        cb(null, getExternalObject(request));
-
-        return;
-      }
-
-      cb();
-    },
-  ];
-};
 
 export { getExternals };
