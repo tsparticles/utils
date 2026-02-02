@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/depcruise-config",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "private": false,
   "type": "module",
   "main": "dist/index.cjs",
@@ -12,7 +12,9 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prettify:ci:src": "prettier --check ./src/*",
     "prettify:ci:readme": "prettier --check ./README.md",
