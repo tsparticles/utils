@@ -1,6 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "extends": "nx/presets/npm.json",
+  "nxCloudId": "6356722b6ecea758750bfdfd",
   "targetDefaults": {
     "build": {
       "dependsOn": [
@@ -13,6 +14,54 @@
         "^build:ci"
       ],
       "cache": true
+    },
+    "prepare": {
+      "dependsOn": [
+        "^build",
+        "^prepare"
+      ]
+    },
+    "package": {
+      "dependsOn": [
+        "^build",
+        "^prepare",
+        "^package"
+      ]
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "build:ci",
+          "test",
+          "lint",
+          "package",
+          "prepare"
+        ]
+      }
+    },
+    "local": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "build:ci",
+          "lint",
+          "test",
+          "e2e"
+        ]
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
+  "pluginsConfig": {
+    "@nrwl/js": {
+      "analyzeSourceFiles": false
     }
   },
   "namedInputs": {
@@ -24,6 +73,5 @@
     "production": [
       "default"
     ]
-  },
-  "nxCloudAccessToken": "ZTBkZDI4YTctNmIzNS00MzllLWFmNDktODg3MzM3NDljYmQ2fHJlYWQ="
+  }
 }

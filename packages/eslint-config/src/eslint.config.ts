@@ -1,8 +1,8 @@
 import { defineConfig } from "eslint/config";
-import fs from "fs";
+import fs from "node:fs";
 import js from "@eslint/js";
 import jsdoc from "eslint-plugin-jsdoc";
-import path from "path";
+import path from "node:path";
 import prettierConfig from "eslint-config-prettier/flat";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
