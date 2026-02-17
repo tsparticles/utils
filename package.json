@@ -13,8 +13,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^9.0.3",
-    "nx": "^22.4.4",
+    "lerna": "^9.0.4",
+    "nx": "^22.5.1",
     "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@10.29.3"
