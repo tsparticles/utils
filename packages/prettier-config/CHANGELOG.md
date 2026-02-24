@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.8](https://github.com/tsparticles/utils/compare/v3.1.7...v3.1.8) (2026-02-24)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.1.7](https://github.com/tsparticles/utils/compare/v3.1.6...v3.1.7) (2026-02-24)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.1.6](https://github.com/tsparticles/utils/compare/v3.1.5...v3.1.6) (2026-02-24)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.1.5](https://github.com/tsparticles/utils/compare/v3.1.4...v3.1.5) (2026-02-24)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.1.4](https://github.com/tsparticles/utils/compare/v3.1.3...v3.1.4) (2026-02-24)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.1.3](https://github.com/tsparticles/utils/compare/v3.1.2...v3.1.3) (2026-02-24)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.0.11](https://github.com/tsparticles/utils/compare/v3.0.10...v3.0.11) (2026-01-22)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.0.10](https://github.com/tsparticles/utils/compare/v3.0.9...v3.0.10) (2026-01-22)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
+## [3.0.7](https://github.com/tsparticles/utils/compare/v3.0.6...v3.0.7) (2025-12-28)
+
+**Note:** Version bump only for package @tsparticles/prettier-config
+
+
+
+
+
 ## [3.0.6](https://github.com/tsparticles/utils/compare/v3.0.5...v3.0.6) (2025-12-20)
 
 **Note:** Version bump only for package @tsparticles/prettier-config

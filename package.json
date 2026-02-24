@@ -2,8 +2,8 @@
   "name": "tsparticles-utils-root",
   "private": true,
   "scripts": {
-    "build": "lerna run build",
-    "build:ci": "lerna run build:ci",
+    "build": "nx run-many -t build",
+    "build:ci": "nx run-many -t build:ci",
     "version:alpha": "lerna version prerelease --preid alpha --conventional-commits",
     "version:beta": "lerna version prerelease --preid beta --conventional-commits",
     "publish:alpha": "lerna publish from-package --pre-dist-tag alpha --preid alpha",
@@ -13,9 +13,9 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@nrwl/workspace": "^19.8.4",
-    "lerna": "^9.0.3",
-    "nx": "^22.3.3",
+    "lerna": "^9.0.4",
+    "nx": "^22.5.2",
     "typescript": "^5.9.3"
-  }
+  },
+  "packageManager": "pnpm@10.30.2"
 }

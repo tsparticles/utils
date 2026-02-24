@@ -3,6 +3,151 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.8](https://github.com/tsparticles/utils/compare/v3.1.7...v3.1.8) (2026-02-24)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.1.7](https://github.com/tsparticles/utils/compare/v3.1.6...v3.1.7) (2026-02-24)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.1.6](https://github.com/tsparticles/utils/compare/v3.1.5...v3.1.6) (2026-02-24)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.1.5](https://github.com/tsparticles/utils/compare/v3.1.4...v3.1.5) (2026-02-24)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.1.4](https://github.com/tsparticles/utils/compare/v3.1.3...v3.1.4) (2026-02-24)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.1.3](https://github.com/tsparticles/utils/compare/v3.1.2...v3.1.3) (2026-02-24)
+
+
+### Bug Fixes
+
+* fixed publish scope ([7999291](https://github.com/tsparticles/utils/commit/7999291e558d931335a03366ddd2cd75a6d8bc2c))
+
+
+
+
+
+## [3.1.2](https://github.com/tsparticles/utils/compare/v3.1.1...v3.1.2) (2026-02-02)
+
+
+### Features
+
+* add initial configuration files and setup for dependency-cruiser ([d166f87](https://github.com/tsparticles/utils/commit/d166f873e259c76047b0a061b10702061833c1d2))
+
+
+
+
+
+## [3.1.1](https://github.com/tsparticles/utils/compare/v3.1.0...v3.1.1) (2026-02-02)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+# [3.1.0](https://github.com/tsparticles/utils/compare/v3.0.14...v3.1.0) (2026-02-01)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.14](https://github.com/tsparticles/utils/compare/v3.0.13...v3.0.14) (2026-01-30)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.13](https://github.com/tsparticles/utils/compare/v3.0.12...v3.0.13) (2026-01-27)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.12](https://github.com/tsparticles/utils/compare/v3.0.11...v3.0.12) (2026-01-27)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.11](https://github.com/tsparticles/utils/compare/v3.0.10...v3.0.11) (2026-01-22)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.10](https://github.com/tsparticles/utils/compare/v3.0.9...v3.0.10) (2026-01-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsdoc to v62 ([7bffdcd](https://github.com/tsparticles/utils/commit/7bffdcd38d071ac1a8ff8c2d10993507ee2ffc08))
+
+
+
+
+
+## [3.0.9](https://github.com/tsparticles/utils/compare/v3.0.8...v3.0.9) (2025-12-30)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.8](https://github.com/tsparticles/utils/compare/v3.0.7...v3.0.8) (2025-12-30)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
+## [3.0.7](https://github.com/tsparticles/utils/compare/v3.0.6...v3.0.7) (2025-12-28)
+
+**Note:** Version bump only for package tsparticles-utils-root
+
+
+
+
+
 ## [3.0.6](https://github.com/tsparticles/utils/compare/v3.0.5...v3.0.6) (2025-12-20)
 
 **Note:** Version bump only for package tsparticles-utils-root

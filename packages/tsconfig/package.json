@@ -1,12 +1,27 @@
 {
   "name": "@tsparticles/tsconfig",
-  "version": "3.0.6",
+  "version": "3.1.8",
   "description": "tsParticles default TypeScript Compiler Configuration",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsparticles/utils.git",
+    "directory": "packages/tsconfig"
+  },
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "cpx \"./src/**.*\" ./dist/",
+    "build:ci": "cpx \"./src/**.*\" ./dist/"
+  },
   "dependencies": {
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "cpx2": "^8.0.0"
   }
 }

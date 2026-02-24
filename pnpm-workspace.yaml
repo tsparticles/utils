@@ -3,3 +3,9 @@ packages:
 
 ignoredBuiltDependencies:
   - nx
+
+onlyBuiltDependencies:
+  - '@swc/core'
+  - core-js
+  - esbuild
+  - fsevents
