@@ -160,7 +160,7 @@ export default defineConfig([
         },
       ],
       "@typescript-eslint/no-useless-constructor": "error",
-      "@typescript-eslint/no-var-requires": "error",
+      "@typescript-eslint/no-require-imports": "error",
       "@typescript-eslint/no-wrapper-object-types": "warn",
       "@typescript-eslint/only-throw-error": "error",
       "@typescript-eslint/prefer-nullish-coalescing": "error",

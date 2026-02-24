@@ -21,7 +21,7 @@ Demo / Generator : https://particles.js.org/
 GitHub : https://www.github.com/matteobruni/tsparticles
 How to use? : Check the GitHub README
 v${version}`,
-    minBanner = `tsParticles ${effectName} Shape v${version} by Matteo Bruni`;
+    minBanner = `tsParticles ${effectName} Effect v${version} by Matteo Bruni`;
 
   return getConfig({
     entry: { format: "effect", name: moduleName, bundle: false },
