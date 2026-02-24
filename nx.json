@@ -7,11 +7,19 @@
       "dependsOn": [
         "^build"
       ],
+      "outputs": [
+        "{projectRoot}",
+        "{projectRoot}/dist"
+      ],
       "cache": true
     },
     "build:ci": {
       "dependsOn": [
         "^build:ci"
+      ],
+      "outputs": [
+        "{projectRoot}",
+        "{projectRoot}/dist"
       ],
       "cache": true
     },
