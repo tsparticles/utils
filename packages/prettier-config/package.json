@@ -2,11 +2,10 @@
   "name": "@tsparticles/prettier-config",
   "version": "3.1.5",
   "description": "tsParticles default Prettier Configuration",
-  "main": "prettier-config.json",
+  "main": "dist/prettier-config.json",
   "license": "MIT",
   "files": [
-    ".editorconfig",
-    "prettier-config.json"
+    "dist/prettier-config.json"
   ],
   "repository": {
     "type": "git",
@@ -16,8 +15,15 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "build": "cpx ./prettier-config.json ./dist/",
+    "build:ci": "cpx ./prettier-config.json ./dist/"
+  },
   "dependencies": {
     "prettier": "^3.8.1",
     "prettier-plugin-multiline-arrays": "^4.1.4"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
   }
 }

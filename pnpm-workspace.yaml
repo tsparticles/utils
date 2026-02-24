@@ -6,4 +6,6 @@ ignoredBuiltDependencies:
 
 onlyBuiltDependencies:
   - '@swc/core'
+  - core-js
   - esbuild
+  - fsevents

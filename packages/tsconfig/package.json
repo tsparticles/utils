@@ -11,7 +11,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "build": "cpx ./tsconfig.base.json ./dist/ && cpx ./tsconfig.json ./dist/ && cpx ./tsconfig.browser.json ./dist && cpx ./tsconfig.module.json ./dist/ && cpx ./tsconfig.types.json ./dist/ && cpx ./tsconfig.umd.json ./dist/",
+    "build:ci": "cpx ./tsconfig.base.json ./dist/ && cpx ./tsconfig.json ./dist/ && cpx ./tsconfig.browser.json ./dist && cpx ./tsconfig.module.json ./dist/ && cpx ./tsconfig.types.json ./dist/ && cpx ./tsconfig.umd.json ./dist/"
+  },
   "dependencies": {
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
   }
 }
