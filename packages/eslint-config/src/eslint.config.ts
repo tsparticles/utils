@@ -1,4 +1,4 @@
-import { defineConfig } from "eslint/config";
+import { defineConfig, globalIgnores } from "eslint/config";
 import fs from "node:fs";
 import js from "@eslint/js";
 import jsdoc from "eslint-plugin-jsdoc";
@@ -15,13 +15,13 @@ const consumerDir = process.cwd(),
   parserProject = fs.existsSync(consumerTsconfig) ? consumerTsconfig : undefined;
 
 export default defineConfig([
+  globalIgnores(["dist", "node_modules"]),
   js.configs.recommended,
   stylistic.configs.recommended,
   jsdoc.configs["flat/recommended-typescript"],
   ...tseslint.configs.strictTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   {
-    ignores: ["dist", "node_modules"],
     plugins: {
       "@stylistic": stylistic,
       "@typescript-eslint": tseslint.plugin,
