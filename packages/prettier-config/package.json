@@ -16,8 +16,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "cpx ./prettier-config.json ./dist/",
-    "build:ci": "cpx ./prettier-config.json ./dist/"
+    "build": "cpx \"./src/**.*\" ./dist/",
+    "build:ci": "cpx \"./src/**.*\" ./dist/"
   },
   "dependencies": {
     "prettier": "^3.8.1",
