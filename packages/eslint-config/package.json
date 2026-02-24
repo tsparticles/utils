@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/eslint-config",
-  "version": "3.1.5",
+  "version": "3.1.6",
   "description": "tsParticles default ESLint Configuration (ESLint 9 + Flat Config)",
   "type": "module",
   "main": "dist/eslint.config.js",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@eslint/js": "^9.39.3",
     "@stylistic/eslint-plugin": "^5.9.0",
-    "@tsparticles/prettier-config": "workspace:^3.1.5",
+    "@tsparticles/prettier-config": "workspace:^3.1.6",
     "@types/node": "^25.3.0",
     "eslint": "^9.39.3",
     "eslint-config-prettier": "^10.1.8",
