@@ -8,6 +8,11 @@
     ".editorconfig",
     "prettier-config.json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsparticles/utils.git",
+    "directory": "packages/prettier-config"
+  },
   "publishConfig": {
     "access": "public"
   },

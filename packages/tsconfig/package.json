@@ -3,6 +3,11 @@
   "version": "3.1.3",
   "description": "tsParticles default TypeScript Compiler Configuration",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsparticles/utils.git",
+    "directory": "packages/tsconfig"
+  },
   "publishConfig": {
     "access": "public"
   },

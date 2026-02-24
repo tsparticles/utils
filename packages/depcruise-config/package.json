@@ -6,6 +6,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsparticles/utils.git",
+    "directory": "packages/depcruise-config"
+  },
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -48,6 +53,6 @@
     "prettier-plugin-multiline-arrays": "^4.1.4",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.0"
+    "typescript-eslint": "^8.56.1"
   }
 }
