@@ -4,7 +4,7 @@ import { loadParticlesEngine } from "./engine/buildEngine.js";
 import { loadParticlesInteraction } from "./interactions/buildInteraction.js";
 import { loadParticlesInteractionExternal } from "./interactions/external/buildInteractionExternal.js";
 import { loadParticlesInteractionParticles } from "./interactions/particles/buildInteractionParticles.js";
-import { loadParticlesMove } from "./moves/buildMove.js";
+import { loadParticlesPalette } from "./palettes/buildPalette.js";
 import { loadParticlesPath } from "./paths/buildPath.js";
 import { loadParticlesPlugin } from "./plugins/buildPlugin.js";
 import { loadParticlesPluginEasing } from "./plugins/easings/buildEasing.js";
@@ -22,7 +22,7 @@ export {
   loadParticlesInteraction,
   loadParticlesInteractionExternal,
   loadParticlesInteractionParticles,
-  loadParticlesMove,
+  loadParticlesPalette,
   loadParticlesPath,
   loadParticlesPlugin,
   loadParticlesPluginEasing,

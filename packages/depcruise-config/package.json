@@ -43,7 +43,7 @@
     "@stylistic/eslint-plugin": "^5.9.0",
     "@tsparticles/eslint-config": "workspace:^3.1.9",
     "@tsparticles/prettier-config": "workspace:^3.1.9",
-    "@types/node": "^25.3.1",
+    "@types/node": "^25.3.3",
     "eslint": "^9.39.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
