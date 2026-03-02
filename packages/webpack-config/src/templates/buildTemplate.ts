@@ -5,6 +5,7 @@ interface TemplateParams {
   additionalExternals?: ExternalData[];
   dir: string;
   moduleName: string;
+  progress: boolean;
   templateName: string;
   version: string;
 }
@@ -14,7 +15,7 @@ interface TemplateParams {
  * @returns the webpack config
  */
 function loadParticlesTemplate(params: TemplateParams): unknown {
-  const { moduleName, templateName, version, dir, additionalExternals } = params,
+  const { moduleName, templateName, version, dir, additionalExternals, progress } = params,
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
@@ -32,6 +33,7 @@ v${version}`,
       dir,
       bundle: false,
       additionalExternals,
+      progress,
     }),
     ...getConfig({
       entry: { format: "template", name: `${moduleName}.bundle`, bundle: true },
@@ -41,6 +43,7 @@ v${version}`,
       dir,
       bundle: true,
       additionalExternals,
+      progress,
     }),
   ];
 }

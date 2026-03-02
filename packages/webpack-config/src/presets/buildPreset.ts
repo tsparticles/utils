@@ -6,6 +6,7 @@ interface PresetParams {
   dir: string;
   moduleName: string;
   presetName: string;
+  progress: boolean;
   version: string;
 }
 
@@ -14,7 +15,7 @@ interface PresetParams {
  * @returns the webpack config
  */
 function loadParticlesPreset(params: PresetParams): unknown {
-  const { moduleName, presetName, version, dir, additionalExternals } = params,
+  const { moduleName, presetName, version, dir, additionalExternals, progress } = params,
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
@@ -32,6 +33,7 @@ v${version}`,
       dir,
       bundle: false,
       additionalExternals,
+      progress,
     }),
     ...getConfig({
       entry: { format: "preset", name: `${moduleName}.bundle`, bundle: true },
@@ -41,6 +43,7 @@ v${version}`,
       dir,
       bundle: true,
       additionalExternals,
+      progress,
     }),
   ];
 }

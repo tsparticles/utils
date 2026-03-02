@@ -4,6 +4,7 @@ import { getConfig } from "../common/getConfig.js";
 interface EngineParams {
   additionalExternals?: ExternalData[];
   dir: string;
+  progress: boolean;
   version: string;
 }
 
@@ -12,7 +13,7 @@ interface EngineParams {
  * @returns the webpack config
  */
 function loadParticlesEngine(params: EngineParams): unknown {
-  const { additionalExternals, dir, version } = params,
+  const { additionalExternals, dir, version, progress } = params,
     banner = `tsParticles Engine v${version}
 Author: Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
@@ -30,6 +31,7 @@ How to use?: Check the GitHub README
     minBanner: minBanner,
     dir,
     bundle: false,
+    progress,
     additionalExternals,
   });
 }

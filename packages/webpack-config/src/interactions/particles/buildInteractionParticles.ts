@@ -6,6 +6,7 @@ interface InteractionParticlesParams {
   dir: string;
   moduleName: string;
   pluginName: string;
+  progress: boolean;
   version: string;
 }
 
@@ -14,7 +15,7 @@ interface InteractionParticlesParams {
  * @returns the webpack config
  */
 function loadParticlesInteractionParticles(params: InteractionParticlesParams): unknown {
-  const { moduleName, pluginName, version, dir, additionalExternals } = params,
+  const { moduleName, pluginName, version, dir, additionalExternals, progress } = params,
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
@@ -34,6 +35,7 @@ v${version}`,
     minBanner: minBanner,
     dir,
     bundle: false,
+    progress,
     additionalExternals,
   });
 }

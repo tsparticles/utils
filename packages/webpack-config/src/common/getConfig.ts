@@ -17,6 +17,7 @@ interface ConfigParams {
     name?: string;
   };
   minBanner: string;
+  progress: boolean;
   version: string;
 }
 
@@ -80,14 +81,14 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
         banner: minBanner,
         include: /\.min\.js$/,
       }),
-      new webpack.ProgressPlugin(),
+      params.progress ? new webpack.ProgressPlugin() : undefined,
       new BundleAnalyzerPlugin({
         openAnalyzer: false,
         analyzerMode: "static",
         excludeAssets: /\.min\.js$/,
         reportFilename: "report.html",
       }),
-    ],
+    ].filter(Boolean),
     optimization: {
       minimize: true,
       minimizer: [

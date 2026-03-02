@@ -6,6 +6,7 @@ interface PaletteParams {
   dir: string;
   moduleName: string;
   paletteName: string;
+  progress: boolean;
   version: string;
 }
 
@@ -14,7 +15,7 @@ interface PaletteParams {
  * @returns the webpack config
  */
 function loadParticlesPalette(params: PaletteParams): unknown {
-  const { moduleName, paletteName, version, dir, additionalExternals } = params,
+  const { moduleName, paletteName, version, dir, additionalExternals, progress } = params,
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
@@ -32,6 +33,7 @@ v${version}`,
       dir,
       bundle: false,
       additionalExternals,
+      progress,
     }),
     ...getConfig({
       entry: { format: "palette", name: `${moduleName}.bundle`, bundle: true },
@@ -41,6 +43,7 @@ v${version}`,
       dir,
       bundle: true,
       additionalExternals,
+      progress,
     }),
   ];
 }

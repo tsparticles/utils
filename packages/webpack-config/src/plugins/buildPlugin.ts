@@ -7,6 +7,7 @@ interface PluginParams {
   dir: string;
   moduleName: string;
   pluginName: string;
+  progress: boolean;
   version: string;
 }
 
@@ -15,7 +16,7 @@ interface PluginParams {
  * @returns the webpack config
  */
 function loadParticlesPlugin(params: PluginParams): unknown {
-  const { moduleName, pluginName, version, dir, bundle, additionalExternals } = params,
+  const { moduleName, pluginName, version, dir, bundle, additionalExternals, progress } = params,
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
@@ -34,6 +35,7 @@ v${version}`,
           dir,
           bundle: false,
           additionalExternals,
+          progress,
         }),
         ...getConfig({
           entry: { format: "plugin", name: `${moduleName}.bundle`, bundle: true },
@@ -43,6 +45,7 @@ v${version}`,
           dir,
           bundle: true,
           additionalExternals,
+          progress,
         }),
       ]
     : getConfig({
@@ -53,6 +56,7 @@ v${version}`,
         dir,
         bundle: false,
         additionalExternals,
+        progress,
       });
 }
 
