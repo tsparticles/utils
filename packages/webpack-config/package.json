@@ -36,7 +36,7 @@
     "@tsparticles/eslint-config": "workspace:^3.1.9",
     "@tsparticles/prettier-config": "workspace:^3.1.9",
     "browserslist": "^4.28.1",
-    "eslint": "^9.39.3",
+    "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsdoc": "^62.7.1",
