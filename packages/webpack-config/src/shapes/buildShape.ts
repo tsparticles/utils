@@ -5,6 +5,7 @@ interface ShapeParams {
   additionalExternals?: ExternalData[];
   dir: string;
   moduleName: string;
+  progress: boolean;
   shapeName: string;
   version: string;
 }
@@ -14,7 +15,7 @@ interface ShapeParams {
  * @returns the webpack config
  */
 function loadParticlesShape(params: ShapeParams): unknown {
-  const { moduleName, shapeName, version, dir, additionalExternals } = params,
+  const { moduleName, shapeName, version, dir, additionalExternals, progress } = params,
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
 Demo / Generator : https://particles.js.org/
@@ -31,6 +32,7 @@ v${version}`,
     dir,
     bundle: false,
     additionalExternals,
+    progress,
   });
 }
 

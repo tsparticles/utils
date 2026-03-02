@@ -7,6 +7,7 @@ interface BundleParams {
   bundleName: string;
   dir: string;
   moduleName: string;
+  progress: boolean;
   version: string;
 }
 
@@ -15,7 +16,7 @@ interface BundleParams {
  * @returns the webpack config
  */
 function loadParticlesBundle(params: BundleParams): unknown {
-  const { additionalExternals, bundle, bundleName, dir, moduleName, version } = params,
+  const { additionalExternals, bundle, bundleName, dir, moduleName, progress, version } = params,
     fixBundleName = bundleName ? `${bundleName} ` : "",
     banner = `Author : Matteo Bruni
 MIT license: https://opensource.org/licenses/MIT
@@ -31,6 +32,7 @@ v${version}`,
       minBanner: minBanner,
       dir,
       bundle: false,
+      progress,
       additionalExternals,
     });
 
@@ -43,6 +45,7 @@ v${version}`,
         minBanner: minBanner,
         dir,
         bundle: true,
+        progress,
         additionalExternals,
       }),
     );
