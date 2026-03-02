@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/tsparticles/utils/compare/v3.1.9...v3.2.0) (2026-03-02)
+
+
+### Features
+
+* added progress flag to webpack config ([cb3aadb](https://github.com/tsparticles/utils/commit/cb3aadb8eb9447ac4ef3230b19eaf26432593264))
+
+
+
+
+
 ## [3.1.9](https://github.com/tsparticles/utils/compare/v3.1.8...v3.1.9) (2026-02-24)
 
 **Note:** Version bump only for package tsparticles-utils-root
