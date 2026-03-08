@@ -90,7 +90,7 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
       }),
     ].filter(Boolean),
     optimization: {
-      minimize: true,
+      minimize: min,
       minimizer: [
         new TerserPlugin({
           include: /\.min\.js$/,
