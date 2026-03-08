@@ -1,6 +1,6 @@
 # Codebase Structure
 
-**Analysis Date:** 2026-03-01
+**Analysis Date:** 2026-03-08
 
 ## Directory Layout (top-level)
 
@@ -98,4 +98,4 @@ Recommended file templates and examples:
 
 ---
 
-*Structure analysis: 2026-03-01*
+*Structure analysis: 2026-03-08*

@@ -1,6 +1,6 @@
 # Coding Conventions
 
-**Analysis Date:** 2026-03-01
+**Analysis Date:** 2026-03-08
 
 This repository is a TypeScript monorepo of build / config utilities. The project-level conventions are enforced by shared config packages included under `packages/` and by CI. Follow the rules below when adding or editing code.
 
@@ -72,4 +72,4 @@ This repository is a TypeScript monorepo of build / config utilities. The projec
 
 If you are adding a new package, consume these shareable configs in the package `package.json` and add `lint`/`prettify` scripts similar to `packages/depcruise-config/package.json`.
 
-*Convention analysis: 2026-03-01*
+*Convention analysis: 2026-03-08*
