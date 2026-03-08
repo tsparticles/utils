@@ -18,10 +18,11 @@
     "build": "cpx \"./src/**.*\" ./dist/",
     "build:ci": "cpx \"./src/**.*\" ./dist/"
   },
-  "dependencies": {
-    "typescript": "^5.9.3"
+  "peerDependencies": {
+    "typescript": "^5"
   },
   "devDependencies": {
-    "cpx2": "^8.0.0"
+    "cpx2": "^8.0.0",
+    "typescript": "^5.9.3"
   }
 }
