@@ -1,6 +1,6 @@
 # Testing Patterns
 
-**Analysis Date:** 2026-03-01
+**Analysis Date:** 2026-03-08
 
 Scope: This repository contains tooling packages and shared configs (ESLint, Prettier, tsconfig, webpack presets). There is no central test runner configuration at the repository root. This document summarizes how tests should be added and the conventions used across the packages.
 
@@ -62,4 +62,4 @@ Scope: This repository contains tooling packages and shared configs (ESLint, Pre
 12) Summary
 - Tests are not present in this repository currently. When adding tests, conform to the monorepo patterns: co-locate tests, add package scripts, enforce formatting/linting, and register CI targets in `.github/workflows/node.js-ci.yml` to run tests via Nx.
 
-*Testing analysis: 2026-03-01*
+*Testing analysis: 2026-03-08*
