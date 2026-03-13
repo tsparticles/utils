@@ -38,7 +38,7 @@
     "browserslist": "^4.28.1",
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-jsdoc": "^62.7.1",
+    "eslint-plugin-jsdoc": "^62.8.0",
     "eslint-plugin-tsdoc": "^0.5.2",
     "prettier": "^3.8.1",
     "prettier-plugin-multiline-arrays": "^4.1.4",
@@ -51,7 +51,7 @@
     "webpack-cli": "^6.0.1"
   },
   "devDependencies": {
-    "@types/node": "^25.4.0",
+    "@types/node": "^25.5.0",
     "@types/webpack-bundle-analyzer": "^4.7.0",
     "@types/webpack-env": "^1.18.8",
     "rimraf": "^6.1.3"
