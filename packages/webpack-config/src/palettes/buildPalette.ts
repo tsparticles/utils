@@ -35,16 +35,6 @@ v${version}`,
       additionalExternals,
       progress,
     }),
-    ...getConfig({
-      entry: { format: "palette", name: `${moduleName}.bundle`, bundle: true },
-      version,
-      banner,
-      minBanner: minBanner,
-      dir,
-      bundle: true,
-      additionalExternals,
-      progress,
-    }),
   ];
 }
 
