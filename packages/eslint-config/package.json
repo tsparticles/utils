@@ -35,7 +35,7 @@
     "eslint-plugin-tsdoc": "^0.5.2",
     "jiti": "^2.6.1",
     "prettier": "^3.8.1",
-    "prettier-plugin-multiline-arrays": "^4.1.4",
+    "prettier-plugin-multiline-arrays": "^4.1.5",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.0"
   },
