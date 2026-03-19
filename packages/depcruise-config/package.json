@@ -52,6 +52,6 @@
     "prettier-plugin-multiline-arrays": "^4.1.5",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.0"
+    "typescript-eslint": "^8.57.1"
   }
 }
