@@ -10,7 +10,9 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
-    "sourceRoot": "src",
-    "sourceMap": true
+    "sourceRoot": "./src",
+    "rootDir": "./src",
+    "sourceMap": true,
+    "types": ["node"]
   }
 }
