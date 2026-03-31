@@ -79,5 +79,6 @@
     "production": [
       "default"
     ]
-  }
+  },
+  "analytics": true
 }

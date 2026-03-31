@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/depcruise-config",
-  "version": "3.3.3",
+  "version": "3.4.1",
   "private": false,
   "type": "module",
   "publishConfig": {
@@ -41,17 +41,20 @@
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tsparticles/eslint-config": "workspace:^3.3.3",
-    "@tsparticles/prettier-config": "workspace:^3.3.3",
+    "@tsparticles/eslint-config": "workspace:^3.4.1",
+    "@tsparticles/prettier-config": "workspace:^3.4.1",
     "@types/node": "^25.5.0",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-jsdoc": "^62.8.0",
+    "eslint-plugin-jsdoc": "^62.8.1",
     "eslint-plugin-tsdoc": "^0.5.2",
     "prettier": "^3.8.1",
-    "prettier-plugin-multiline-arrays": "^4.1.4",
+    "prettier-plugin-multiline-arrays": "^4.1.5",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.0"
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.0"
+  },
+  "patchedDependencies": {
+    "tsup@8.5.1": "patches/tsup@8.5.1.patch"
   }
 }

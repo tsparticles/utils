@@ -28,13 +28,13 @@ jobs:
           fetch-depth: 0
 
       - name: Derive SHAs for nx affected
-        uses: nrwl/nx-set-shas@v4
+        uses: nrwl/nx-set-shas@v5
 
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
 
-      - uses: pnpm/action-setup@v4.3.0
+      - uses: pnpm/action-setup@v5.0.0
         with:
           run_install: false
 

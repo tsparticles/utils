@@ -27,7 +27,7 @@ export default defineConfig([
       "@typescript-eslint": tseslint.plugin,
       jsdoc,
       tsdoc,
-      prettierPlugin,
+      prettier: prettierPlugin,
     },
     languageOptions: {
       parser: tseslint.parser,
