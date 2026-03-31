@@ -19,7 +19,7 @@
     "build:ci": "cpx \"./src/**.*\" ./dist/"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5 || ^6.0.0"
   },
   "devDependencies": {
     "cpx2": "^8.0.0",
