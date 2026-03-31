@@ -1,8 +1,6 @@
 import { defineConfig, globalIgnores } from "eslint/config";
-import fs from "node:fs";
 import js from "@eslint/js";
 import jsdoc from "eslint-plugin-jsdoc";
-import path from "node:path";
 import prettierConfig from "eslint-config-prettier/flat";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierRecommended from "eslint-plugin-prettier/recommended";
@@ -29,7 +27,7 @@ export default defineConfig([
       parser: tseslint.parser,
       parserOptions: {
         project: "./tsconfig.json",
-        tsconfigRootDir: __dirname,
+        tsconfigRootDir: import.meta.url,
       },
     },
     rules: {
