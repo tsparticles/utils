@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/tsconfig",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "description": "tsParticles default TypeScript Compiler Configuration",
   "license": "MIT",
   "repository": {
@@ -19,7 +19,7 @@
     "build:ci": "cpx \"./src/**.*\" ./dist/"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^6"
   },
   "devDependencies": {
     "cpx2": "^8.0.0",
