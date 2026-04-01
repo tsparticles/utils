@@ -36,10 +36,10 @@ importers:
         specifier: ^5.10.0
         version: 5.10.0(eslint@10.1.0(jiti@2.6.1))
       '@tsparticles/eslint-config':
-        specifier: workspace:^3.4.2
+        specifier: workspace:^3.4.3
         version: link:../eslint-config
       '@tsparticles/prettier-config':
-        specifier: workspace:^3.4.2
+        specifier: workspace:^3.4.3
         version: link:../prettier-config
       '@types/node':
         specifier: ^25.5.0
@@ -81,7 +81,7 @@ importers:
         specifier: ^5.10.0
         version: 5.10.0(eslint@10.1.0(jiti@2.6.1))
       '@tsparticles/prettier-config':
-        specifier: workspace:^3.4.2
+        specifier: workspace:^3.4.3
         version: link:../prettier-config
       eslint-config-prettier:
         specifier: ^10.1.8
@@ -149,10 +149,10 @@ importers:
         specifier: ^1.15.21
         version: 1.15.21
       '@tsparticles/eslint-config':
-        specifier: workspace:^3.4.2
+        specifier: workspace:^3.4.3
         version: link:../eslint-config
       '@tsparticles/prettier-config':
-        specifier: workspace:^3.4.2
+        specifier: workspace:^3.4.3
         version: link:../prettier-config
       browserslist:
         specifier: ^4.28.2
