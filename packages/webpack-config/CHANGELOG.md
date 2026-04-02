@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.4](https://github.com/tsparticles/utils/compare/v3.4.3...v3.4.4) (2026-04-02)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
+## [3.4.3](https://github.com/tsparticles/utils/compare/v3.4.2...v3.4.3) (2026-04-01)
+
+**Note:** Version bump only for package @tsparticles/webpack-plugin
+
+
+
+
+
 ## [3.4.2](https://github.com/tsparticles/utils/compare/v3.4.1...v3.4.2) (2026-03-31)
 
 **Note:** Version bump only for package @tsparticles/webpack-plugin
