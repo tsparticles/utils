@@ -35,6 +35,6 @@
     "types": [],
     "useDefineForClassFields": true,
     "useUnknownInCatchVariables": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": false
   }
 }
