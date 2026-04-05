@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.6](https://github.com/tsparticles/utils/compare/v3.4.5...v3.4.6) (2026-04-05)
+
+**Note:** Version bump only for package @tsparticles/eslint-config
+
+
+
+
+
 ## [3.4.5](https://github.com/tsparticles/utils/compare/v3.4.4...v3.4.5) (2026-04-02)
 
 **Note:** Version bump only for package @tsparticles/eslint-config

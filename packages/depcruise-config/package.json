@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/depcruise-config",
-  "version": "3.4.5",
+  "version": "3.4.6",
   "private": false,
   "type": "module",
   "publishConfig": {
@@ -41,8 +41,8 @@
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tsparticles/eslint-config": "workspace:^3.4.5",
-    "@tsparticles/prettier-config": "workspace:^3.4.5",
+    "@tsparticles/eslint-config": "workspace:^3.4.6",
+    "@tsparticles/prettier-config": "workspace:^3.4.6",
     "@types/node": "^25.5.2",
     "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
