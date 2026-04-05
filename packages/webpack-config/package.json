@@ -32,13 +32,13 @@
   "prettier": "@tsparticles/prettier-config",
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@swc/core": "^1.15.21",
+    "@swc/core": "^1.15.24",
     "@tsparticles/eslint-config": "workspace:^3.4.5",
     "@tsparticles/prettier-config": "workspace:^3.4.5",
     "browserslist": "^4.28.2",
-    "eslint": "^10.1.0",
+    "eslint": "^10.2.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-jsdoc": "^62.8.1",
+    "eslint-plugin-jsdoc": "^62.9.0",
     "eslint-plugin-tsdoc": "^0.5.2",
     "prettier": "^3.8.1",
     "prettier-plugin-multiline-arrays": "^4.1.5",
@@ -51,7 +51,7 @@
     "webpack-cli": "^7.0.2"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.5.2",
     "@types/webpack-bundle-analyzer": "^4.7.0",
     "@types/webpack-env": "^1.18.8",
     "rimraf": "^6.1.3"
