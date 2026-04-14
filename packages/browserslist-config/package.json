@@ -1,0 +1,28 @@
+{
+  "name": "@tsparticles/browserslist-config",
+  "version": "3.4.6",
+  "description": "tsParticles default Browserslist configuration",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsparticles/utils.git",
+    "directory": "packages/browserslist-config"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "cpx \"./src/**.*\" ./dist/",
+    "build:ci": "cpx \"./src/**.*\" ./dist/"
+  },
+  "devDependencies": {
+    "browserslist": "^4.28.2",
+    "cpx2": "^8.0.1"
+  },
+  "peerDependencies": {
+    "browserslist": "^4"
+  }
+}
