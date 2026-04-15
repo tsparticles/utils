@@ -10,11 +10,13 @@ pnpm add -D @tsparticles/browserslist-config browserslist
 
 ## Included Query
 
-Current configuration (`src/browserslist`):
+Current configuration (`src/index.js` export):
 
-```text
-since 2021
-not dead
+```js
+module.exports = [
+  "since 2021",
+  "not dead",
+];
 ```
 
 ## Usage
