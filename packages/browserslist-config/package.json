@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "browserslist": "^4.28.2",
-    "cpx2": "^8.0.1"
+    "cpx2": "^8.0.2"
   },
   "peerDependencies": {
     "browserslist": "^4"
