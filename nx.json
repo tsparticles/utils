@@ -2,6 +2,28 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "extends": "nx/presets/npm.json",
   "nxCloudId": "6356722b6ecea758750bfdfd",
+  "release": {
+    "projectsRelationship": "fixed",
+    "version": {
+      "conventionalCommits": true,
+      "generatorOptions": {
+        "fallbackCurrentVersionResolver": "disk"
+      }
+    },
+    "changelog": {
+      "workspaceChangelog": true,
+      "projectChangelogs": false
+    },
+    "git": {
+      "commit": true,
+      "commitMessage": "chore(release): published new version",
+      "tag": true,
+      "stageChanges": true
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
   "targetDefaults": {
     "build": {
       "dependsOn": [
@@ -34,36 +56,6 @@
         "^package"
       ]
     }
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "build:ci",
-          "test",
-          "lint",
-          "package",
-          "prepare"
-        ]
-      }
-    },
-    "local": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "build:ci",
-          "lint",
-          "test",
-          "e2e"
-        ]
-      }
-    }
-  },
-  "affected": {
-    "defaultBase": "main"
   },
   "pluginsConfig": {
     "@nrwl/js": {

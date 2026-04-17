@@ -88,8 +88,8 @@ This document lists technical debt, security and performance concerns, fragile a
     - Centralize discovery/registry patterns for builders or provide an explicit plugin registration API.
 
 10) Publish pipeline lacks verification tests (Low)
-- Symptom: Publishing uses `lerna` and `prepack` scripts but there is no automated `pack`/smoke verification in CI.
-  - Evidence: Root `package.json` (`./package.json`) contains `lerna` scripts; packages include `prepack` entries (e.g., `packages/depcruise-config/package.json`, `packages/webpack-config/package.json`). `.github/workflows/npm-publish.yml` orchestrates publishing.
+- Symptom: Publishing uses Nx Release and `prepack` scripts but there is no automated `pack`/smoke verification in CI.
+  - Evidence: Root `package.json` (`./package.json`) contains Nx Release scripts (`version:*`, `publish:*`); packages include `prepack` entries (e.g., `packages/depcruise-config/package.json`, `packages/webpack-config/package.json`). `.github/workflows/npm-publish.yml` orchestrates publishing.
   - Impact: Published packages may omit expected files (`dist`, `types`) or expose incorrect `exports`/`files` fields.
   - Fix approach:
     - Add CI job that runs `pnpm pack` for each package and inspects the tarball contents for expected files.

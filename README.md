@@ -39,7 +39,7 @@ pnpm nx affected -t build
 
 ## Release Flow
 
-Versioning and publishing are managed with Lerna using conventional commits.
+Versioning and publishing are managed with Nx Release using conventional commits.
 
 ```bash
 # pre-release version bump

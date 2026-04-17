@@ -4,7 +4,7 @@
 
 ## Pattern Overview
 
-Overall: Monorepo for developer tooling and shared configs built and orchestrated with Nx + pnpm (workspace) and Lerna for publishing.
+Overall: Monorepo for developer tooling and shared configs built and orchestrated with Nx + pnpm workspaces, with Nx Release for publishing.
 
 Key characteristics:
 - Package-per-concern layout: each directory under `packages/` is an independently versioned npm package (examples: `packages/webpack-config`, `packages/depcruise-config`, `packages/eslint-config`).
@@ -16,7 +16,7 @@ This repository is a tooling/configuration library workspace; there is no applic
 ## High-level Components
 
 - Workspace root:
-  - `package.json` (root) — workspace settings and root scripts: `build`, `build:ci`, lerna flows. See `package.json` at repo root.
+  - `package.json` (root) — workspace settings and root scripts: `build`, `build:ci`, and Nx Release flows. See `package.json` at repo root.
   - `pnpm-workspace.yaml` — workspace package globs (includes `packages/*`).
   - `nx.json` — Nx defaults and task configuration. See `nx.json` for `build`, `build:ci` defaults and `outputs` config.
 
@@ -51,7 +51,7 @@ High-level flow for change → package publication:
 1. Developer edits `packages/<pkg>/src/*` (e.g. `packages/webpack-config/src/templates/buildTemplate.ts`).
 2. Local/CI: `pnpm install` then `npx nx run-many -t build` or `npx nx affected -t build:ci` (CI uses affected detection). See `.github/workflows/node.js-ci.yml`.
 3. Package build scripts (`tsup`, `tsc`, `cpx`) produce `packages/<pkg>/dist/` and `package.json` normally lists `dist` in `files`.
-4. Publishing uses `lerna` flows defined in root `package.json` (scripts `version:alpha`/`version:beta`, `publish:alpha`/`publish:beta`) or CI `npm-publish` workflow.
+4. Publishing uses Nx Release flows defined in root `package.json` (scripts `version:alpha`/`version:beta`, `publish:alpha`/`publish:beta`) or CI `npm-publish` workflow.
 
 ASCII diagram (simplified):
 
