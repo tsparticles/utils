@@ -18,6 +18,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@nx/js": "^22.7.0",
     "@nx/devkit": "^22.7.0",
     "nx": "^22.7.0",
     "nx-cloud": "^19.1.3",

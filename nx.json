@@ -8,17 +8,21 @@
       "conventionalCommits": true,
       "generatorOptions": {
         "fallbackCurrentVersionResolver": "disk"
+      },
+      "git": {
+        "commit": true,
+        "commitMessage": "chore(release): published new version",
+        "tag": true,
+        "stageChanges": true
       }
     },
     "changelog": {
       "workspaceChangelog": true,
-      "projectChangelogs": false
-    },
-    "git": {
-      "commit": true,
-      "commitMessage": "chore(release): published new version",
-      "tag": true,
-      "stageChanges": true
+      "projectChangelogs": false,
+      "git": {
+        "commit": true,
+        "stageChanges": true
+      }
     }
   },
   "affected": {
