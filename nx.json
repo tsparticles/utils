@@ -6,9 +6,6 @@
     "projectsRelationship": "fixed",
     "version": {
       "conventionalCommits": true,
-      "generatorOptions": {
-        "fallbackCurrentVersionResolver": "disk"
-      },
       "git": {
         "commit": true,
         "commitMessage": "chore(release): published new version",
