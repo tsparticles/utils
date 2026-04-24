@@ -20,7 +20,7 @@
     "build:ci": "cpx \"./src/**.*\" ./dist/"
   },
   "dependencies": {
-    "prettier-plugin-multiline-arrays": "^4.1.5"
+    "prettier-plugin-multiline-arrays": "^4.1.7"
   },
   "devDependencies": {
     "cpx2": "^8.0.2",

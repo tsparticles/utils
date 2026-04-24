@@ -3,7 +3,7 @@ import type { ExternalData } from "./ExternalData.js";
 import TerserPlugin from "terser-webpack-plugin";
 import { getEntry } from "./getEntry.js";
 import { getExternals } from "./getExternals.js";
-import path from "path";
+import path from "node:path";
 import webpack from "webpack";
 
 interface ConfigParams {
@@ -25,13 +25,14 @@ interface ConfigParams {
  *
  * @param params -
  * @param min -
+ * @param lazy -
  * @returns the webpack configuration
  */
-function getSingleConfig(params: ConfigParams, min: boolean): unknown {
+function getSingleConfig(params: ConfigParams, min: boolean, lazy: boolean): unknown {
   const { additionalExternals, banner, bundle, dir, entry, minBanner, version } = params;
 
   return {
-    entry: getEntry({ ...entry, min }),
+    entry: getEntry({ ...entry, min, lazy }),
     target: "web",
     mode: min ? "production" : "development",
     output: {
@@ -116,7 +117,12 @@ function getSingleConfig(params: ConfigParams, min: boolean): unknown {
 }
 
 const getConfig = (params: ConfigParams): unknown[] => {
-  return [getSingleConfig(params, false), getSingleConfig(params, true)];
+  return [
+    getSingleConfig(params, false, false),
+    getSingleConfig(params, true, false),
+    getSingleConfig(params, false, true),
+    getSingleConfig(params, true, true),
+  ];
 };
 
 export { getConfig };
