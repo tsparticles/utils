@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: '24'
 
-      - uses: pnpm/action-setup@v5.0.0
+      - uses: pnpm/action-setup@v6.0.3
         with:
           run_install: false
 
