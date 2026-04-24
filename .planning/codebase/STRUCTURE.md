@@ -22,7 +22,7 @@
 │   └── tsconfig/            # shared TypeScript compiler configurations
 ├── nx.json                  # Nx configuration and task defaults
 ├── pnpm-workspace.yaml      # Workspace package globs
-├── package.json             # Root workspace scripts and lerna config
+├── package.json             # Root workspace scripts and release config
 └── .planning/               # Generated mapping docs (this folder)
 ```
 
@@ -45,7 +45,7 @@
   - `packages/tsconfig/src/` — TypeScript base `tsconfig` files
 
 **Root files**:
-- `package.json` — defines workspaces, root scripts (`build`, `build:ci`) and `lerna` commands.
+- `package.json` — defines workspaces, root scripts (`build`, `build:ci`) and Nx Release commands.
 - `pnpm-workspace.yaml` — workspace package glob (includes `packages/*`).
 - `nx.json` — Nx configuration controlling default targets, outputs and caching. See `nx.json` lines configuring `build`, `build:ci`, and outputs to `{projectRoot}/dist`.
 

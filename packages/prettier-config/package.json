@@ -1,6 +1,6 @@
 {
   "name": "@tsparticles/prettier-config",
-  "version": "3.4.6",
+  "version": "3.4.11",
   "description": "tsParticles default Prettier Configuration",
   "main": "dist/prettier-config.json",
   "license": "MIT",
@@ -20,11 +20,11 @@
     "build:ci": "cpx \"./src/**.*\" ./dist/"
   },
   "dependencies": {
-    "prettier-plugin-multiline-arrays": "^4.1.5"
+    "prettier-plugin-multiline-arrays": "^4.1.7"
   },
   "devDependencies": {
-    "cpx2": "^8.0.1",
-    "prettier": "^3.8.1"
+    "cpx2": "^8.0.2",
+    "prettier": "^3.8.3"
   },
   "peerDependencies": {
     "prettier": "^3"

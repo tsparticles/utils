@@ -2,6 +2,44 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "extends": "nx/presets/npm.json",
   "nxCloudId": "6356722b6ecea758750bfdfd",
+  "release": {
+    "projectsRelationship": "fixed",
+    "groups": {
+      "all": {
+        "projects": [
+          "@tsparticles/browserslist-config",
+          "@tsparticles/depcruise-config",
+          "@tsparticles/prettier-config",
+          "@tsparticles/webpack-plugin",
+          "@tsparticles/eslint-config",
+          "@tsparticles/tsconfig"
+        ]
+        ,
+        "releaseTagPattern": "v{version}"
+      }
+    },
+    "version": {
+      "conventionalCommits": true,
+      "updateDependents": true,
+      "git": {
+        "commit": true,
+        "commitMessage": "chore(release): published new version",
+        "tag": true,
+        "stageChanges": true
+      }
+    },
+    "changelog": {
+      "workspaceChangelog": true,
+      "projectChangelogs": false,
+      "git": {
+        "commit": true,
+        "stageChanges": true
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
+  },
   "targetDefaults": {
     "build": {
       "dependsOn": [
@@ -34,36 +72,6 @@
         "^package"
       ]
     }
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "build:ci",
-          "test",
-          "lint",
-          "package",
-          "prepare"
-        ]
-      }
-    },
-    "local": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "build:ci",
-          "lint",
-          "test",
-          "e2e"
-        ]
-      }
-    }
-  },
-  "affected": {
-    "defaultBase": "main"
   },
   "pluginsConfig": {
     "@nrwl/js": {

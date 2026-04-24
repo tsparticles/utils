@@ -52,8 +52,8 @@ This repository is a TypeScript monorepo of build / config utilities. The projec
 - `console` usage is disallowed by `no-console`. Use package-level logging utilities if present in a package, or throw errors and return structured results. If you must log for scripts, gate logging behind a flag and avoid leaving `console` in committed library code.
 
 8) Commit messages and release conventions
-- This workspace uses Lerna with `--conventional-commits` for automated changelogs and prerelease workflows (see root `package.json` scripts: `version:alpha` and `version:beta`). Use conventional commit messages when bumping versions or creating releases.
-  - See `package.json` at repository root for the Lerna scripts.
+- This workspace uses Nx Release for automated changelogs and prerelease workflows (see root `package.json` scripts: `version:alpha` and `version:beta`). Use conventional commit messages when bumping versions or creating releases.
+  - See `package.json` at repository root for the Nx Release scripts.
 
 9) Scripts & CI
 - Lint and format scripts are defined per-package. Examples:

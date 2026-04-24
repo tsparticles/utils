@@ -19,16 +19,16 @@ Overview
   - Trigger: `on: push` for tags `v*`
   - Setup Node (Node 24) with `registry-url: https://registry.npmjs.org`
   - Build: `npx nx run-many -t build:ci`
-  - Publish: `npx lerna publish from-package` (tag-based pre-release branching for alpha/beta)
+  - Publish: `pnpm exec nx release publish --skip-version` (with alpha/beta tag handling)
 
 2) Nx Cloud (distributed execution & caching)
 - Configuration: `nx.json` defines `tasksRunnerOptions.default.runner` = `nx-cloud` and cacheable operations. File: `nx.json`.
 - CI workflows set environment variables: `NX_CLOUD_DISTRIBUTED_EXECUTION: true` and pass `NX_CLOUD_ACCESS_TOKEN` from GitHub Secrets. See `/.github/workflows/node.js-ci.yml` and `/.github/workflows/npm-publish.yml` (env section).
 - Files referencing Nx Cloud: `nx.json`, `/.github/workflows/node.js-ci.yml`, `/.github/workflows/npm-publish.yml`.
 
-3) Package publishing (NPM via Lerna)
-- Lerna config: `lerna.json` and root `package.json` scripts (`version:alpha`, `publish:alpha`, `publish:beta`).
-- Publishing workflow: `/.github/workflows/npm-publish.yml` runs `npx lerna publish from-package` and uses OIDC & repository permissions instead of storing long-lived npm tokens in repo.
+3) Package publishing (NPM via Nx Release)
+- Release config: root `package.json` scripts (`version:alpha`, `publish:alpha`, `publish:beta`).
+- Publishing workflow: `/.github/workflows/npm-publish.yml` runs `pnpm exec nx release publish --skip-version` and uses OIDC & repository permissions instead of storing long-lived npm tokens in repo.
 - Registry: `https://registry.npmjs.org` configured in workflow `actions/setup-node` step.
 
 4) Caching & package manager support
@@ -53,11 +53,11 @@ Overview
 9) Where integrations are configured (quick paths)
 - GitHub Actions workflows: `/.github/workflows/node.js-ci.yml`, `/.github/workflows/npm-publish.yml`.
 - Nx Cloud runner config: `nx.json`.
-- Lerna config + publish scripts: `lerna.json`, `package.json` (root).
+- Nx Release publish scripts: `package.json` (root).
 
 10) Credentials patterns & cautions
 - Secrets are supplied via GitHub Secrets (e.g., `NX_CLOUD_ACCESS_TOKEN`) — verify they are not replicated in source.
-- Publishing uses OIDC and repository permissions rather than long-lived npm tokens committed in repo (see `/.github/workflows/npm-publish.yml` `actions/setup-node` usage and `npx lerna publish from-package`).
+- Publishing uses OIDC and repository permissions rather than long-lived npm tokens committed in repo (see `/.github/workflows/npm-publish.yml` `actions/setup-node` usage and `pnpm exec nx release publish --skip-version`).
 
 11) Recommended checks when modifying integrations
 - If you change Nx Cloud usage, ensure `NX_CLOUD_ACCESS_TOKEN` remains configured in repository secrets or fallback runner will be used (see `nx.json` tasks runner `local`).
