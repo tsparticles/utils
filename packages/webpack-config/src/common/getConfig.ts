@@ -1,7 +1,6 @@
 import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import type { ExternalData } from "./ExternalData.js";
 import TerserPlugin from "terser-webpack-plugin";
-import type { TransformOptions } from "esbuild";
 import { getEntry } from "./getEntry.js";
 import { getExternals } from "./getExternals.js";
 import path from "node:path";
@@ -94,17 +93,18 @@ function getSingleConfig(params: ConfigParams, min: boolean, lazy: boolean): unk
     optimization: {
       minimize: min,
       minimizer: [
-        new TerserPlugin<TransformOptions>({
+        new TerserPlugin({
           include: /\.min\.js$/,
-          minify: TerserPlugin.esbuildMinify,
           parallel: true,
           terserOptions: {
-            minify: true,
-            minifyWhitespace: true,
-            minifyIdentifiers: true,
-            minifySyntax: true,
-            legalComments: "none",
-            target: "es2022",
+            compress: {
+              unused: true,
+              dead_code: true,
+            },
+            mangle: true,
+            format: {
+              comments: false,
+            },
           },
         }),
       ],
