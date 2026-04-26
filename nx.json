@@ -4,26 +4,16 @@
   "nxCloudId": "6356722b6ecea758750bfdfd",
   "release": {
     "projectsRelationship": "fixed",
-    "groups": {
-      "all": {
-        "projects": [
-          "@tsparticles/browserslist-config",
-          "@tsparticles/depcruise-config",
-          "@tsparticles/prettier-config",
-          "@tsparticles/webpack-plugin",
-          "@tsparticles/eslint-config",
-          "@tsparticles/tsconfig"
-        ]
-        ,
-        "releaseTagPattern": "v{version}"
-      }
-    },
+    "projects": [
+      "*"
+    ],
     "version": {
       "conventionalCommits": true,
-      "updateDependents": true,
+      "updateDependents": "always",
       "git": {
         "commit": true,
         "commitMessage": "chore(release): published new version",
+        "push": true,
         "tag": true,
         "stageChanges": true
       }
@@ -33,6 +23,7 @@
       "projectChangelogs": false,
       "git": {
         "commit": true,
+        "push": true,
         "stageChanges": true
       }
     }
