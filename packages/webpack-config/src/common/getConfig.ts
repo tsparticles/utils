@@ -92,9 +92,11 @@ function getSingleConfig(params: ConfigParams, min: boolean, lazy: boolean): unk
     ].filter(Boolean),
     optimization: {
       minimize: min,
+      concatenateModules: false,
       minimizer: [
         new TerserPlugin({
           include: /\.min\.js$/,
+          minify: TerserPlugin.swcMinify,
           parallel: true,
           terserOptions: {
             compress: {
