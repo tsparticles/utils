@@ -32,7 +32,7 @@
   "prettier": "@tsparticles/prettier-config",
   "dependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@swc/core": "^1.15.30",
+    "@swc/core": "^1.15.32",
     "@tsparticles/eslint-config": "workspace:^3.4.13",
     "@tsparticles/prettier-config": "workspace:^3.4.13",
     "browserslist": "^4.28.2",
