@@ -41,8 +41,8 @@
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tsparticles/eslint-config": "workspace:^3.4.13",
-    "@tsparticles/prettier-config": "workspace:^3.4.13",
+    "@tsparticles/eslint-config": "workspace:^",
+    "@tsparticles/prettier-config": "workspace:^",
     "@types/node": "^25.6.0",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
@@ -52,7 +52,7 @@
     "prettier-plugin-multiline-arrays": "^4.1.7",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.0"
+    "typescript-eslint": "^8.59.1"
   },
   "patchedDependencies": {
     "tsup@8.5.1": "patches/tsup@8.5.1.patch"

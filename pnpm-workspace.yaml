@@ -1,5 +1,9 @@
 packages:
   - packages/*
+allowBuilds:
+  '@swc/core': true
+  esbuild: true
+  nx: true
 
 ignoredBuiltDependencies:
   - nx
