@@ -58,7 +58,7 @@ jobs:
         run: pnpm install
 
       - name: Build packages
-        run: npx nx affected -t build:ci
+        run: pnpm run build:ci:affected
 
       - name: Stop Nx Cloud Session
         run: npx nx fix-ci
